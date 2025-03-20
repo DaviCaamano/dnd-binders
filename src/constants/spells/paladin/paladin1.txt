@@ -374,6 +374,7 @@ The mount disappears temporarily when it drops to 0 hit points or when you dismi
 You can't have more than one mount bonded by this spell or *find steed* at the same time. As an action, you can release a mount from its bond, causing it to disappear permanently.
 
 Whenever the mount disappears, it leaves behind any objects it was wearing or carrying.
+  &nbsp;
 
 > ##### Dragonnel Steeds
 >

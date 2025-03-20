@@ -6,7 +6,10 @@ import { SpellCard } from "@components/SpellCard";
 import { Spell } from "@type/spells";
 import { Routes } from "@type/routes";
 
-export const SpellBook = ({ route }: Routes) => {
+interface SpellBookProps {
+  route: Routes;
+}
+export const SpellBook = ({ route }: SpellBookProps) => {
   const spellData: Spell[] = useGetSpellData(route);
   const { iteration, reportOversizedCard, spells } = useLargeCards(spellData);
 

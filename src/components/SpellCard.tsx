@@ -134,15 +134,11 @@ export const SpellCard = ({
                 p: ({ ...props }) => (
                   <p {...props} style={{ marginBottom: "1em" }} />
                 ),
-                table: ({ node, ...props }) => (
+                table: ({ ...props }) => (
                   <table {...props} className="custom-table" />
                 ),
-                th: ({ node, ...props }) => (
-                  <th {...props} className="custom-th" />
-                ),
-                td: ({ node, ...props }) => (
-                  <td {...props} className="custom-td" />
-                ),
+                th: ({ ...props }) => <th {...props} className="custom-th" />,
+                td: ({ ...props }) => <td {...props} className="custom-td" />,
               }}
             >
               {/* add empty lines after paragraphs

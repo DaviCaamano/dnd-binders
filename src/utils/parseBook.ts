@@ -40,7 +40,7 @@ export const parseBook = async (filePaths: string[]): Promise<Spell[]> => {
 
     // Collect the Rest of the Text as the text of the spell.
     let nextLine = headerEndIndex + 1;
-    let spellText = [];
+    const spellText = [];
     while (
       typeof spellData[nextLine] === "string" &&
       nextLine < spellData.length

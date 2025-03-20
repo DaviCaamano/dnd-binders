@@ -1,9 +1,8 @@
-'use server';
+"use server";
 
-import path from 'path';
-import { NextResponse } from 'next/server';
-import {parseBook} from '@utils/parseBook';
-
+import path from "path";
+import { NextResponse } from "next/server";
+import { parseBook } from "@utils/parseBook";
 
 const paladinFilePaths = [
   path.join(
@@ -21,7 +20,7 @@ export const GET = async () => {
     { spells: await parseBook(paladinFilePaths) },
     {
       status: 200,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { "Content-Type": "application/json" },
     },
   );
 };

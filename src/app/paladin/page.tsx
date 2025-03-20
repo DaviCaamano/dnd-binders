@@ -4,7 +4,7 @@ import { Spell } from "@types/spells";
 import { useGetSpellData } from "@hooks/useGetSpellData";
 import { Routes } from "@types/routes";
 import { useLargeCards } from "@hooks/useLargeCards";
-import {Card} from '@components/Card';
+import { Card } from "@components/Card";
 
 export default function Home() {
   const spellData: Spell[] = useGetSpellData(Routes.paladin);

@@ -1,10 +1,10 @@
 'use client';
 
-import { Card } from '../components/Card';
-import { useLargeCards } from '../components/wizard/useLargeCards';
 import { Spell } from 'components/types/spells';
 import { useGetSpellData } from 'components/components/wizard/useGetSpellData';
 import { Routes } from 'components/types/routes';
+import { useLargeCards } from 'components/components/wizard/useLargeCards';
+import { Card } from 'components/components/Card';
 
 export default function Home() {
   const spellData: Spell[] = useGetSpellData(Routes.wizard);
@@ -18,15 +18,15 @@ export default function Home() {
 
   if (!spells) return <div>Loading...</div>;
   return (
-      <div className="grid-container">
-        {spells?.map((spell, index) => (
-            <Card
-                key={index}
-                iteration={iteration}
-                spell={spell}
-                reportOversizedCard={report(index)}
-            />
-        ))}
-      </div>
+    <div className="grid-container">
+      {spells?.map((spell, index) => (
+        <Card
+          key={index}
+          iteration={iteration}
+          spell={spell}
+          reportOversizedCard={report(index)}
+        />
+      ))}
+    </div>
   );
 }

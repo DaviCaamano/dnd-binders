@@ -1,0 +1,420 @@
+#### Find Steed
+*Level 2 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 30 feet
+- **Components:** V, S
+- **Duration:** Instantaneous
+---
+You summon an otherworldly being that appears as a loyal steed in an unoccupied space of your choice within range. This creature uses the **Otherworldly Steed** stat block. If you already have a steed from this spell, the steed is replaced by the new one.
+
+The steed resembles a Large, rideable animal of your choice, such as a horse, a camel, a dire wolf, or an elk. Whenever you cast the spell, choose the steed's creature type—Celestial, Fey, or Fiend—which determines certain traits in the stat block.
+
+***Combat.*** The steed is an ally to you and your allies. In combat, it shares your Initiative count, and it functions as a controlled mount while you ride it (as defined in the rules on mounted combat). If you have the Incapacitated condition, the steed takes its turn immediately after yours and acts independently, focusing on protecting you.
+
+***Disappearance of the Steed.*** The steed disappears if it drops to 0 Hit Points or if you die. When it disappears, it leaves behind anything it was wearing or carrying. If you cast this spell again, you decide whether you summon the steed that disappeared or a different one.
+***Using a Higher-Level Spell Slot.*** Use the spell slot's level for the spell's level in the stat block.
+
+**Classes:** Paladin
+
+#### Geas
+*Level 5 Enchantment*
+___
+- **Casting Time:** 1 minute
+- **Range:** 60 feet
+- **Components:** V
+- **Duration:** 30 days
+---
+You give a verbal command to a creature that you can see within range, ordering it to carry out some service or refrain from an action or a course of activity as you decide. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target automatically succeeds if it can't understand your command.
+
+While Charmed, the creature takes 5d10 Psychic damage if it acts in a manner directly counter to your command. It takes this damage no more than once each day.
+
+You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.
+
+A *Remove Curse*, *Greater Restoration*, or *Wish* spell ends this spell.
+***Using a Higher-Level Spell Slot.*** If you use a level 7 or 8 spell slot, the duration is 365 days. If you use a level 9 spell slot, the spell lasts until it is ended by one of the spells mentioned above.
+
+**Classes:** Bard, Cleric, Druid, Paladin, Wizard
+
+#### Gentle Repose
+*Level 2 Necromancy*
+___
+- **Casting Time:** Action or Ritual
+- **Range:** Touch
+- **Components:** V, S, M (2 Copper Pieces, which the spell consumes)
+- **Duration:** 10 days
+---
+You touch a corpse or other remains. For the duration, the target is protected from decay and can't become Undead.
+
+The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as *Raise Dead*.
+
+**Classes:** Cleric, Paladin, Wizard
+
+#### Greater Restoration
+*Level 5 Abjuration*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, S, M (diamond dust worth 100+ GP, which the spell consumes)
+- **Duration:** Instantaneous
+---
+You touch a creature and magically remove one of the following effects from it:
+
+- 1 Exhaustion level
+- The Charmed or Petrified condition
+- A curse, including the target's Attunement to a cursed magic item
+- Any reduction to one of the target's ability scores
+- Any reduction to the target's Hit Point maximum
+
+**Classes:** Artificer, Bard, Cleric, Druid, Paladin, Ranger
+
+#### Heroism
+*Level 1 Enchantment*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, S
+- **Duration:** Concentration, up to 1 minute
+---
+A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.
+***Using a Higher-Level Spell Slot.*** You can target one additional creature for each spell slot level above 1.
+
+**Classes:** Bard, Paladin
+
+#### Holy Weapon
+*Level 5 Evocation*
+___
+- **Casting Time:** Bonus action
+- **Range:** Touch
+- **Components:** V, S
+- **Duration:** Concentration, up to 1 hour
+---
+You imbue a weapon you touch with holy power. Until the spell ends, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet. In addition, weapon attacks made with it deal an extra 2d8 radiant damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration.
+
+As a bonus action on your turn, you can dismiss this spell and cause the weapon to emit a burst of radiance. Each creature of your choice that you can see within 30 feet of the weapon must make a Constitution saving throw. On a failed save, a creature takes 4d8 radiant damage, and it is blinded for 1 minute. On a successful save, a creature takes half as much damage and isn't blinded. At the end of each of its turns, a blinded creature can make a Constitution saving throw, ending the effect on itself on a success.
+
+**Classes:** Cleric, Cleric, Paladin, Paladin
+
+#### Lesser Restoration
+*Level 2 Abjuration*
+___
+- **Casting Time:** Bonus action
+- **Range:** Touch
+- **Components:** V, S
+- **Duration:** Instantaneous
+---
+You touch a creature and end one condition on it: Blinded, Deafened, Paralyzed, or Poisoned.
+
+**Classes:** Artificer, Bard, Cleric, Druid, Paladin, Ranger
+
+#### Locate Creature
+*Level 4 Divination*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** V, S, M (fur from a bloodhound)
+- **Duration:** Concentration, up to 1 hour
+---
+Describe or name a creature that is familiar to you. You sense the direction to the creature's location if that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.
+
+The spell can locate a specific creature known to you or the nearest creature of a specific kind (such as a human or a unicorn) if you have seen such a creature up close—within 30 feet—at least once. If the creature you described or named is in a different form, such as under the effects of a *Flesh to Stone* or *Polymorph* spell, this spell doesn't locate the creature.
+
+This spell can't locate a creature if any thickness of lead blocks a direct path between you and the creature.
+
+**Classes:** Bard, Cleric, Druid, Paladin, Ranger, Wizard
+
+#### Locate Object
+*Level 2 Divination*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** V, S, M (a forked twig)
+- **Duration:** Concentration, up to 10 minutes
+---
+Describe or name an object that is familiar to you. You sense the direction to the object's location if that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.
+
+The spell can locate a specific object known to you if you have seen it up close—within 30 feet—at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.
+
+This spell can't locate an object if any thickness of lead blocks a direct path between you and the object.
+
+**Classes:** Bard, Cleric, Druid, Paladin, Ranger, Wizard
+
+#### Magic Circle
+*Level 3 Abjuration*
+___
+- **Casting Time:** 1 minute
+- **Range:** 10 feet
+- **Components:** V, S, M (salt and powdered silver worth 100+ GP, which the spell consumes)
+- **Duration:** 1 hour
+---
+You create a 10-foot-radius, 20-foot-tall Cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the Cylinder intersects with the floor or other surface.
+
+Choose one or more of the following types of creatures: Celestials, Elementals, Fey, Fiends, or Undead. The circle affects a creature of the chosen type in the following ways:
+
+- The creature can't willingly enter the Cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.
+- The creature has Disadvantage on attack rolls against targets within the Cylinder.
+- Targets within the Cylinder can't be possessed by or gain the Charmed or Frightened condition from the creature.
+
+Each time you cast this spell, you can cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the Cylinder and protecting targets outside it.
+***Using a Higher-Level Spell Slot.*** The duration increases by 1 hour for each spell slot level above 3.
+
+**Classes:** Cleric, Paladin, Warlock, Wizard
+
+#### Magic Weapon
+*Level 2 Transmutation*
+___
+- **Casting Time:** Bonus action
+- **Range:** Touch
+- **Components:** V, S
+- **Duration:** 1 hour
+---
+You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls. The spell ends early if you cast it again.
+***Using a Higher-Level Spell Slot.*** The bonus increases to +2 with a level 3-5 spell slot. The bonus increases to +3 with a level 6+ spell slot.
+
+**Classes:** Artificer, Paladin, Ranger, Sorcerer, Wizard
+
+#### Neutralizing Field
+*Level 5 Abjuration*
+___
+- **Casting Time:** Action
+- **Range:** Self (10-foot radius)
+- **Components:** V, S, M (A delerium crystal or holy relic worth 1,000 gp)
+- **Duration:** Concentration, up to 1 hour
+---
+You negate contaminated magical energies in a 10-foot radius sphere. Until the spell ends, the sphere moves with you, centred on you. Creatures in the sphere (including you) can't gain *contamination levels* and have immunity to necrotic damage. Contaminated spells can't be cast by creatures in the area.
+
+#### Prayer of Healing
+*Level 2 Abjuration*
+___
+- **Casting Time:** 10 minutes
+- **Range:** 30 feet
+- **Components:** V
+- **Duration:** Instantaneous
+---
+Up to five creatures of your choice who remain within range for the spell's entire casting gain the benefits of a Short Rest and also regain 2d8 Hit Points. A creature can't be affected by this spell again until that creature finishes a Long Rest.
+***Using a Higher-Level Spell Slot.*** The healing increases by 1d8 for each spell slot level above 2.
+
+**Classes:** Cleric, Paladin
+
+#### Protection from Evil and Good
+*Level 1 Abjuration*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, S, M (a flask of Holy Water worth 25+ GP, which the spell consumes)
+- **Duration:** Concentration, up to 10 minutes
+---
+Until the spell ends, one willing creature you touch is protected against creatures that are Aberrations, Celestials, Elementals, Fey, Fiends, or Undead. The protection grants several benefits. Creatures of those types have Disadvantage on attack rolls against the target. The target also can't be possessed by or gain the Charmed or Frightened conditions from them. If the target is already possessed, Charmed, or Frightened by such a creature, the target has Advantage on any new saving throw against the relevant effect.
+
+**Classes:** Cleric, Druid, Paladin, Warlock, Wizard
+
+#### Protection from Poison
+*Level 2 Abjuration*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, S
+- **Duration:** 1 hour
+---
+You touch a creature and end the Poisoned condition on it. For the duration, the target has Advantage on saving throws to avoid or end the Poisoned condition, and it has Resistance to Poison damage.
+
+**Classes:** Artificer, Cleric, Druid, Paladin, Ranger
+
+#### Purge Contamination
+*Level 3 Abjuration*
+___
+- **Casting Time:** 1 hour
+- **Range:** Touch
+- **Components:** V, S, M (100 gp of alchemical fluids or holy water, which the spell consumes)
+- **Duration:** Instantaneous
+---
+You apply alchemical fluids or holy water to a contaminated humanoid creature while reciting an exacting magical chant that expels eldritch contaminants from the target's body. When you finish casting the spell, all *contamination levels* and mutations are removed from the creature. It then gains one level of exhaustion for each *contamination level* removed with this spell.
+
+#### Purify Food and Drink
+*Level 1 Transmutation*
+___
+- **Casting Time:** Action or Ritual
+- **Range:** 10 feet
+- **Components:** V, S
+- **Duration:** Instantaneous
+---
+You remove poison and rot from nonmagical food and drink in a 5-foot-radius Sphere centered on a point within range.
+
+**Classes:** Artificer, Cleric, Druid, Paladin
+
+#### Raise Dead
+*Level 5 Necromancy*
+___
+- **Casting Time:** 1 hour
+- **Range:** Touch
+- **Components:** V, S, M (a diamond worth 500+ GP, which the spell consumes)
+- **Duration:** Instantaneous
+---
+With a touch, you revive a dead creature if it has been dead no longer than 10 days and it wasn't Undead when it died.
+
+The creature returns to life with 1 Hit Point. This spell also neutralizes any poisons that affected the creature at the time of death.
+
+This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival—its head, for instance—the spell automatically fails.
+
+Coming back from the dead is an ordeal. The target takes a -4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.
+
+**Classes:** Bard, Cleric, Paladin
+
+#### Remove Curse
+*Level 3 Abjuration*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, S
+- **Duration:** Instantaneous
+---
+At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's Attunement to the object so it can be removed or discarded.
+
+**Classes:** Cleric, Paladin, Warlock, Wizard
+
+#### Revivify
+*Level 3 Necromancy*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, S, M (a diamond worth 300+ GP, which the spell consumes)
+- **Duration:** Instantaneous
+---
+You touch a creature that has died within the last minute. That creature revives with 1 Hit Point. This spell can't revive a creature that has died of old age, nor does it restore any missing body parts.
+
+**Classes:** Artificer, Cleric, Druid, Paladin, Ranger
+
+#### Searing Smite
+*Level 1 Evocation*
+___
+- **Casting Time:** Bonus action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike
+- **Range:** Self
+- **Components:** V
+- **Duration:** 1 minute
+---
+As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.
+***Using a Higher-Level Spell Slot.*** All the damage increases by 1d6 for each spell slot level above 1.
+
+**Classes:** Paladin
+
+#### Shield of Faith
+*Level 1 Abjuration*
+___
+- **Casting Time:** Bonus action
+- **Range:** 60 feet
+- **Components:** V, S, M (a prayer scroll)
+- **Duration:** Concentration, up to 10 minutes
+---
+A shimmering field surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.
+
+**Classes:** Cleric, Paladin
+
+#### Shining Smite
+*Level 2 Transmutation*
+___
+- **Casting Time:** Bonus action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike
+- **Range:** Self
+- **Components:** V
+- **Duration:** Concentration, up to 1 minute
+---
+The target hit by the strike takes an extra 2d6 Radiant damage from the attack. Until the spell ends, the target sheds Bright Light in a 5-foot radius, attack rolls against it have Advantage, and it can't benefit from the Invisible condition.
+***Using a Higher-Level Spell Slot.*** The damage increases by 1d6 for each spell slot level above 2.
+
+**Classes:** Paladin
+
+#### Spirit Shroud
+*Level 3 Necromancy*
+___
+- **Casting Time:** Bonus action
+- **Range:** Self
+- **Components:** V, S
+- **Duration:** Concentration, up to 1 minute
+---
+You call forth spirits of the dead, which flit around you for the spell's duration. The spirits are intangible and invulnerable.
+
+Until the spell ends, any attack you make deals 1d8 extra damage when you hit a creature within 10 feet of you. This damage is radiant, necrotic, or cold (your choice when you cast the spell). Any creature that takes this damage can't regain hit points until the start of your next turn.
+
+In addition, any creature of your choice that you can see that starts its turn within 10 feet of you has its speed reduced by 10 feet until the start of your next turn.
+***At Higher Levels.*** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every two slot levels above 3rd.
+
+#### Staggering Smite
+*Level 4 Enchantment*
+___
+- **Casting Time:** Bonus action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike
+- **Range:** Self
+- **Components:** V
+- **Duration:** Instantaneous
+---
+The target takes an extra 4d6 Psychic damage from the attack, and the target must succeed on a Wisdom saving throw or have the Stunned condition until the end of your next turn.
+***Using a Higher-Level Spell Slot.*** The extra damage increases by 1d6 for each spell slot level above 4.
+
+**Classes:** Paladin
+
+#### Summon Celestial
+*Level 5 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 90 feet
+- **Components:** V, S, M (a reliquary worth 500+ GP)
+- **Duration:** Concentration, up to 1 hour
+---
+You call forth a Celestial spirit. It manifests in an angelic form in an unoccupied space that you can see within range and uses the **Celestial Spirit** stat block. When you cast the spell, choose Avenger or *Defender*. Your choice determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.
+
+The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.
+***Using a Higher-Level Spell Slot.*** Use the spell slot's level for the spell's level in the stat block.
+
+**Classes:** Cleric, Paladin
+
+#### Thunderous Smite
+*Level 1 Evocation*
+___
+- **Casting Time:** Bonus action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike
+- **Range:** Self
+- **Components:** V
+- **Duration:** Instantaneous
+---
+Your strike rings with thunder that is audible within 300 feet of you, and the target takes an extra 2d6 Thunder damage from the attack. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and have the Prone condition.
+***Using a Higher-Level Spell Slot.*** The damage increases by 1d6 for each spell slot level above 1.
+
+**Classes:** Paladin
+
+#### Warding Bond
+*Level 2 Abjuration*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, S, M (a pair of platinum rings worth 50+ GP each, which you and the target must wear for the duration)
+- **Duration:** 1 hour
+---
+You touch another creature that is willing and create a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has Resistance to all damage. Also, each time it takes damage, you take the same amount of damage.
+
+The spell ends if you drop to 0 Hit Points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures.
+
+**Classes:** Cleric, Paladin
+
+#### Wrathful Smite
+*Level 1 Necromancy*
+___
+- **Casting Time:** Bonus action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike
+- **Range:** Self
+- **Components:** V
+- **Duration:** 1 minute
+---
+The target takes an extra 1d6 Necrotic damage from the attack, and it must succeed on a Wisdom saving throw or have the Frightened condition until the spell ends. At the end of each of its turns, the Frightened target repeats the save, ending the spell on itself on a success.
+***Using a Higher-Level Spell Slot.*** The damage increases by 1d6 for each spell slot level above 1.
+
+**Classes:** Paladin
+
+#### Zone of Truth
+*Level 2 Enchantment*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S
+- **Duration:** 10 minutes
+---
+You create a magical zone that guards against deception in a 15-foot-radius Sphere centered on a point within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there makes a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether a creature succeeds or fails on this save.
+
+An affected creature is aware of the spell and can avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive yet must be truthful.
+
+**Classes:** Bard, Cleric, Paladin

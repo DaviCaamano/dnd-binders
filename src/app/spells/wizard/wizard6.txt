@@ -1,0 +1,911 @@
+
+#### Sword Burst
+*Conjuration Cantrip*
+___
+- **Casting Time:** Action
+- **Range:** Self (5-foot radius)
+- **Components:** V
+- **Duration:** Instantaneous
+---
+You create a momentary circle of spectral blades that sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take 1d6 force damage.
+
+This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).
+
+**Classes:** Artificer, Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
+
+
+
+
+
+
+#### Symbol
+*Level 7 Abjuration*
+___
+- **Casting Time:** 1 minute
+- **Range:** Touch
+- **Components:** V, S, M (powdered diamond worth 1,000+ GP, which the spell consumes)
+- **Duration:** Until dispelled or triggered
+---
+You inscribe a harmful glyph either on a surface (such as a section of floor or wall) or within an object that can be closed (such as a book or chest). The glyph can cover an area no larger than 10 feet in diameter. If you choose an object, it must remain in place; if it is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.
+
+The glyph is nearly imperceptible and requires a successful Wisdom (Perception) check against your spell save DC to notice.
+
+When you inscribe the glyph, you set its trigger and choose which effect the symbol bears: Death, Discord, Fear, Pain, Sleep, or Stunning. Each one is explained below.
+
+***Set the Trigger.*** You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph.
+
+You can refine the trigger so that only creatures of certain types activate it (for example, the glyph could be set to affect Aberrations). You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.
+
+Once triggered, the glyph glows, filling a 60-foot-radius Sphere with Dim Light for 10 minutes, after which time the spell ends. Each creature in the Sphere when the glyph activates is targeted by its effect, as is a creature that enters the Sphere for the first time on a turn or ends its turn there. A creature is targeted only once per turn.
+
+***Death.*** Each target makes a Constitution saving throw, taking 10d10 Necrotic damage on a failed save or half as much damage on a successful save.
+
+***Discord.*** Each target makes a Wisdom saving throw. On a failed save, a target argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has Disadvantage on attack rolls and ability checks.
+
+***Fear.*** Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened, the target must move at least 30 feet away from the glyph on each of its turns, if able.
+
+***Pain.*** Each target must succeed on a Constitution saving throw or have the Incapacitated condition for 1 minute.
+
+***Sleep.*** Each target must succeed on a Wisdom saving throw or have the Unconscious condition for 10 minutes. A creature awakens if it takes damage or if someone takes an action to shake it awake.
+
+***Stunning.*** Each target must succeed on a Wisdom saving throw or have the Stunned condition for 1 minute.
+
+**Classes:** Bard, Cleric, Druid, Wizard
+
+#### Synaptic Static
+*Level 5 Enchantment*
+___
+- **Casting Time:** Action
+- **Range:** 120 feet
+- **Components:** V, S
+- **Duration:** Instantaneous
+---
+You cause psychic energy to erupt at a point within range. Each creature in a 20-foot-radius Sphere centered on that point makes an Intelligence saving throw, taking 8d6 Psychic damage on a failed save or half as much damage on a successful one.
+
+On a failed save, a target also has muddled thoughts for 1 minute. During that time, it subtracts 1d6 from all its attack rolls and ability checks, as well as any Constitution saving throws to maintain Concentration. The target makes an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+**Classes:** Bard, Sorcerer, Warlock, Wizard
+
+#### Tasha's Bubbling Cauldron
+*Level 6 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 5 feet
+- **Components:** V, S, M (a gilded ladle worth 500 + GP)
+- **Duration:** 10 minutes
+---
+You conjure a claw-footed cauldron filled with bubbling liquid. The cauldron appears in an unoccupied space on the ground within 5 feet of you and lasts for the duration. The cauldron can't be moved and disappears when the spell ends, along with the bubbling liquid inside it.
+
+The liquid in the cauldron duplicates the properties of a Common or an Uncommon potion of your choice (such as a *Potion of Healing*). As a Bonus Action, you or an ally can reach into the cauldron and withdraw one potion of that kind. The potion is contained in a vial that disappears when the potion is consumed. The cauldron can produce a number of these potions equal to your spellcasting ability modifier (minimum 1). When the last of these potions is withdrawn from the cauldron, the cauldron disappears, and the spell ends.
+
+Potions obtained from the cauldron that aren't consumed disappear when you cast this spell again.
+
+**Classes:** Warlock, Wizard
+
+#### Tasha's Caustic Brew
+*Level 1 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** Self (30-foot line)
+- **Components:** V, S, M (a bit of rotten food)
+- **Duration:** Concentration, up to 1 minute
+---
+A stream of acid emanates from you in a line 30 feet long and 5 feet wide in a direction you choose. Each creature in the line must succeed on a Dexterity saving throw or be covered in acid for the spell's duration or until a creature uses its action to scrape or wash the acid off itself or another creature. A creature covered in the acid takes 2d4 acid damage at start of each of its turns.
+***At Higher Levels.*** When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 2d4 for each slot level above 1st.
+
+**Classes:** Artificer
+
+
+
+
+
+
+#### Tasha's Hideous Laughter
+*Level 1 Enchantment*
+___
+- **Casting Time:** Action
+- **Range:** 30 feet
+- **Components:** V, S, M (a tart and a feather)
+- **Duration:** Concentration, up to 1 minute
+---
+One creature of your choice that you can see within range makes a Wisdom saving throw. On a failed save, it has the Prone and Incapacitated conditions for the duration. During that time, it laughs uncontrollably if it's capable of laughter, and it can't end the Prone condition on itself.
+
+At the end of each of its turns and each time it takes damage, it makes another Wisdom saving throw. The target has Advantage on the save if the save is triggered by damage. On a successful save, the spell ends.
+***Using a Higher-Level Spell Slot.*** You can target one additional creature for each spell slot level about 1.
+
+**Classes:** Bard, Warlock, Wizard
+
+#### Tasha's Mind Whip
+*Level 2 Enchantment*
+___
+- **Casting Time:** Action
+- **Range:** 90 feet
+- **Components:** V
+- **Duration:** 1 round
+---
+You psychically lash out at one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, the target takes 3d6 psychic damage, and it can't take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three. On a successful save, the target takes half as much damage and suffers none of the spell's other effects.
+***At Higher Levels.*** When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd. The creatures must be within 30 feet of each other when you target them.
+
+#### Tasha's Otherworldly Guise
+*Level 6 Transmutation*
+___
+- **Casting Time:** Bonus action
+- **Range:** Self
+- **Components:** V, S, M (an object engraved with a symbol of the Outer Planes, worth at least 500 gp)
+- **Duration:** Concentration, up to 1 minute
+---
+Uttering an incantation, you draw on the magic of the Lower Planes or Upper Planes (your choice) to transform yourself. You gain the following benefits until the spell ends:
+
+- You are immune to fire and poison damage (Lower Planes) or radiant and necrotic damage (Upper Planes).
+- You are immune to the poisoned condition (Lower Planes) or the charmed condition (Upper Planes).
+- Spectral wings appear on your back, giving you a flying speed of 40 feet.
+- You have a +2 bonus to AC.
+- All your weapon attacks are magical, and when you make a weapon attack, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls.
+- You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that lets you attack more than once when you take the Attack action on your turn.
+
+#### Telekinesis
+*Level 5 Transmutation*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S
+- **Duration:** Concentration, up to 10 minutes
+---
+You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell and as a Magic action on your later turns before the spell ends, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.
+
+***Creature.*** You can try to move a Huge or smaller creature. The target must succeed on a Strength saving throw, or you move it up to 30 feet in any direction within the spell's range. Until the end of your next turn, the creature has the Restrained condition, and if you lift it into the air, it is suspended there. It falls at the end of your next turn unless you use this option on it again and it fails the save.
+
+***Object.*** You can try to move a Huge or smaller object. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction within the spell's range.
+
+If the object is worn or carried by a creature, that creature must succeed on a Strength saving throw, or you pull the object away and move it up to 30 feet in any direction within the spell's range.
+
+You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial.
+
+**Classes:** Sorcerer, Wizard
+
+#### Telepathy
+*Level 8 Divination*
+___
+- **Casting Time:** Action
+- **Range:** Unlimited
+- **Components:** V, S, M (a pair of linked silver rings)
+- **Duration:** 24 hours
+---
+You create a telepathic link between yourself and a willing creature with which you are familiar. The creature can be anywhere on the same plane of existence as you. The spell ends if you or the target are no longer on the same plane.
+
+Until the spell ends, you and the target can instantly share words, images, sounds, and other sensory messages with each other through the link, and the target recognizes you as the creature it is communicating with. The spell enables a creature to understand the meaning of your words and any sensory messages you send to it.
+
+**Classes:** Wizard
+
+#### Teleport
+*Level 7 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 10 feet
+- **Components:** V
+- **Duration:** Instantaneous
+---
+This spell instantly transports you and up to eight willing creatures that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be Large or smaller, and it can't be held or carried by an unwilling creature.
+
+The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls 1d100 and consults the Teleportation Outcome table and the explanations after it.
+
+##### Teleportation Outcome
+| Familiarity              | Mishap | Similar Area | Off Target | On Target |
+|--------------------------|:------:|:------------:|:----------:|:---------:|
+| Permanent circle         |    —   |       —      |      —     |   01-00   |
+| Linked object            |    —   |       —      |      —     |   01-00   |
+| Very familiar            |  01-05 |     06-13    |    14-24   |   25-00   |
+| Seen casually            |  01-33 |     34-43    |    44-53   |   54-00   |
+| Viewed once or described |  01-43 |     44-53    |    54-73   |   74-00   |
+| False destination        |  01-50 |     51-00    |      —     |     —     |
+
+***Familiarity.*** Here are the meanings of the terms in the table's Familiarity column:
+
+- "Permanent circle" means a permanent teleportation circle whose sigil sequence you know.
+- "Linked object" means you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library.
+- "Very familiar" is a place you have visited often, a place you have carefully studied, or a place you can see when you cast the spell.
+- "Seen casually" is a place you have seen more than once but with which you aren't very familiar.
+- "Viewed once or described" is a place you have seen once, possibly using magic, or a place you know through someone else's description, perhaps from a map.
+- "False destination" is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a location that no longer exists.
+
+***Mishap.*** The spell's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 Force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).
+
+***Similar Area.*** You and your group (or the target object) appear in a different area that's visually or thematically similar to the target area. You appear in the closest similar place. If you are heading for your home laboratory, for example, you might appear in another person's laboratory in the same city.
+
+***Off Target.*** You and your group (or the target object) appear 2d12 miles away from the destination in a random direction. Roll 1d8 for the direction: 1, east; 2, southeast; 3, south; 4, southwest; 5, west; 6, northwest; 7, north; or 8, northeast.
+
+***On Target.*** You and your group (or the target object) appear where you intended.
+
+**Classes:** Bard, Sorcerer, Wizard
+
+
+
+
+
+
+#### Teleportation Circle
+*Level 5 Conjuration*
+___
+- **Casting Time:** 1 minute
+- **Range:** 10 feet
+- **Components:** V, M (rare inks worth 50+ GP, which the spell consumes)
+- **Duration:** 1 round
+---
+As you cast the spell, you draw a 5-foot-radius circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.
+
+Many major temples, guildhalls, and other important places have permanent teleportation circles. Each circle includes a unique sigil sequence—a string of runes arranged in a particular pattern.
+
+When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations on the Material Plane, determined by the DM. You might learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.
+
+You can create a permanent teleportation circle by casting this spell in the same location every day for 365 days.
+
+**Classes:** Bard, Sorcerer, Warlock, Wizard
+
+#### Tenser's Floating Disk
+*Level 1 Conjuration*
+___
+- **Casting Time:** Action or Ritual
+- **Range:** 30 feet
+- **Components:** V, S, M (a drop of mercury)
+- **Duration:** 1 hour
+---
+This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.
+
+The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom.
+
+If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.
+
+**Classes:** Wizard
+
+#### Tenser's Transformation
+*Level 6 Transmutation*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** V, S, M (a few hairs from a bull)
+- **Duration:** Concentration, up to 10 minutes
+---
+You endow yourself with endurance and martial prowess fueled by magic. Until the spell ends, you can't cast spells, and you gain the following benefits:
+
+- You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.
+- You have advantage on attack rolls that you make with simple and martial weapons.
+- When you hit a target with a weapon attack, that target takes an extra 2d12 force damage.
+- You have proficiency with all armor, shields, simple weapons, and martial weapons.
+- You have proficiency in Strength and Constitution saving throws.
+- You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks.
+
+Immediately after the spell ends, you must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion.
+
+**Classes:** Wizard, Wizard
+
+#### Thunder Step
+*Level 3 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 90 feet
+- **Components:** V
+- **Duration:** Instantaneous
+---
+You teleport yourself to an unoccupied space you can see within range. Immediately after you disappear, a thunderous boom sounds, and each creature within 10 feet of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much damage on a successful one. The thunder can be heard from up to 300 feet away.
+
+You can bring along objects as long as their weight doesn't exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind.
+***At Higher Levels.*** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.
+
+**Classes:** Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
+
+#### Thunderclap
+*Evocation Cantrip*
+___
+- **Casting Time:** Action
+- **Range:** Self (5-foot emanation)
+- **Components:** S
+- **Duration:** Instantaneous
+---
+Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell's thunderous sound can be heard up to 100 feet away.
+***Cantrip Upgrade.*** The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
+
+**Classes:** Artificer, Bard, Druid, Sorcerer, Warlock, Wizard
+
+#### Thunderwave
+*Level 1 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** Self (15-foot cube)
+- **Components:** V, S
+- **Duration:** Instantaneous
+---
+You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.
+
+In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.
+***Using a Higher-Level Spell Slot.*** The damage increases by 1d8 for each spell slot level above 1.
+
+**Classes:** Bard, Druid, Sorcerer, Wizard
+
+
+
+
+
+
+#### Tidal Wave
+*Level 3 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 120 feet
+- **Components:** V, S, M (a drop of water)
+- **Duration:** Instantaneous
+---
+You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 4d8 bludgeoning damage and is knocked prone. On a successful save, a creature takes half as much damage and isn't knocked prone. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it, and then it vanishes.
+
+**Classes:** Druid, Druid, Sorcerer, Sorcerer, Wizard, Wizard
+
+#### Time Stop
+*Level 9 Transmutation*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** V
+- **Duration:** Instantaneous
+---
+You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use actions and move as normal.
+
+This spell ends if one of the actions you use during this period, or any effects that you create during it, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it.
+
+**Classes:** Sorcerer, Wizard
+
+#### Tiny Servant
+*Level 3 Transmutation*
+___
+- **Casting Time:** 1 minute
+- **Range:** Touch
+- **Components:** V, S
+- **Duration:** 8 hours
+---
+You touch one Tiny, nonmagical object that isn't attached to another object or a surface and isn't being carried by another creature. The target animates and sprouts little arms and legs, becoming a creature under your control until the spell ends or the creature drops to 0 hit points. See the **stat block** for its statistics.
+
+As a bonus action, you can mentally command the creature if it is within 120 feet of you. (If you control multiple creatures with this spell, you can command any or all of them at the same time, issuing the same command to each one.) You decide what action the creature will take and where it will move during its next turn, or you can issue a simple, general command, such as to fetch a key, stand watch, or stack some books. If you issue no commands, the servant does nothing other than defend itself against hostile creatures. Once given an order, the servant continues to follow that order until its task is complete.
+
+When the creature drops to 0 hit points, it reverts to its original form, and any remaining damage carries over to that form.
+***At Higher Levels.*** When you cast this spell using a spell slot of 4th level or higher, you can animate two additional objects for each slot level above 3rd.
+
+**Classes:** Artificer, Wizard, Wizard
+
+#### Toll the Dead
+*Necromancy Cantrip*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S
+- **Duration:** Instantaneous
+---
+You point at one creature you can see within range, and the single chime of a dolorous bell is audible within 10 feet of the target. The target must succeed on a Wisdom saving throw or take 1d8 Necrotic damage. If the target is missing any of its Hit Points, it instead takes 1d12 Necrotic damage.
+***Cantrip Upgrade.*** The damage increases by one die when you reach levels 5 (2d8 or 2d12), 11 (3d8 or 3d12), and 17 (4d8 or 4d12).
+
+**Classes:** Cleric, Warlock, Wizard
+
+#### Tongues
+*Level 3 Divination*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, M (a miniature ziggurat)
+- **Duration:** 1 hour
+---
+This spell grants the creature you touch the ability to understand any spoken or signed language that it hears or sees. Moreover, when the target communicates by speaking or signing, any creature that knows at least one language can understand it if that creature can hear the speech or see the signing.
+
+**Classes:** Bard, Cleric, Sorcerer, Warlock, Wizard
+
+#### Transmute Rock
+*Level 5 Transmutation*
+___
+- **Casting Time:** Action
+- **Range:** 120 feet
+- **Components:** V, S, M (clay and water)
+- **Duration:** Until dispelled
+---
+You choose an area of stone or mud that you can see that fits within a 40-foot cube and is within range, and choose one of the following effects.
+
+***Transmute Rock to Mud.*** Nonmagical rock of any sort in the area becomes an equal volume of thick, flowing mud that remains for the spell's duration.
+
+The ground in the spell's area becomes muddy enough that creatures can sink into it. Each foot that a creature moves through the mud costs 4 feet of movement, and any creature on the ground when you cast the spell must make a Strength saving throw. A creature must also make the saving throw when it moves into the area for the first time on a turn or ends its turn there. On a failed save, a creature sinks into the mud and is restrained, though it can use an action to end the restrained condition on itself by pulling itself free of the mud.
+
+If you cast the spell on a ceiling, the mud falls. Any creature under the mud when it falls must make a Dexterity saving throw. A creature takes 4d8 bludgeoning damage on a failed save, or half as much damage on a successful one.
+
+***Transmute Mud to Rock.*** Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spell's duration. Any creature in the mud when it transforms must make a Dexterity saving throw. On a successful save, a creature is shunted safely to the surface in an unoccupied space. On a failed save, a creature becomes restrained by the rock. A restrained creature, or another creature within reach, can use an action to try to break the rock by succeeding on a DC 20 Strength check or by dealing damage to it. The rock has AC 15 and 25 hit points, and it is immune to poison and psychic damage.
+
+**Classes:** Artificer, Druid, Druid, Wizard, Wizard
+
+
+
+
+
+
+#### True Polymorph
+*Level 9 Transmutation*
+___
+- **Casting Time:** Action
+- **Range:** 30 feet
+- **Components:** V, S, M (a drop of mercury, a dollop of gum arabic, and a wisp of smoke)
+- **Duration:** Concentration, up to 1 hour
+---
+Choose one creature or nonmagical object that you can see within range. The creature shape-shifts into a different creature or a nonmagical object, or the object shape-shifts into a creature (the object must be neither worn nor carried). The transformation lasts for the duration or until the target dies or is destroyed, but if you maintain Concentration on this spell for the full duration, the spell lasts until dispelled.
+
+An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isn't affected by this spell.
+
+***Creature into Creature.*** If you turn a creature into another kind of creature, the new form can be any kind you choose that has a Challenge Rating equal to or less than the target's Challenge Rating or level. The target's game statistics are replaced by the stat block of the new form, but it retains its Hit Points, Hit Point Dice, alignment, and personality.
+
+The target gains a number of Temporary Hit Points equal to the Hit Points of the new form. The spell ends early on the target if it has no Temporary Hit Points left.
+
+The target is limited in the actions it can perform by the anatomy of its new form, and it can't speak or cast spells.
+
+The target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment.
+
+***Object into Creature.*** You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature has a Challenge Rating of 9 or lower. The creature is Friendly to you and your allies. In combat, it takes its turns immediately after yours, and it obeys your commands.
+
+If the spell lasts more than an hour, you no longer control the creature. It might remain Friendly to you, depending on how you have treated it.
+
+***Creature into Object.*** If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form after the spell ends and it returns to normal.
+
+**Classes:** Bard, Warlock, Wizard
+
+#### True Seeing
+*Level 6 Divination*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, S, M (mushroom powder worth 25+ GP, which the spell consumes)
+- **Duration:** 1 hour
+---
+For the duration, the willing creature you touch has Truesight with a range of 120 feet.
+
+**Classes:** Bard, Cleric, Sorcerer, Warlock, Wizard
+
+#### True Strike
+*Divination Cantrip*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** S, M (a weapon with which you have proficiency and that is worth 1+ CP)
+- **Duration:** Instantaneous
+---
+Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).
+***Cantrip Upgrade.*** Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).
+
+**Classes:** Bard, Sorcerer, Warlock, Wizard
+
+#### Unseen Servant
+*Level 1 Conjuration*
+___
+- **Casting Time:** Action or Ritual
+- **Range:** 60 feet
+- **Components:** V, S, M (a bit of string and of wood)
+- **Duration:** 1 hour
+---
+This spell creates an Invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 Hit Point, and a Strength of 2, and it can't attack. If it drops to 0 Hit Points, the spell ends.
+
+Once on each of your turns as a Bonus Action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring drinks. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.
+
+If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.
+
+**Classes:** Bard, Warlock, Wizard
+
+#### Vampiric Touch
+*Level 3 Necromancy*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** V, S
+- **Duration:** Concentration, up to 1 minute
+---
+The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against one creature within reach. On a hit, the target takes 3d6 Necrotic damage, and you regain Hit Points equal to half the amount of Necrotic damage dealt.
+
+Until the spell ends, you can make the attack again on each of your turns as a Magic action, targeting the same creature or a different one.
+***Using a Higher-Level Spell Slot.*** The damage increases by 1d6 for each spell slot level above 3.
+
+**Classes:** Sorcerer, Warlock, Wizard
+
+#### Vitriolic Sphere
+*Level 4 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 150 feet
+- **Components:** V, S, M (a drop of bile)
+- **Duration:** Instantaneous
+---
+You point at a location within range, and a glowing, 1-foot-diameter ball of acid streaks there and explodes in a 20-foot-radius Sphere. Each creature in that area makes a Dexterity saving throw. On a failed save, a creature takes 10d4 Acid damage and another 5d4 Acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage only.
+***Using a Higher-Level Spell Slot.*** The initial damage increases by 2d4 for each spell slot level above 4.
+
+**Classes:** Sorcerer, Wizard
+
+
+
+
+
+
+#### Vortex Warp
+*Level 2 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 90 feet
+- **Components:** V, S
+- **Duration:** Instantaneous
+---
+You magically twist space around another creature you can see within range. The target must succeed on a Constitution saving throw (the target can choose to fail), or the target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze.
+***At Higher Levels.*** When you cast this spell using a spell slot of 3rd level or higher, the range of the spell increases by 30 feet for each slot level above 2nd.
+
+**Classes:** Artificer, Sorcerer, Sorcerer, Wizard, Wizard
+
+#### Wall of Fire
+*Level 4 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 120 feet
+- **Components:** V, S, M (a piece of charcoal)
+- **Duration:** Concentration, up to 1 minute
+---
+You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.
+
+When the wall appears, each creature in its area makes a Dexterity saving throw, taking 5d8 Fire damage on a failed save or half as much damage on a successful one.
+
+One side of the wall, selected by you when you cast this spell, deals 5d8 Fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.
+***Using a Higher-Level Spell Slot.*** The damage increases by 1d8 for each spell slot level above 4.
+
+**Classes:** Druid, Sorcerer, Wizard
+
+#### Wall of Force
+*Level 5 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 120 feet
+- **Components:** V, S, M (a shard of glass)
+- **Duration:** Concentration, up to 10 minutes
+---
+An Invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick and lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side).
+
+Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by *Dispel Magic*. A *Disintegrate* spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane and blocks ethereal travel through the wall.
+
+**Classes:** Wizard
+
+#### Wall of Ice
+*Level 6 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 120 feet
+- **Components:** V, S, M (a piece of quartz)
+- **Duration:** Concentration, up to 10 minutes
+---
+You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.
+
+If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side) and makes a Dexterity saving throw, taking 10d6 Cold damage on a failed save or half as much damage on a successful one.
+
+The wall is an object that can be damaged and thus breached. It has AC 12 and 30 Hit Points per 10-foot section, and it has Immunity to Cold, Poison, and Psychic damage and Vulnerability to Fire damage. Reducing a 10-foot section of wall to 0 Hit Points destroys it and leaves behind a sheet of frigid air in the space the wall occupied.
+
+A creature moving through the sheet of frigid air for the first time on a turn makes a Constitution saving throw, taking 5d6 Cold damage on a failed save or half as much damage on a successful one.
+***Using a Higher-Level Spell Slot.*** The damage the wall deals when it appears increases by 2d6 and the damage from passing through the sheet of frigid air increases by 1d6 for each spell slot level above 6.
+
+**Classes:** Wizard
+
+#### Wall of Light
+*Level 5 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 120 feet
+- **Components:** V, S, M (a hand mirror)
+- **Duration:** Concentration, up to 10 minutes
+---
+A shimmering wall of bright light appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it. It emits bright light out to 120 feet and dim light for an additional 120 feet.
+
+When the wall appears, each creature in its area must make a Constitution saving throw. On a failed save, a creature takes 4d8 radiant damage, and it is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded. A blinded creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+A creature that ends its turn in the wall's area takes 4d8 radiant damage.
+
+Until the spell ends, you can use an action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes 4d8 radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends.
+***At Higher Levels.*** When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.
+
+**Classes:** Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
+
+
+
+
+
+
+#### Wall of Sand
+*Level 3 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 90 feet
+- **Components:** V, S, M (a handful of sand)
+- **Duration:** Concentration, up to 10 minutes
+---
+You create a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. A creature is blinded while in the wall's space and must spend 3 feet of movement for every 1 foot it moves there.
+
+**Classes:** Wizard, Wizard
+
+#### Wall of Stone
+*Level 5 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 120 feet
+- **Components:** V, S, M (a cube of granite)
+- **Duration:** Concentration, up to 10 minutes
+---
+A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.
+
+If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its Reaction to move up to its Speed so that it is no longer enclosed by the wall.
+
+The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on a firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.
+
+If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create battlements and the like.
+
+The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 Hit Points per inch of thickness, and it has Immunity to Poison and Psychic damage. Reducing a panel to 0 Hit Points destroys it and might cause connected panels to collapse at the DM's discretion.
+
+If you maintain your Concentration on this spell for its full duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends.
+
+**Classes:** Artificer, Druid, Sorcerer, Wizard
+
+#### Wall of Water
+*Level 3 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S, M (a drop of water)
+- **Duration:** Concentration, up to 10 minutes
+---
+You create a wall of water on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall's space is difficult terrain.
+
+Any ranged weapon attack that enters the wall's space has disadvantage on the attack roll, and fire damage is halved if the fire effect passes through the wall to reach its target. Spells that deal cold damage that pass through the wall cause the area of the wall they pass through to freeze solid (at least a 5-foot-square section is frozen). Each 5-foot-square frozen section has AC 5 and 15 hit points. Reducing a frozen section to 0 hit points destroys it. When a section is destroyed, the wall's water doesn't fill it.
+
+**Classes:** Druid, Druid, Sorcerer, Sorcerer, Wizard, Wizard
+
+#### Warding Wind
+*Level 2 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** V
+- **Duration:** Concentration, up to 10 minutes
+---
+A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell's duration.
+
+The wind has the following effects:
+
+- It deafens you and other creatures in its area.
+- It extinguishes unprotected flames in its area that are torch-sized or smaller.
+- It hedges out vapor, gas, and fog that can be dispersed by strong wind.
+- The area is difficult terrain for creatures other than you.
+- The attack rolls of ranged weapon attacks have disadvantage if the attacks pass in or out of the wind.
+
+**Classes:** Bard, Bard, Druid, Druid, Sorcerer, Sorcerer, Wizard, Wizard
+
+#### Warp Bolt
+*Level 2 Evocation (contaminated)*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S, M (a delerium fragment worth 100 gp, which the spell consumes)
+- **Duration:** Concentration, up to 1 minute
+---
+When you cast this spell, you gain one *level of contamination*. An arcing bolt of octarine lightning strikes a creature within range. If the target has one or more *contamination levels*, it is hit automatically. Otherwise, make a ranged spell attack against that creature. On a hit, the target takes 6d6 necrotic damage and gains one *level of contamination*.
+
+You can create a new bolt of lightning as your action on any turn until the spell ends.
+***At Higher Levels.*** When you cast this spell using a spell slot of 3rd level or higher, you can target 1 additional creature for each spell level above 2nd.
+
+#### Warp Sense
+*Level 2 Divination*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** V, S, M (a razorvine leaf)
+- **Duration:** Concentration, up to 1 minute
+---
+For the duration, you sense the presence of portals, even inactive ones, within 30 feet of yourself.
+
+If you detect a portal in this way, you can use your action to study it. Make a DC 15 ability check using your spellcasting ability. On a successful check, you learn the destination plane of the portal and what portal key it requires, then the spell ends. On a failed check, you learn nothing and can't study that portal again using this spell until you cast it again.
+
+The spell can penetrate most barriers but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
+
+**Classes:** Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
+
+
+
+
+
+
+#### Water Breathing
+*Level 3 Transmutation*
+___
+- **Casting Time:** Action or Ritual
+- **Range:** 30 feet
+- **Components:** V, S, M (a short reed)
+- **Duration:** 24 hours
+---
+This spell grants up to ten willing creatures of your choice within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.
+
+**Classes:** Artificer, Druid, Ranger, Sorcerer, Wizard
+
+#### Watery Sphere
+*Level 4 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 90 feet
+- **Components:** V, S, M (a droplet of water)
+- **Duration:** Concentration, up to 1 minute
+---
+You conjure up a sphere of water with a 5-foot radius at a point you can see within range. The sphere can hover but no more than 10 feet off the ground. The sphere remains for the spell's duration.
+
+Any creature in the sphere's space must make a Strength saving throw. On a successful save, a creature is ejected from that space to the nearest unoccupied space of the creature's choice outside the sphere. A Huge or larger creature succeeds on the saving throw automatically, and a Large or smaller creature can choose to fail it. On a failed save, a creature is restrained by the sphere and is engulfed by the water. At the end of each of its turns, a restrained target can repeat the saving throw, ending the effect on itself on a success.
+
+The sphere can restrain as many as four Medium or smaller creatures or one Large creature. If the sphere restrains a creature that causes it to exceed this capacity, a random creature that was already restrained by the sphere falls out of it and lands prone in a space within 5 feet of it.
+
+As an action, you can move the sphere up to 30 feet in a straight line. If it moves over a pit, a cliff, or other drop-off, it safely descends until it is hovering 10 feet above the ground. Any creature restrained by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the saving throw.
+
+When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 30 feet of it. Any creature restrained by the sphere is knocked prone in the space where it falls. The water then vanishes.
+
+**Classes:** Druid, Druid, Sorcerer, Sorcerer, Wizard, Wizard
+
+#### Web
+*Level 2 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S, M (a bit of spiderweb)
+- **Duration:** Concentration, up to 1 hour
+---
+You conjure a mass of sticky webbing at a point within range. The webs fill a 20-foot Cube there for the duration. The webs are Difficult Terrain, and the area within them is Lightly Obscured.
+
+If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.
+
+The first time a creature enters the webs on a turn or starts its turn there, it must succeed on a Dexterity saving throw or have the Restrained condition while in the webs or until it breaks free.
+
+A creature Restrained by the webs can take an action to make a Strength (Athletics) check against your spell save DC. If it succeeds, it is no longer Restrained.
+
+The webs are flammable. Any 5-foot Cube of webs exposed to fire burns away in 1 round, dealing 2d4 Fire damage to any creature that starts its turn in the fire.
+
+**Classes:** Artificer, Sorcerer, Wizard
+
+#### Weird
+*Level 9 Illusion*
+___
+- **Casting Time:** Action
+- **Range:** 120 feet
+- **Components:** V, S
+- **Duration:** Concentration, up to 1 minute
+---
+You try to create illusory terrors in others' minds. Each creature of your choice in a 30-foot-radius Sphere centered on a point within range makes a Wisdom saving throw. On a failed save, a target takes 10d10 Psychic damage and has the Frightened condition for the duration. On a successful save, a target takes half as much damage only.
+
+A Frightened target makes a Wisdom saving throw at the end of each of its turns. On a failed save, it takes 5d10 Psychic damage. On a successful save, the spell ends on that target.
+
+**Classes:** Warlock, Wizard
+
+#### Whirlwind
+*Level 7 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 300 feet
+- **Components:** V, M (a piece of straw)
+- **Duration:** Concentration, up to 1 minute
+---
+A whirlwind howls down to a point that you can see on the ground within range. The whirlwind is a 10-foot-radius, 30-foot-high cylinder centered on that point. Until the spell ends, you can use your action to move the whirlwind up to 30 feet in any direction along the ground. The whirlwind sucks up any Medium or smaller objects that aren't secured to anything and that aren't worn or carried by anyone.
+
+A creature must make a Dexterity saving throw the first time on a turn that it enters the whirlwind or that the whirlwind enters its space, including when the whirlwind first appears. A creature takes 10d6 bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, a Large or smaller creature that fails the save must succeed on a Strength saving throw or become restrained in the whirlwind until the spell ends. When a creature starts its turn restrained by the whirlwind, the creature is pulled 5 feet higher inside it, unless the creature is at the top. A restrained creature moves with the whirlwind and falls when the spell ends, unless the creature has some means to stay aloft.
+
+A restrained creature can use an action to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer restrained by the whirlwind and is hurled 3d6 × 10 feet away from it in a random direction.
+
+**Classes:** Druid, Druid, Sorcerer, Sorcerer, Wizard, Wizard
+
+
+
+
+
+
+#### Wish
+*Level 9 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** V
+- **Duration:** Instantaneous
+---
+Wish is the mightiest spell a mortal can cast. By simply speaking aloud, you can alter reality itself.
+
+The basic use of this spell is to duplicate any other spell of level 8 or lower. If you use it this way, you don't need to meet any requirements to cast that spell, including costly components. The spell simply takes effect.
+
+Alternatively, you can create one of the following effects of your choice:
+
+- **Object Creation.** You create one object of up to 25,000 GP in value that isn't a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space that you can see on the ground.
+- **Instant Health.** You allow yourself and up to twenty creatures that you can see to regain all Hit Points, and you end all effects on them listed in the *Greater Restoration* spell.
+- **Resistance.** You grant up to ten creatures that you can see Resistance to one damage type that you choose. This Resistance is permanent.
+- **Spell Immunity.** You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours.
+- **Sudden Learning.** You replace one of your feats with another feat for which you are eligible. You lose all the benefits of the old feat and gain the benefits of the new one. You can't replace a feat that is a prerequisite for any of your other feats or features.
+- **Roll Redo.** You undo a single recent event by forcing a reroll of any die roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a Wish spell could undo an ally's failed saving throw or a foe's Critical Hit. You can force the reroll to be made with Advantage or Disadvantage, and you choose whether to use the reroll or the original roll.
+- **Reshape Reality.** You may wish for something not included in any of the other effects. To do so, state your wish to the DM as precisely as possible. The DM has great latitude in ruling what occurs in such an instance; the greater the wish, the greater the likelihood that something goes wrong. This spell might simply fail, the effect you desire might be achieved only in part, or you might suffer an unforeseen consequence as a result of how you worded the wish. For example, wishing that a villain were dead might propel you forward in time to a period when that villain is no longer alive, effectively removing you from the game. Similarly, wishing for a Legendary magic item or an Artifact might instantly transport you to the presence of the item's current owner. If your wish is granted and its effects have consequences for a whole community, region, or world, you are likely to attract powerful foes. If your wish would affect a god, the god's divine servants might instantly intervene to prevent it or to encourage you to craft the wish in a particular way. If your wish would undo the multiverse itself, threaten the City of Sigil, or affect the Lady of Pain in any way, you see an image of her in your mind for a moment; she shakes her head, and your wish fails.
+
+The stress of casting Wish to produce any effect other than duplicating another spell weakens you. After enduring that stress, each time you cast a spell until you finish a Long Rest, you take 1d10 Necrotic damage per level of that spell. This damage can't be reduced or prevented in any way. In addition, your Strength score becomes 3 for 2d4 days. For each of those days that you spend resting and doing nothing more than light activity, your remaining recovery time decreases by 2 days. Finally, there is a 33 percent chance that you are unable to cast *Wish* ever again if you suffer this stress.
+
+**Classes:** Sorcerer, Wizard
+
+#### Witch Bolt
+*Level 1 Evocation*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S, M (a twig struck by lightning)
+- **Duration:** Concentration, up to 1 minute
+---
+A beam of crackling energy lances toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against it. On a hit, the target takes 2d12 Lightning damage.
+
+On each of your subsequent turns, you can take a Bonus Action to deal 1d12 Lightning damage to the target automatically, even if the first attack missed.
+
+The spell ends if the target is ever outside the spell's range or if it has Total Cover from you.
+***Using a Higher-Level Spell Slot.*** The initial damage increases by 1d12 for each spell slot level above 1.
+
+**Classes:** Sorcerer, Warlock, Wizard
+
+#### Wither and Bloom
+*Level 2 Necromancy*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S, M (a withered vine twisted into a loop)
+- **Duration:** Instantaneous
+---
+You invoke both death and life upon a 10-foot-radius sphere centered on a point within range. Each creature of your choice in that area must make a Constitution saving throw, taking 2d6 necrotic damage on a failed save, or half as much damage on a successful one. Nonmagical vegetation in that area withers.
+
+In addition, one creature of your choice in that area can spend and roll one of its unspent Hit Dice and regain a number of hit points equal to the roll plus your spellcasting ability modifier.
+***At Higher Levels.*** When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot above the 2nd, and the number of Hit Dice that can be spent and added to the healing roll increases by one for each slot above 2nd.
+
+**Classes:** Druid, Druid, Sorcerer, Sorcerer, Wizard, Wizard
+
+
+
+
+
+
+#### Yolande's Regal Presence
+*Level 5 Enchantment*
+___
+- **Casting Time:** Action
+- **Range:** Self
+- **Components:** V, S, M (a miniature tiara)
+- **Duration:** Concentration, up to 1 minute
+---
+You surround yourself with unearthly majesty in a 10-foot Emanation. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the target takes 4d6 Psychic damage and has the Prone condition, and you can push it up to 10 feet away. On a successful save, the target takes half as much damage only. A creature makes this save only once per turn.
+
+**Classes:** Bard, Wizard
+
+
+
+
+
+#### Prismatic Wall
+*Level 9 Abjuration*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S
+- **Duration:** 10 minutes
+---
+A shimmering, multicolored plane of light forms a vertical opaque wall—up to 90 feet long, 30 feet high, and 1 inch thick—centered on a point within range. Alternatively, you shape the wall into a globe up to 30 feet in diameter centered on a point within range. The wall lasts for the duration. If you position the wall in a space occupied by a creature, the spell ends instantly without effect.
+
+The wall sheds Bright Light within 100 feet and Dim Light for an additional 100 feet. You and creatures you designate when you cast the spell can pass through and be near the wall without harm. If another creature that can see the wall moves within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or have the Blinded condition for 1 minute.
+
+The wall consists of seven layers, each with a different color. When a creature reaches into or passes through the wall, it does so one layer at a time through all the layers. Each layer forces the creature to make a Dexterity saving throw or be affected by that layer's properties as described in the Prismatic Layers table.
+
+The wall, which has AC 10, can be destroyed one layer at a time, in order from red to violet, by means specific to each layer. If a layer is destroyed, it is gone for the duration. *Antimagic Field* has no effect on the wall, and *Dispel Magic* can affect only the violet layer.
+
+##### Prismatic Layers
+| Order | Effects                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|:-----:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   1   | **Red.** *Failed Save:* 12d6 Fire damage. *Successful Save:* Half as much damage. *Additional Effects*: Nonmagical ranged attacks can't pass through this layer, which is destroyed if it takes at least 25 Cold damage.                                                                                                                                                                                                                                                                                                                                                          |
+|   2   | **Orange.** *Failed Save:* 12d6 Acid damage. *Successful Save:* Half as much damage. *Additional Effects:* Magical ranged attacks can't pass through this layer, which is destroyed by a strong wind (such as the one created by *Gust of Wind*).                                                                                                                                                                                                                                                                                                                                 |
+|   3   | **Yellow.** *Failed Save:* 12d6 Lightning damage. *Successful Save:* Half as much damage. *Additional Effects:* The layer is destroyed if it takes at least 60 Force damage.                                                                                                                                                                                                                                                                                                                                                                                                      |
+|   4   | **Green.** *Failed Save:* 12d6 Poison damage. *Successful Save:* Half as much damage. *Additional Effects:* A *Passwall* spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.                                                                                                                                                                                                                                                                                                                                        |
+|   5   | **Blue.** *Failed Save:* 12d6 Cold damage. *Successful Save:* Half as much damage. *Additional Effects:* The layer is destroyed if it takes at least 25 Fire damage.                                                                                                                                                                                                                                                                                                                                                                                                              |
+|   6   | **Indigo.** *Failed Save:* The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the *Greater Restoration* spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind. *Additional Effects:* Spells can't be cast through this layer, which is destroyed by Bright Light shed by the *Daylight* spell. |
+|   7   | **Violet.** *Failed Save:* The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM's choice). *Additional Effects:* This layer is destroyed by *Dispel Magic*.                                                                                                                                                                                                                          |
+
+**Classes:** Bard, Wizard
+
+
+
+
+

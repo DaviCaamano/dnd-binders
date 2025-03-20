@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 
-const TEXT_ROW_HEIGHT = 14;
+const TEXT_ROW_HEIGHT = 12;
 interface CardProps {
   cardNo: [number, number] | undefined;
   iteration: number;
@@ -72,8 +72,11 @@ export const SpellCard = ({
       // Hard far down the content is visible from the top of the content area.
       const containerReach = (spell.tailCardOffset || 0) + textRowHeight;
 
+      // containerReach increased by TEXT_ROW_HEIGHT due to extra empty line added to end of markdown
       reportOversizedCard(
-        contentHeight > containerReach ? containerReach : undefined,
+        contentHeight > containerReach + TEXT_ROW_HEIGHT
+          ? containerReach
+          : undefined,
       );
       reported.current = true;
     }

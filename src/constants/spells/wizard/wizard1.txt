@@ -97,11 +97,6 @@ You alter your physical form. Choose one of the following options. Its effects l
 
 **Classes:** Artificer, Sorcerer, Wizard
 
-
-
-
-
-
 #### Animate Dead
 *Level 3 Necromancy*
 ___
@@ -181,11 +176,6 @@ As you cast the spell, choose whether it creates antipathy or sympathy, and targ
 ***Ending the Effect.*** If the Frightened or Charmed creature ends its turn more than 120 feet away from the target, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target. A creature that successfully saves against this effect is immune to it for 1 minute, after which it can be affected again.
 
 **Classes:** Bard, Druid, Wizard
-
-
-
-
-
 
 #### Arcane Eye
 *Level 4 Divination*
@@ -301,11 +291,6 @@ If you cast the spell more than once before finishing a Long Rest, there is a cu
 
 **Classes:** Cleric, Druid, Wizard
 
-
-
-
-
-
 #### Banishment
 *Level 4 Abjuration*
 ___
@@ -391,11 +376,6 @@ As a bonus action on your turn, you can move the blade up to 30 feet to an unocc
 
 The blade can harmlessly pass through any barrier, including a *wall of force*.
 
-
-
-
-
-
 #### Blade Ward
 *Abjuration Cantrip*
 ___
@@ -476,18 +456,6 @@ This spell's damage increases when you reach certain levels. At 5th level, the m
 
 **Classes:** Artificer, Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
 
-#### Borrowed Knowledge
-*Level 2 Divination*
-___
-- **Casting Time:** Action
-- **Range:** Self
-- **Components:** V, S, M (a book worth at least 25 gp)
-- **Duration:** 1 hour
----
-You draw on knowledge from spirits of the past. Choose one skill in which you lack proficiency. For the spell's duration, you have proficiency in the chosen skill. The spell ends early if you cast it again.
-
-**Classes:** Bard, Bard, Cleric, Cleric, Warlock, Warlock, Wizard, Wizard
-
 #### Burning Hands
 *Level 1 Evocation*
 ___
@@ -515,11 +483,6 @@ Choose one object weighing 1 to 5 pounds within range that isn't being worn or c
 ***At Higher Levels.*** When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by 1d8, for each slot level above 1st.
 
 **Classes:** Artificer, Sorcerer, Sorcerer, Wizard, Wizard
-
-
-
-
-
 
 #### Catnap
 *Level 3 Enchantment*
@@ -628,11 +591,6 @@ Negative energy ripples out in a 60-foot-radius Sphere from a point you choose w
 ***Using a Higher-Level Spell Slot.*** The damage increases by 2d8 for each spell slot level above 6.
 
 **Classes:** Sorcerer, Warlock, Wizard
-
-
-
-
-
 
 #### Circle of Power
 *Level 5 Abjuration*
@@ -745,11 +703,6 @@ You unleash a blast of cold air. Each creature in a 60-foot Cone originating fro
 
 **Classes:** Druid, Sorcerer, Wizard
 
-
-
-
-
-
 #### Confusion
 *Level 4 Enchantment*
 ___
@@ -802,20 +755,6 @@ In addition, the ground in the Emanation is Difficult Terrain for your enemies.
 
 **Classes:** Druid, Wizard
 
-#### Conjure the Deep Haze
-*Level 5 Conjuration (contaminated)*
-___
-- **Casting Time:** Action
-- **Range:** 120 feet
-- **Components:** V, S, M (a delerium fragment worth 100 gp, which the spell consumes)
-- **Duration:** Concentration, up to 10 minutes
----
-When you cast this spell, you gain one *level of contamination*.
-
-You create a 20-foot-radius sphere of the Deep Haze on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.
-
-When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw. On a failed saving throw, it suffers (8d6) necrotic damage and gains one *level of contamination*. On a successful save, the creature takes half as much damage and does not gain any *contamination levels*. Creatures are affected even if they hold their breath or don't need to breathe.
-
 #### Contact Other Plane
 *Level 5 Divination*
 ___
@@ -829,39 +768,6 @@ You mentally contact a demigod, the spirit of a long-dead sage, or some other kn
 On a failed save, you take 6d6 Psychic damage and have the Incapacitated condition until you finish a Long Rest. A *Greater Restoration* spell cast on you ends this effect.
 
 **Classes:** Warlock, Wizard
-
-
-
-
-
-
-#### Contaminated Power
-*Level 8 Transmutation (contaminated)*
-___
-- **Casting Time:** Bonus action
-- **Range:** Self
-- **Components:** V, S, M (a delerium shard worth 500 gp, which the spell consumes)
-- **Duration:** 1 minute
----
-When you cast this spell, you gain one *level of contamination*. You draw unrestrained arcane magic from the delerium shard you hold in your hand. Until the spell ends, you gain the following benefits:
-
-- When you cast a spell that deals acid, fire, cold, lightning, or poison damage, you can change the damage type to force, necrotic, psychic, or radiant damage.
-- Once per turn when you deal damage with a spell, you can deal an extra 1d12 necrotic damage for each *contamination level* you have gained to one target of that spell.
-- When you cast a spell that forces a creature to make a saving throw to resist its effects, you can choose to gain one *level of contamination*. If you do, one target of the spell has disadvantage on its first saving throw made against that spell.
-
-This spell can't be dispelled by *dispel magic*.
-
-#### Contamination Immunity
-*Level 7 Abjuration*
-___
-- **Casting Time:** 1 minute
-- **Range:** Touch
-- **Components:** V, S, M (An eldritch lily mixed into 250 gp worth of specially-prepared purified fluids, which the spell consumes)
-- **Duration:** 24 hours
----
-Until the spell ends, one willing creature you touch is immune to necrotic damage and cannot gain *contamination levels*. The affected creature may rest normally within the Haze.
-
-This spell ends immediately if the creature casts a contaminated spell.
 
 #### Contingency
 *Level 6 Abjuration*
@@ -932,11 +838,6 @@ The water level remains elevated until the spell ends or you choose a different 
 
 **Classes:** Cleric, Druid, Wizard
 
-
-
-
-
-
 #### Control Weather
 *Level 8 Transmutation*
 ___
@@ -960,13 +861,6 @@ When you change the weather conditions, find a current condition on the followin
 |   4   | Rain, hail, or snow                        |
 |   5   | Torrential rain, driving hail, or blizzard |
 
-
-
-  &nbsp;
-  &nbsp;
-  &nbsp;
-
-
 ##### Temperature
 | Stage | Condition |
 |:-----:|-----------|
@@ -977,9 +871,6 @@ When you change the weather conditions, find a current condition on the followin
 |   5   | Cold      |
 |   6   | Freezing  |
 
-  &nbsp;
-  &nbsp;
-
 ##### Wind
 | Stage | Condition     |
 |:-----:|---------------|
@@ -988,9 +879,6 @@ When you change the weather conditions, find a current condition on the followin
 |   3   | Strong wind   |
 |   4   | Gale          |
 |   5   | Storm         |
-
-  &nbsp;
-  &nbsp;
 
 **Classes:** Cleric, Druid, Wizard
 
@@ -1011,3 +899,100 @@ You take control of the air in a 100-foot cube that you can see within range. Ch
 ***Updraft.*** You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal.
 
 **Classes:** Druid, Druid, Sorcerer, Sorcerer, Wizard, Wizard
+
+#### Counterspell
+*Level 3 Abjuration*
+___
+- **Casting Time:** Reaction, which you take when you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material components
+- **Range:** 60 feet
+- **Components:** S
+- **Duration:** Instantaneous
+---
+You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.
+
+**Classes:** Sorcerer, Warlock, Wizard
+
+#### Create Bonfire
+*Conjuration Cantrip*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S
+- **Duration:** Concentration, up to 1 minute
+---
+You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.
+
+The bonfire ignites flammable objects in its area that aren't being worn or carried.
+
+The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+
+**Classes:** Artificer, Druid, Druid, Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
+
+#### Create Homunculus
+*Level 6 Transmutation*
+___
+- **Casting Time:** 1 hour
+- **Range:** Touch
+- **Components:** V, S, M (clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 1,000 gp)
+- **Duration:** Instantaneous
+---
+While speaking an intricate incantation, you cut yourself with a jewel-encrusted dagger, taking 2d4 piercing damage that can't be reduced in any way. You then drip your blood on the spell's other components and touch them, transforming them into a special construct called a **homunculus**.
+
+The statistics of the **homunculus** are in the Monster Manual. It is your faithful companion, and it dies if you die. Whenever you finish a long rest, you can spend up to half your Hit Dice if the homunculus is on the same plane of existence as you. When you do so, roll each die and add your Constitution modifier to it. Your hit point maximum is reduced by the total, and the homunculus's hit point maximum and current hit points are both increased by it. This process can reduce you to no lower than 1 hit point, and the change to your and the homunculus's hit points ends when you finish your next long rest. The reduction to your hit point maximum can't be removed by any means before then, except by the homunculus's death.
+
+You can have only one homunculus at a time. If you cast this spell while your homunculus lives, the spell fails.
+
+**Classes:** Wizard, Wizard
+
+#### Create Spelljamming Helm
+*Level 5 Transmutation*
+___
+- **Casting Time:** Action
+- **Range:** Touch
+- **Components:** V, S, M (a crystal rod worth at least 5,000 gp, which the spell consumes)
+- **Duration:** Instantaneous
+---
+Holding the rod used in the casting of the spell, you touch a Large or smaller chair that is unoccupied. The rod disappears, and the chair is transformed into a *spelljamming helm*.
+
+**Classes:** Artificer, Wizard, Wizard
+
+#### Create Undead
+*Level 6 Necromancy*
+___
+- **Casting Time:** 1 minute
+- **Range:** 10 feet
+- **Components:** V, S, M (one 150+ GP black onyx stone for each corpse)
+- **Duration:** Instantaneous
+---
+You can cast this spell only at night. Choose up to three corpses of Medium or Small Humanoids within range. Each one becomes a **Ghoul** under your control (see the *Monster Manual* for its stat block).
+
+As a Bonus Action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to them). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a particular place. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete.
+
+The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell rather than animating new ones.
+***Using a Higher-Level Spell Slot.*** If you use a level 7 spell slot, you can animate or reassert control over four **Ghouls**. If you use a level 8 spell slot, you can animate or reassert control over five **Ghouls** or two **Ghasts** or **Wights**. If you use a level 9 spell slot, you can animate or reassert control over six **Ghouls**, three **Ghasts** or **Wights**, or two **Mummies**. See the *Monster Manual* for these stat blocks.
+
+**Classes:** Cleric, Warlock, Wizard
+
+#### Creation
+*Level 5 Illusion*
+___
+- **Casting Time:** 1 minute
+- **Range:** 30 feet
+- **Components:** V, S, M (a paintbrush)
+- **Duration:** Special
+---
+You pull wisps of shadow material from the Shadowfell to create an object within range. It is either an object of vegetable matter (soft goods, rope, wood, and the like) or mineral matter (stone, crystal, metal, and the like). The object must be no larger than a 5-foot Cube, and the object must be of a form and material that you have seen.
+
+The spell's duration depends on the object's material, as shown in the Materials table. If the object is composed of multiple materials, use the shortest duration. Using any object created by this spell as another spell's Material component causes the other spell to fail.
+
+##### Materials
+| Material              | Duration   |
+|-----------------------|------------|
+| Vegetable matter      | 24 hours   |
+| Stone or crystal      | 12 hours   |
+| Precious metals       | 1 hour     |
+| Gems                  | 10 minutes |
+| Adamantine or mithral | 1 minute   |
+***Using a Higher-Level Spell Slot.*** The Cube increases by 5 feet for each spell slot level above 5.
+
+**Classes:** Artificer, Sorcerer, Wizard

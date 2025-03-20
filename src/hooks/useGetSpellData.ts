@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import { Routes } from "@type/routes";
 import { Spell } from "@type/spells";
 
-export const useGetSpellData = (routes: Routes) => {
+export const useGetSpellData = (route: Routes) => {
+  console.log("route", route);
   const [spellData, setSpellData] = useState<Spell[]>([]);
 
   useEffect(() => {
-    fetch(`/api/${routes}`)
+    fetch(`/api/${route}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -18,7 +19,7 @@ export const useGetSpellData = (routes: Routes) => {
         return;
       })
       .catch((error) => console.error("Error fetching the JSON data:", error));
-  }, [routes]);
+  }, [route]);
 
   return spellData;
 };

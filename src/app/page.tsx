@@ -1,10 +1,10 @@
 "use client";
 
-import { Spell } from "@types/spells";
 import { useGetSpellData } from "@hooks/useGetSpellData";
-import { Routes } from "@types/routes";
 import { useLargeCards } from "@hooks/useLargeCards";
-import { Card } from "@components/Card";
+import { SpellCard } from "@components/SpellCard";
+import {Spell} from '@type/spells';
+import {Routes} from '@type/routes';
 
 export default function Home() {
   const spellData: Spell[] = useGetSpellData(Routes.wizard);
@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className="grid-container">
       {spells?.map((spell: Spell, index: number) => (
-        <Card
+        <SpellCard
           key={index}
           iteration={iteration}
           spell={spell}

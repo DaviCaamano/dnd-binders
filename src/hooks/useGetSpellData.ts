@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Routes } from "@types/routes";
-import { Spell } from "@types/spells";
+import { Routes } from "@type/routes";
+import { Spell } from "@type/spells";
 
 export const useGetSpellData = (routes: Routes) => {
   const [spellData, setSpellData] = useState<Spell[]>([]);

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import {Spell} from '@types/spells';
+import {Spell} from '@type/spells';
 
 interface OversizedCard {
   count: number;

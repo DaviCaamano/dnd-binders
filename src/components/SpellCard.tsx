@@ -7,7 +7,7 @@ import {
   useState,
 } from "react";
 import { formatSpellText } from "@utils/formatSpellText";
-import { Spell } from "@types/spells";
+import { Spell } from "@type/spells";
 import { getSchoolColor } from "@utils/schoolColors";
 
 const TEXT_ROW_HEIGHT = 14;
@@ -16,7 +16,7 @@ interface CardProps {
   reportOversizedCard: (offset: number | undefined) => void;
   spell: Spell;
 }
-export const Card = ({ iteration, reportOversizedCard, spell }: CardProps) => {
+export const SpellCard = ({ iteration, reportOversizedCard, spell }: CardProps) => {
   const reported = useRef<boolean>(false);
   const stickyIteration = useRef<number>(iteration);
 

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "es2015",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -17,16 +18,16 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@components/*": ["/src/components/*"],
-      "@types/*": ["/src/types/*"],
-      "@styles/*": ["/src/styles/*"],
-      "@utils/*": ["/src/utils/*"],
-      "@pages/*": ["/src/pages/*"],
-      "@api/*": ["/src/api/*"],
-      "@constants/*": ["/src/constants/*"],
-      "@hooks/*": ["/src/hooks/*"]
+      "@components/*": ["./src/components/*"],
+      "@type/*": ["./src/type/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@pages/*": ["./src/app/pages/*"],
+      "@api/*": ["./src/app/api/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@hooks/*": ["./src/hooks/*"]
     }
   },
   "include": [

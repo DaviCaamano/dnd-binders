@@ -10,7 +10,7 @@ export type Spell = {
   range?: string;
   school?: string;
   source?: string;
-  text: string[];
+  text: string;
 };
 
 export enum SpellKeys {

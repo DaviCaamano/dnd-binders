@@ -960,6 +960,13 @@ When you change the weather conditions, find a current condition on the followin
 |   4   | Rain, hail, or snow                        |
 |   5   | Torrential rain, driving hail, or blizzard |
 
+
+
+  &nbsp;
+  &nbsp;
+  &nbsp;
+
+
 ##### Temperature
 | Stage | Condition |
 |:-----:|-----------|
@@ -970,6 +977,9 @@ When you change the weather conditions, find a current condition on the followin
 |   5   | Cold      |
 |   6   | Freezing  |
 
+  &nbsp;
+  &nbsp;
+
 ##### Wind
 | Stage | Condition     |
 |:-----:|---------------|
@@ -978,6 +988,9 @@ When you change the weather conditions, find a current condition on the followin
 |   3   | Strong wind   |
 |   4   | Gale          |
 |   5   | Storm         |
+
+  &nbsp;
+  &nbsp;
 
 **Classes:** Cleric, Druid, Wizard
 

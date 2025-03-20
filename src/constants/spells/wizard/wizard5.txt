@@ -597,7 +597,7 @@ A restrained creature can make a Dexterity saving throw at the end of each of it
 
 After the trap is triggered, the spell ends when no creature is restrained by it.
 
-**Classes:** Artificer, Druid, Druid, Ranger, Ranger, Wizard, Wizard
+**Classes:** Artificer, Druid, Druid, Ranger, Ranger, Wizard
 
 
 

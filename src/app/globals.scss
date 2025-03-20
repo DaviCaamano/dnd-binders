@@ -32,7 +32,7 @@
   }
 
   .spell-name {
-    font-family: 'Times New Roman', serif;
+    font-family: "Times New Roman", serif;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 8px;
@@ -62,8 +62,7 @@
     line-height: 20px;
     padding: 0;
     flex: 1;
-    font-family:
-      Consolas, Monaco, monospace; /* Use Consolas and Monaco monospaced fonts */
+    font-family: Consolas, Monaco, monospace; /* Use Consolas and Monaco monospaced fonts */
   }
 
   .text-field-inner {
@@ -72,24 +71,25 @@
     position: absolute;
     top: 0;
     left: 0;
+    line-height: 11px;
 
     * {
       font-size: 11px;
-      line-height: 0;
+      line-height: 11px;
       margin: 0;
       padding: 0;
       border: 0;
 
       * {
         font-size: 11px;
-        line-height: 0;
+        line-height: 11px;
         margin: 0;
         padding: 0;
         border: 0;
 
         * {
           font-size: 11px;
-          line-height: 0;
+          line-height: 11px;
           margin: 0;
           padding: 0;
           border: 0;
@@ -118,7 +118,7 @@ body {
 }
 
 .spell-name {
-  font-family: 'Times New Roman', serif;
+  font-family: "Times New Roman", serif;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -150,8 +150,7 @@ body {
   line-height: 14px;
   padding: 0;
   flex: 1;
-  font-family:
-    Consolas, Monaco, monospace; /* Use Consolas and Monaco monospaced fonts */
+  font-family: Consolas, Monaco, monospace; /* Use Consolas and Monaco monospaced fonts */
 }
 
 .text-field-inner {
@@ -160,28 +159,68 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  line-height: 12px;
 
   * {
-    font-size: 11px;
-    line-height: 0;
+    font-size: 12px;
+    line-height: 12px;
     margin: 0;
     padding: 0;
     border: 0;
 
     * {
-      font-size: 11px;
-      line-height: 0;
+      font-size: 12px;
+      line-height: 12px;
       margin: 0;
       padding: 0;
       border: 0;
 
       * {
-        font-size: 11px;
-        line-height: 0;
+        font-size: 12px;
+        line-height: 12px;
         margin: 0;
         padding: 0;
         border: 0;
       }
     }
   }
+}
+
+.ofText {
+  font-size: 12px;
+  position: relative;
+  bottom: 1px;
+}
+
+.cardNumberParenthese {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  bottom: 1px;
+}
+
+.cardNo {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.markdown > * {
+  all: revert;
+}
+
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.custom-th, .custom-td {
+  border: 1px solid #ddd;
+  padding: 2px;
+}
+
+.custom-th {
+  background-color: #f2f2f2;
+  text-align: left;
 }

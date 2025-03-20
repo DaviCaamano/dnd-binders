@@ -40,16 +40,15 @@ export const parseBook = async (filePaths: string[]): Promise<Spell[]> => {
 
     // Collect the Rest of the Text as the text of the spell.
     let nextLine = headerEndIndex + 1;
-    spell.text = [];
+    let spellText = [];
     while (
       typeof spellData[nextLine] === "string" &&
       nextLine < spellData.length
     ) {
-      spell.text.push(spellData[nextLine]);
+      spellText.push(spellData[nextLine]);
       nextLine++;
     }
-    spell.text = removeTrailingEmptyStrings(spell.text);
-
+    spell.text = spellText.join("\n");
     spells.push(spell as Spell);
   }
 
@@ -109,11 +108,4 @@ const getBook = async (filePaths: string[]) => {
     .flat();
 
   return book;
-};
-
-const removeTrailingEmptyStrings = (arr: string[]): string[] => {
-  while (arr.length > 0 && arr[arr.length - 1] === "") {
-    arr.pop();
-  }
-  return arr;
 };

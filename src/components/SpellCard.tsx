@@ -1,26 +1,30 @@
-import {
-  CSSProperties,
-  ReactNode,
-  RefObject,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
-import { formatSpellText } from "@utils/formatSpellText";
+import { CSSProperties, RefObject, useEffect, useRef, useState } from "react";
 import { Spell } from "@type/spells";
 import { getSchoolColor } from "@utils/schoolColors";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import remarkBreaks from "remark-breaks";
 
 const TEXT_ROW_HEIGHT = 14;
 interface CardProps {
+  cardNo: [number, number] | undefined;
   iteration: number;
   reportOversizedCard: (offset: number | undefined) => void;
   spell: Spell;
 }
-export const SpellCard = ({ iteration, reportOversizedCard, spell }: CardProps) => {
+export const SpellCard = ({
+  cardNo,
+  iteration,
+  reportOversizedCard,
+  spell,
+}: CardProps) => {
+  const cardNumber = cardNo?.[0];
+  const totalCards = cardNo?.[1];
   const reported = useRef<boolean>(false);
   const stickyIteration = useRef<number>(iteration);
+  const stickyText = useRef<string>(spell.text);
 
-  const [text, setText] = useState<ReactNode[]>(formatSpellText(spell.text));
+  const [text, setText] = useState<string>(spell.text);
   const [textRowHeight, setTextRowHeight] = useState<number | undefined>(
     undefined,
   );
@@ -33,7 +37,7 @@ export const SpellCard = ({ iteration, reportOversizedCard, spell }: CardProps) 
     if (stickyIteration.current !== iteration) {
       reported.current = false;
       stickyIteration.current = iteration;
-      setText(formatSpellText(spell.text));
+      setText(spell.text);
       setTextRowHeight(undefined);
     }
   }, [iteration, spell.text]);
@@ -48,34 +52,46 @@ export const SpellCard = ({ iteration, reportOversizedCard, spell }: CardProps) 
         Math.floor(availableHeight / TEXT_ROW_HEIGHT) * TEXT_ROW_HEIGHT;
       setTextRowHeight(newHeight);
     }
-  }, [textRowHeight]);
+  }, [iteration, spell.name, textRowHeight]);
 
   useEffect(() => {
+    if (stickyText.current !== spell.text) {
+      stickyText.current = spell.text;
+      setText(spell.text);
+    }
     // once the size of the container has been worked out,
     // check if the content is larger than the container
     // and report back to useLargeCards()
-    if (
+    else if (
       !reported.current &&
       textRowHeight &&
       textContainerRef.current !== null
     ) {
-      const contentHeight = textContainerRef.current!.scrollHeight;
+      const contentHeight = textContentsRef.current!.scrollHeight;
+
+      // Hard far down the content is visible from the top of the content area.
+      const containerReach = (spell.tailCardOffset || 0) + textRowHeight;
 
       reportOversizedCard(
-        contentHeight > textRowHeight
-          ? textRowHeight + (spell.tailCardOffset || 0)
-          : undefined,
+        contentHeight > containerReach ? containerReach : undefined,
       );
       reported.current = true;
     }
-  }, [textRowHeight, reportOversizedCard, spell.tailCardOffset]);
-
+  }, [
+    textRowHeight,
+    reportOversizedCard,
+    spell.tailCardOffset,
+    spell.name,
+    text,
+    iteration,
+    spell,
+  ]);
   return (
     <div className={`card shadow-md bg-wite border rounded-lg p-2`}>
       <div className="flex h-full flex-col">
         <h2 className="spell-name">
           <span>{spell?.name}</span>
-          {spell.tailCardOffset && <span className="ml-2">cont.</span>}
+          <CardNumber cardNumber={cardNumber} totalCards={totalCards} />
         </h2>
         <div className="field-grid">
           <div className="column-left">
@@ -109,7 +125,27 @@ export const SpellCard = ({ iteration, reportOversizedCard, spell }: CardProps) 
             ref={textContentsRef as RefObject<HTMLDivElement>}
             style={{ top: spell.tailCardOffset ? -spell.tailCardOffset : 0 }}
           >
-            {text}
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm, remarkBreaks]}
+              components={{
+                p: ({ ...props }) => (
+                  <p {...props} style={{ marginBottom: "1em" }} />
+                ),
+                table: ({ node, ...props }) => (
+                  <table {...props} className="custom-table" />
+                ),
+                th: ({ node, ...props }) => (
+                  <th {...props} className="custom-th" />
+                ),
+                td: ({ node, ...props }) => (
+                  <td {...props} className="custom-td" />
+                ),
+              }}
+            >
+              {/* add empty lines after paragraphs
+              (but not after table as it breaks the table */}
+              {text.replace(/(?<!\|.*)\n(?!.*\|)/g, "\n\n")}
+            </ReactMarkdown>
           </div>
         </div>
       </div>
@@ -131,3 +167,18 @@ const Row = ({ name, value, style }: TwinRowProps) => {
     </p>
   );
 };
+
+interface CardNumberProps {
+  cardNumber: number | undefined;
+  totalCards: number | undefined;
+}
+const CardNumber = ({ cardNumber, totalCards }: CardNumberProps) =>
+  typeof totalCards === "number" &&
+  typeof cardNumber === "number" &&
+  totalCards > 1 ? (
+    <span className="ml-2">
+      <span className="cardNumberParenthese">(</span>{" "}
+      <span className="cardNo">{cardNumber + 1}</span>{" "}
+      <span className="cardNumberParenthese">)</span>
+    </span>
+  ) : null;

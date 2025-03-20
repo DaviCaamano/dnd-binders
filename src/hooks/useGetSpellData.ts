@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import { Spell } from '../../types/spells';
-import { Routes } from 'components/types/routes';
+import { useEffect, useState } from "react";
+import { Routes } from "@types/routes";
+import { Spell } from "@types/spells";
 
 export const useGetSpellData = (routes: Routes) => {
   const [spellData, setSpellData] = useState<Spell[]>([]);
@@ -9,7 +9,7 @@ export const useGetSpellData = (routes: Routes) => {
     fetch(`/api/${routes}`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -17,7 +17,7 @@ export const useGetSpellData = (routes: Routes) => {
         setSpellData(data.spells);
         return;
       })
-      .catch((error) => console.error('Error fetching the JSON data:', error));
+      .catch((error) => console.error("Error fetching the JSON data:", error));
   }, [routes]);
 
   return spellData;

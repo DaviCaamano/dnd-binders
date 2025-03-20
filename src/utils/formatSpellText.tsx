@@ -1,5 +1,5 @@
-import { parseMarkup } from 'components/utils/parseMarkup';
 import { ReactNode } from 'react';
+import {parseMarkup} from '@utils/parseMarkup';
 
 const atHigherLevels = '***At Higher Levels.***';
 const atHigherLevelsAlt = '***Using a Higher-Level Spell Slot.***';

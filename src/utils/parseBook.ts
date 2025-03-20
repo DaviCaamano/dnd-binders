@@ -1,9 +1,7 @@
-import { Spell, SpellKeys } from 'components/types/spells';
-import {
-  getLevelAndSchool,
-  replaceTableHeaders,
-} from 'components/utils/fileParser';
+
 import fs from 'fs';
+import {Spell, SpellKeys} from '@types/spells';
+import {getLevelAndSchool, replaceTableHeaders} from '@utils/fileParser';
 
 export const parseBook = async (filePaths: string[]): Promise<Spell[]> => {
   const book: string[][] = await getBook(filePaths);

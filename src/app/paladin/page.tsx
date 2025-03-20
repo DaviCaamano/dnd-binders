@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { Spell } from 'components/types/spells';
-import { useGetSpellData } from 'components/components/wizard/useGetSpellData';
-import { Routes } from 'components/types/routes';
-import { useLargeCards } from 'components/components/wizard/useLargeCards';
-import { Card } from 'components/components/Card';
+import { Spell } from "@types/spells";
+import { useGetSpellData } from "@hooks/useGetSpellData";
+import { Routes } from "@types/routes";
+import { useLargeCards } from "@hooks/useLargeCards";
+import {Card} from '@components/Card';
 
 export default function Home() {
   const spellData: Spell[] = useGetSpellData(Routes.paladin);

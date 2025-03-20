@@ -1,4 +1,3 @@
-import { Spell } from '../types/spells';
 import {
   CSSProperties,
   ReactNode,
@@ -6,11 +5,12 @@ import {
   useEffect,
   useRef,
   useState,
-} from 'react';
-import { formatSpellText } from 'components/utils/formatSpellText';
-import { getSchoolColor } from 'components/utils/schoolColors';
+} from "react";
+import { formatSpellText } from "@utils/formatSpellText";
+import { Spell } from "@types/spells";
+import { getSchoolColor } from "@utils/schoolColors";
 
-const TEXT_ROW_HEIGHT = 20;
+const TEXT_ROW_HEIGHT = 14;
 interface CardProps {
   iteration: number;
   reportOversizedCard: (offset: number | undefined) => void;
@@ -48,7 +48,7 @@ export const Card = ({ iteration, reportOversizedCard, spell }: CardProps) => {
         Math.floor(availableHeight / TEXT_ROW_HEIGHT) * TEXT_ROW_HEIGHT;
       setTextRowHeight(newHeight);
     }
-  }, [textRowHeight, textContainerRef.current]);
+  }, [textRowHeight]);
 
   useEffect(() => {
     // once the size of the container has been worked out,
@@ -68,7 +68,7 @@ export const Card = ({ iteration, reportOversizedCard, spell }: CardProps) => {
       );
       reported.current = true;
     }
-  }, [textRowHeight, textContainerRef.current, reportOversizedCard, spell.tailCardOffset]);
+  }, [textRowHeight, reportOversizedCard, spell.tailCardOffset]);
 
   return (
     <div className={`card shadow-md bg-wite border rounded-lg p-2`}>
@@ -79,28 +79,28 @@ export const Card = ({ iteration, reportOversizedCard, spell }: CardProps) => {
         </h2>
         <div className="field-grid">
           <div className="column-left">
-            <Row name={'Level'} value={spell?.level} />
-            <Row name={'Casting Time'} value={spell?.castingTime} />
-            <Row name={'Range'} value={spell?.range} />
+            <Row name={"Level"} value={spell?.level} />
+            <Row name={"Casting Time"} value={spell?.castingTime} />
+            <Row name={"Range"} value={spell?.range} />
           </div>
           <div className="column-right">
-            <Row name={'Duration'} value={spell?.duration} />
+            <Row name={"Duration"} value={spell?.duration} />
             <Row
-              name={'School'}
+              name={"School"}
               value={spell?.school}
               style={{
-                fontWeight: 'bold',
+                fontWeight: "bold",
                 color: getSchoolColor(spell?.school),
               }}
             />
           </div>
         </div>
-        <Row name={'Components'} value={spell?.components} />
+        <Row name={"Components"} value={spell?.components} />
         <div
           className="text-field overflow-hidden"
           ref={textContainerRef as RefObject<HTMLDivElement>}
           style={{
-            flex: textRowHeight ? 'unset' : 1,
+            flex: textRowHeight ? "unset" : 1,
             height: textRowHeight,
           }}
         >

@@ -2,11 +2,18 @@
 
 import path from 'path';
 import { NextResponse } from 'next/server';
+import {parseBook} from '@utils/parseBook';
 
-import { parseBook } from 'components/utils/parseBook';
 
 const paladinFilePaths = [
-  path.join(process.cwd(), 'src', 'app', 'spells', 'paladin', 'paladin1.txt'),
+  path.join(
+    process.cwd(),
+    "src",
+    "constants",
+    "spells",
+    "paladin",
+    "paladin1.txt",
+  ),
 ];
 
 export const GET = async () => {

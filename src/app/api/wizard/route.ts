@@ -1,18 +1,67 @@
-'use server';
+"use server";
 
-import path from 'path';
-import { NextResponse } from 'next/server';
+import path from "path";
+import { NextResponse } from "next/server";
 
-import { parseBook } from 'components/utils/parseBook';
+import { parseBook } from "@utils/parseBook";
 
 const wizardFilePaths = [
-  path.join(process.cwd(), 'src', 'app', 'spells', 'wizard', 'wizard1.txt'),
-  path.join(process.cwd(), 'src', 'app', 'spells', 'wizard', 'wizard2.txt'),
-  path.join(process.cwd(), 'src', 'app', 'spells', 'wizard', 'wizard3.txt'),
-  path.join(process.cwd(), 'src', 'app', 'spells', 'wizard', 'wizard4.txt'),
-  path.join(process.cwd(), 'src', 'app', 'spells', 'wizard', 'wizard5.txt'),
-  path.join(process.cwd(), 'src', 'app', 'spells', 'wizard', 'wizard6.txt'),
-  path.join(process.cwd(), 'src', 'app', 'spells', 'wizard', 'wizard7.txt'),
+  path.join(
+    process.cwd(),
+    "src",
+    "constants",
+    "spells",
+    "wizard",
+    "wizard1.txt",
+  ),
+  path.join(
+    process.cwd(),
+    "src",
+    "constants",
+    "spells",
+    "wizard",
+    "wizard2.txt",
+  ),
+  path.join(
+    process.cwd(),
+    "src",
+    "constants",
+    "spells",
+    "wizard",
+    "wizard3.txt",
+  ),
+  path.join(
+    process.cwd(),
+    "src",
+    "constants",
+    "spells",
+    "wizard",
+    "wizard4.txt",
+  ),
+  path.join(
+    process.cwd(),
+    "src",
+    "constants",
+    "spells",
+    "wizard",
+    "wizard5.txt",
+  ),
+  path.join(
+    process.cwd(),
+    "src",
+    "constants",
+    "spells",
+    "wizard",
+    "wizard6.txt",
+  ),
+  path.join(
+    process.cwd(),
+    "src",
+    "constants",
+    "spells",
+    "wizard",
+    "wizard7.txt",
+  ),
 ];
 
 export const GET = async () => {
@@ -20,7 +69,7 @@ export const GET = async () => {
     { spells: await parseBook(wizardFilePaths) },
     {
       status: 200,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { "Content-Type": "constantslication/json" },
     },
   );
 };

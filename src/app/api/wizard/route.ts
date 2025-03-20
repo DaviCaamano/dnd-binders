@@ -2,7 +2,6 @@
 
 import path from "path";
 import { NextResponse } from "next/server";
-
 import { parseBook } from "@utils/parseBook";
 
 const wizardFilePaths = [

@@ -1,13 +1,11 @@
 "use client";
-
+import styles from "../../styles/SpellBook.module.scss";
 import { useGetSpellData } from "@hooks/useGetSpellData";
 import { useLargeCards } from "@hooks/useLargeCards";
 import { SpellCard } from "@components/SpellBook/SpellCard";
 import { Spell } from "@type/spells";
 import { Routes } from "@type/routes";
-import {
-  generateRandomSpellCardBackgrounds,
-} from "@utils/pixelPerInch";
+import { generateRandomSpellCardBackgrounds } from "@utils/pixelPerInch";
 
 interface SpellBookProps {
   route: Routes;
@@ -24,12 +22,9 @@ export const SpellBook = ({ route }: SpellBookProps) => {
 
   if (!spells) return <div>Loading...</div>;
   return (
-    <div className="grid-container">
+    <div className={styles.gridContainer}>
       {getSpellCardNumbers(spells)?.map(
-        (
-          [spell, cardNo, background],
-          index,
-        ) => (
+        ([spell, cardNo, background], index) => (
           <SpellCard
             key={index}
             iteration={iteration}

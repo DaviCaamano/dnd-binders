@@ -6,6 +6,7 @@ import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 import rehypeRaw from "rehype-raw";
 import { SpellCardBackground } from "@components/SpellBook/SpellCardBackground";
+import styles from "../../styles/SpellBook.module.scss";
 
 const TEXT_ROW_HEIGHT = 12;
 interface CardProps {
@@ -94,21 +95,23 @@ export const SpellCard = ({
     spell,
   ]);
   return (
-    <div className={`card bg-wite border rounded-lg p-2 overflow-hidden`}>
+    <div
+      className={`${styles.card} bg-wite border rounded-lg p-2 overflow-hidden`}
+    >
       <SpellCardBackground offSets={backgroundOffsets} />
       {/* Spell Name and Card Number */}
       <div className="flex h-full flex-col">
-        <h2 className="spell-name">
+        <h2 className={styles.spellName}>
           <span>{spell?.name}</span>
           <CardNumber cardNumber={cardNumber} totalCards={totalCards} />
         </h2>
-        <div className="field-grid">
-          <div className="column-left">
+        <div className={styles.fieldGrid}>
+          <div>
             <Row name={"Level"} value={spell?.level} />
             <Row name={"Casting Time"} value={spell?.castingTime} />
             <Row name={"Range"} value={spell?.range} />
           </div>
-          <div className="column-right">
+          <div>
             <Row name={"Duration"} value={spell?.duration} />
             <Row
               name={"School"}
@@ -122,7 +125,7 @@ export const SpellCard = ({
         </div>
         <Row name={"Components"} value={spell?.components} />
         <div
-          className="text-field overflow-hidden"
+          className={`${styles.textField} overflow-hidden`}
           ref={textContainerRef as RefObject<HTMLDivElement>}
           style={{
             flex: textRowHeight ? "unset" : 1,
@@ -130,7 +133,7 @@ export const SpellCard = ({
           }}
         >
           <div
-            className={`text-field-inner`}
+            className={styles.textFieldInner}
             ref={textContentsRef as RefObject<HTMLDivElement>}
             style={{ top: spell.tailCardOffset ? -spell.tailCardOffset : 0 }}
           >
@@ -172,7 +175,7 @@ interface TwinRowProps {
 const Row = ({ name, value, style }: TwinRowProps) => {
   if (!value) return null;
   return (
-    <p className="field">
+    <p className={styles.field}>
       <strong>{name}:</strong> <span style={{ ...style }}>{value}</span>
     </p>
   );
@@ -187,15 +190,15 @@ const CardNumber = ({ cardNumber, totalCards }: CardNumberProps) =>
   typeof cardNumber === "number" &&
   totalCards > 1 ? (
     <span className="ml-2">
-      <span className="cardNumberParenthese">(</span>{" "}
-      <span className="cardNo">{cardNumber + 1}</span>{" "}
-      <span className="cardNumberParenthese">)</span>
+      <span className={styles.cardNumberParenthese}>(</span>{" "}
+      <span className={styles.cardNo}>{cardNumber + 1}</span>{" "}
+      <span className={styles.cardNumberParenthese}>)</span>
     </span>
   ) : null;
 
 const formatDamageDice = (text: string) => {
   return text.replace(
     /\d+d\d+/g,
-    (match) => `<span className="damageDice">${match}</span>`,
+    (match) => `<span className={styles.damageDice}>${match}</span>`,
   );
 };

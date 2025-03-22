@@ -1,3 +1,5 @@
+import styles from "../../styles/SpellBook.module.scss";
+
 export const SpellCardBackground = ({
   offSets: [left, right],
 }: {
@@ -5,7 +7,7 @@ export const SpellCardBackground = ({
 }) => (
   <>
     <div
-      className="spell-card-background-panel"
+      className={styles.spellCardBackgroundPanel}
       style={{
         backgroundImage: `url("/img/Card BG sm.png")`,
         backgroundRepeat: "no-repeat",
@@ -14,7 +16,7 @@ export const SpellCardBackground = ({
       }}
     />
     <div
-      className="spell-card-background-panel"
+      className={styles.spellCardBackgroundPanel}
       style={{
         backgroundImage: `url("/img/Card BG2 sm.png")`,
         backgroundRepeat: "no-repeat",
@@ -23,7 +25,7 @@ export const SpellCardBackground = ({
       }}
     />
     <div
-      className="spell-card-background-panel"
+      className={styles.spellCardBackgroundPanel}
       style={{
         background: `linear-gradient(to bottom, rgba(169, 169, 169,.75),rgba(169, 169, 169, 0.5), rgba(169, 169, 169, 0.2), transparent)`,
         backgroundWidth: "100%",
@@ -35,7 +37,7 @@ export const SpellCardBackground = ({
       }}
     />
     <div
-      className="spell-card-background-panel"
+      className={styles.spellCardBackgroundPanel}
       style={{
         background: `linear-gradient(to top, rgba(169, 169, 169, 0.5), rgba(169, 169, 169, 0.2), transparent)`,
         backgroundWidth: "100%",

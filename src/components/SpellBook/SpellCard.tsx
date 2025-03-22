@@ -1,18 +1,11 @@
-import {
-  CSSProperties,
-  Fragment,
-  ReactNode,
-  RefObject,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { CSSProperties, RefObject, useEffect, useRef, useState } from "react";
 import { Spell } from "@type/spells";
 import { getSchoolColor } from "@utils/schoolColors";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 import rehypeRaw from "rehype-raw";
+import { SpellCardBackground } from "@components/SpellBook/SpellCardBackground";
 
 const TEXT_ROW_HEIGHT = 12;
 interface CardProps {
@@ -20,12 +13,14 @@ interface CardProps {
   iteration: number;
   reportOversizedCard: (offset: number | undefined) => void;
   spell: Spell;
+  backgroundOffsets: [number, number];
 }
 export const SpellCard = ({
   cardNo,
   iteration,
   reportOversizedCard,
   spell,
+  backgroundOffsets,
 }: CardProps) => {
   const cardNumber = cardNo?.[0];
   const totalCards = cardNo?.[1];
@@ -99,7 +94,9 @@ export const SpellCard = ({
     spell,
   ]);
   return (
-    <div className={`card shadow-md bg-wite border rounded-lg p-2`}>
+    <div className={`card bg-wite border rounded-lg p-2 overflow-hidden`}>
+      <SpellCardBackground offSets={backgroundOffsets} />
+      {/* Spell Name and Card Number */}
       <div className="flex h-full flex-col">
         <h2 className="spell-name">
           <span>{spell?.name}</span>

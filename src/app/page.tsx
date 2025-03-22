@@ -1,8 +1,8 @@
 "use client";
 
-import { Routes } from "@type/routes";
-import { SpellBook } from "@components/SpellBook";
+import {FeatureList} from '@components/FeatureList/FeatureList';
+import {Players} from '@type/players';
 
 export default function Home() {
-  return <SpellBook route={Routes.wizard} />;
+  return <FeatureList player={Players.Barabis} />;
 }

@@ -112,9 +112,20 @@ body {
   max-width: 1200px;
   padding: 4px;
 }
+
 .card {
   grid-row: span 1;
   height: calc(5.5in - 8px);
+  position: relative;
+}
+
+.spell-card-background-panel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 
 .spell-name {

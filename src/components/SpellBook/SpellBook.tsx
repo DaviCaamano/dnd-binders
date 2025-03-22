@@ -2,9 +2,12 @@
 
 import { useGetSpellData } from "@hooks/useGetSpellData";
 import { useLargeCards } from "@hooks/useLargeCards";
-import { SpellCard } from "@components/SpellCard";
+import { SpellCard } from "@components/SpellBook/SpellCard";
 import { Spell } from "@type/spells";
 import { Routes } from "@type/routes";
+import {
+  generateRandomSpellCardBackgrounds,
+} from "@utils/pixelPerInch";
 
 interface SpellBookProps {
   route: Routes;
@@ -24,8 +27,8 @@ export const SpellBook = ({ route }: SpellBookProps) => {
     <div className="grid-container">
       {getSpellCardNumbers(spells)?.map(
         (
-          [spell, cardNo]: [Spell, [number, number] | undefined],
-          index: number,
+          [spell, cardNo, background],
+          index,
         ) => (
           <SpellCard
             key={index}
@@ -33,6 +36,7 @@ export const SpellBook = ({ route }: SpellBookProps) => {
             spell={spell}
             reportOversizedCard={report(index)}
             cardNo={cardNo}
+            backgroundOffsets={background}
           />
         ),
       )}
@@ -46,7 +50,7 @@ export const SpellBook = ({ route }: SpellBookProps) => {
 // and the final card holding the end of the tail text would be 3
 const getSpellCardNumbers = (
   spells: Spell[],
-): [Spell, [number, number] | undefined][] => {
+): [Spell, [number, number] | undefined, [number, number]][] => {
   const spellNames = spells
     .map((spell) => spell.name)
     .reduce(
@@ -66,7 +70,7 @@ const getSpellCardNumbers = (
     ]),
   );
 
-  return spells.map((spell) => {
+  const newSpells = spells.map((spell) => {
     const count: number | undefined = spellsWithDuplicates[spell.name]?.count;
     if (!count) {
       return [spell, undefined];
@@ -76,4 +80,10 @@ const getSpellCardNumbers = (
     if (used !== undefined) spellsWithDuplicates[spell.name].used++;
     return [spell, typeof used === "number" ? [used, count] : undefined];
   });
+  const cardBgs = generateRandomSpellCardBackgrounds(spells.length);
+  return newSpells.map(([spell, cardNo], index) => [
+    spell,
+    cardNo,
+    cardBgs[index],
+  ]);
 };

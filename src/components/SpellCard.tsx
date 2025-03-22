@@ -1,9 +1,18 @@
-import { CSSProperties, RefObject, useEffect, useRef, useState } from "react";
+import {
+  CSSProperties,
+  Fragment,
+  ReactNode,
+  RefObject,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { Spell } from "@type/spells";
 import { getSchoolColor } from "@utils/schoolColors";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
+import rehypeRaw from "rehype-raw";
 
 const TEXT_ROW_HEIGHT = 12;
 interface CardProps {
@@ -130,20 +139,25 @@ export const SpellCard = ({
           >
             <ReactMarkdown
               remarkPlugins={[remarkGfm, remarkBreaks]}
+              rehypePlugins={[rehypeRaw]}
               components={{
-                p: ({ ...props }) => (
-                  <p {...props} style={{ marginBottom: "1em" }} />
-                ),
+                p: ({ children, ...props }) => {
+                  return (
+                    <p {...props} style={{ marginBottom: "1em" }}>
+                      {children}
+                    </p>
+                  );
+                },
                 table: ({ ...props }) => (
-                  <table {...props} className="custom-table" />
+                  <table {...props} className="markdown-table" />
                 ),
-                th: ({ ...props }) => <th {...props} className="custom-th" />,
-                td: ({ ...props }) => <td {...props} className="custom-td" />,
+                th: ({ ...props }) => <th {...props} className="markdown-th" />,
+                td: ({ ...props }) => <td {...props} className="markdown-td" />,
               }}
             >
               {/* add empty lines after paragraphs
               (but not after table as it breaks the table */}
-              {text.replace(/(?<!\|.*)\n(?!.*\|)/g, "\n\n")}
+              {formatDamageDice(text).replace(/(?<!\|.*)\n(?!.*\|)/g, "\n\n")}
             </ReactMarkdown>
           </div>
         </div>
@@ -181,3 +195,10 @@ const CardNumber = ({ cardNumber, totalCards }: CardNumberProps) =>
       <span className="cardNumberParenthese">)</span>
     </span>
   ) : null;
+
+const formatDamageDice = (text: string) => {
+  return text.replace(
+    /\d+d\d+/g,
+    (match) => `<span className="damageDice">${match}</span>`,
+  );
+};

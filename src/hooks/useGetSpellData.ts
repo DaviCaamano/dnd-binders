@@ -3,7 +3,6 @@ import { Routes } from "@type/routes";
 import { Spell } from "@type/spells";
 
 export const useGetSpellData = (route: Routes) => {
-  console.log("route", route);
   const [spellData, setSpellData] = useState<Spell[]>([]);
 
   useEffect(() => {

@@ -186,7 +186,6 @@ body {
   }
 }
 
-
 .cardNumberParenthese {
   font-size: 16px;
   font-weight: bold;
@@ -199,19 +198,24 @@ body {
   font-weight: bold;
 }
 
-
-.custom-table {
+.markdown-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1em;
 }
 
-.custom-th, .custom-td {
+.markdown-th,
+.markdown-td {
   border: 1px solid #ddd;
   padding: 2px;
 }
 
-.custom-th {
+.markdown-th {
   background-color: #f2f2f2;
   text-align: left;
+}
+
+.damageDice {
+  color: #893030;
+  font-weight: 700;
 }

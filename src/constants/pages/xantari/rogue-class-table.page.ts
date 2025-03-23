@@ -1,6 +1,8 @@
-import { MarkdownSection } from "@type/markdown-entry";
+import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const rogueClassTableEntries = `
+const rogueClassTableEntries: MarkdownEntry = `
+# Level Up Chart
+
 | Level | Prof. Bonus | Class Features                                             | Sneak Attack |
 |-------|-------------|------------------------------------------------------------|--------------|
 | 1st   | +2          | Expertise, Sneak Attack, Thieves’ Cant, Weapon Mastery     | 1d6          |
@@ -33,7 +35,4 @@ What new features you get per level
 ### Sneak Attack
 Once per turn, if you have advantage against the target of your attack, or you are attacking a creature within 5 feet of an ally (without disadvantage) roll these die and add them to your weapon damage.`;
 
-export const rogueClassTableSection: MarkdownSection = {
-  title: "Level Up Chart",
-  sections: [rogueClassTableEntries],
-};
+export const rogueClassTable: MarkdownPage = [rogueClassTableEntries];

@@ -1,6 +1,8 @@
-import {MarkdownSection} from '@type/markdown-entry';
+import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const wizardClassTableEntries = `
+const wizardClassTableEntries: MarkdownEntry = `
+# Level Up Chart
+
 ### Wizard
 
 | Level | Prof. Bonus | Class Features                         | Cantrips | Prepared Spells | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
@@ -36,9 +38,6 @@ What new features you get per level
 Level 0 spells that only cost an action to cast. Each time this number increases you can pick a new cantrip to learn.
 
 ### Prepared Spells
-Your spell book can have as many spells as you can collect, however you can only cast spells you prepared for the day, when you finish a long rest pick this number of spells to prepare.`
+Your spell book can have as many spells as you can collect, however you can only cast spells you prepared for the day, when you finish a long rest pick this number of spells to prepare.`;
 
-export const wizardClassTableSection: MarkdownSection = {
-    title: "Level Up Chart",
-    sections: [wizardClassTableEntries],
-};
+export const wizardClassTable: MarkdownPage = [wizardClassTableEntries];

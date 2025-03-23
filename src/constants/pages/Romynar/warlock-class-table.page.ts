@@ -1,6 +1,8 @@
-import {MarkdownSection} from '@type/markdown-entry';
+import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const warlockClassTableEntries = `
+const warlockClassTableEntries: MarkdownEntry = `
+# Level Up Chart
+
 | Level | Prof. Bonus | Class Features                              | Invocations | Cantrips | Spells Prepared | Spell Slots | Slot Level |
 |-------|-------------|---------------------------------------------|-------------|----------|-----------------|-------------|------------|
 | 1     | +2          | Eldritch Invocations, Pact Magic            | 1           | 2        | 2               | 1           | 1          |
@@ -42,8 +44,5 @@ You have access to every warlock spell you have spell slots for. However, you ca
 ### Slot Level
 All of your non-cantrip spells are cast at this level.
 
-`
-export const warlockClassTableSection: MarkdownSection = {
-    title: "Level Up Chart",
-    sections: [warlockClassTableEntries],
-};
+`;
+export const warlockClassTable: MarkdownPage = [warlockClassTableEntries];

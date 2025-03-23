@@ -4,9 +4,6 @@ export type MarkdownEntry = (
   | string
   | DetailedMarkdownEntry
   | DetailedMarkdownEntry[]
-)[];
+);
 
-export interface MarkdownSection {
-  title?: string;
-  sections: MarkdownEntry;
-}
+export type MarkdownPage = MarkdownEntry[]

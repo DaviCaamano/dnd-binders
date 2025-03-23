@@ -1,23 +1,13 @@
 "use server";
 
-import path from "path";
 import { NextResponse } from "next/server";
 import { parseBook } from "@utils/parseBook";
+import {extraSpells} from '@constants/spells/extra-spells';
 
-const paladinFilePaths = [
-    path.join(
-        process.cwd(),
-        "src",
-        "constants",
-        "spells",
-        "paladin",
-        "paladin1.txt",
-    ),
-];
 
 export const GET = async () => {
     return NextResponse.json(
-        { spells: await parseBook(paladinFilePaths) },
+        { spells: await parseBook(extraSpells) },
         {
             status: 200,
             headers: { "Content-Type": "application/json" },

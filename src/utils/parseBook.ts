@@ -2,8 +2,30 @@ import fs from "fs";
 import { Spell, SpellKeys } from "@type/spells";
 import { getLevelAndSchool, replaceTableHeaders } from "@utils/fileParser";
 
-export const parseBook = async (filePaths: string[]): Promise<Spell[]> => {
-  const book: string[][] = await getBook(filePaths);
+export const getPages = async (filePaths: string[]): Promise<string[]> => {
+  const pages: string[] = [];
+
+  for (const filePath of filePaths) {
+    await new Promise<void>((resolve, reject) => {
+      fs.createReadStream(filePath)
+          .on("data", (data) => {
+            // Process each file's data here
+            pages.push(data.toString());
+          })
+          .on("end", () => {
+            resolve();
+          })
+          .on("error", (err) => {
+            reject(err);
+          });
+    });
+  }
+
+  return pages;
+};
+
+export const parseBook = async (pages: string[]): Promise<Spell[]> => {
+  const book: string[][] = await getBook(pages);
 
   const spells: Spell[] = [];
   for (const spellData of book) {
@@ -80,32 +102,14 @@ export const parseBook = async (filePaths: string[]): Promise<Spell[]> => {
   return spellsGroupedByLevel.flat();
 };
 
-const getBook = async (filePaths: string[]) => {
-  const pages: string[] = [];
-
-  for (const filePath of filePaths) {
-    await new Promise<void>((resolve, reject) => {
-      fs.createReadStream(filePath)
-        .on("data", (data) => {
-          // Process each file's data here
-          pages.push(data.toString());
-        })
-        .on("end", () => {
-          resolve();
-        })
-        .on("error", (err) => {
-          reject(err);
-        });
-    });
-  }
-
+const getBook = async (pages: string[]) => {
   const book: string[][] = pages
-    .map((book) =>
-      replaceTableHeaders(book)
-        .split("#### ")
-        .map((page) => page.split(/\r?\n/)),
-    )
-    .flat();
+      .map((book) =>
+          replaceTableHeaders(book)
+              .split("#### ")
+              .map((page) => page.split(/\r?\n/)),
+      )
+      .flat();
 
   return book;
 };

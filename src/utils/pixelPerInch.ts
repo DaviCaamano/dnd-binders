@@ -1,3 +1,4 @@
+"use client";
 // height of a <SpellCard> component in inches
 const CARD_HEIGHT_IN_INCHES = 5.5;
 // The card is reduced by this amount in pixels to allow gaps between cards

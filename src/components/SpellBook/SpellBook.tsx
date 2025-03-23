@@ -6,13 +6,31 @@ import { SpellCard } from "@components/SpellBook/SpellCard";
 import { Spell } from "@type/spells";
 import { Routes } from "@type/routes";
 import { generateRandomSpellCardBackgrounds } from "@utils/pixelPerInch";
+import { useEffect, useRef, useState } from "react";
+import isEqual from "lodash/isEqual";
 
+type SpellCardNumbers = [
+  Spell,
+  [number, number] | undefined,
+  [number, number],
+][];
 interface SpellBookProps {
   route: Routes;
 }
 export const SpellBook = ({ route }: SpellBookProps) => {
   const spellData: Spell[] = useGetSpellData(route);
   const { iteration, reportOversizedCard, spells } = useLargeCards(spellData);
+  const [spellCardData, setSpellCardData] = useState<SpellCardNumbers>([]);
+
+  const stickySpells = useRef<Spell[]>(spellData);
+  useEffect(() => {
+    const currentSpells = spellData ?? spells;
+    if (!isEqual(currentSpells, stickySpells.current)) {
+      stickySpells.current = currentSpells;
+      const newSpellCardData = getSpellCardNumbers(currentSpells);
+      setSpellCardData(newSpellCardData);
+    }
+  }, [spellData, spells]);
 
   const report = (index: number) => {
     return (offset: number | undefined) => {
@@ -20,21 +38,20 @@ export const SpellBook = ({ route }: SpellBookProps) => {
     };
   };
 
-  if (!spells) return <div>Loading...</div>;
+  if (!spellCardData) return <div>Loading...</div>;
   return (
     <div className={styles.gridContainer}>
-      {getSpellCardNumbers(spells)?.map(
-        ([spell, cardNo, background], index) => (
-          <SpellCard
-            key={index}
-            iteration={iteration}
-            spell={spell}
-            reportOversizedCard={report(index)}
-            cardNo={cardNo}
-            backgroundOffsets={background}
-          />
-        ),
-      )}
+      {spellCardData?.map(([spell, cardNo, background], index) => (
+        <SpellCard
+          key={index}
+          iteration={iteration}
+          spell={spell}
+          reportOversizedCard={report(index)}
+          cardNo={cardNo}
+          backgroundOffsets={background}
+          omitCounter={route === Routes.extra}
+        />
+      ))}
     </div>
   );
 };

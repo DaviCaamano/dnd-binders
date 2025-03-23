@@ -2,7 +2,7 @@
 
 import path from "path";
 import { NextResponse } from "next/server";
-import { parseBook } from "@utils/parseBook";
+import {getPages, parseBook} from "@utils/parseBook";
 
 const paladinFilePaths = [
     path.join(
@@ -17,7 +17,7 @@ const paladinFilePaths = [
 
 export const GET = async () => {
     return NextResponse.json(
-        { spells: await parseBook(paladinFilePaths) },
+        { spells: await parseBook(await getPages(paladinFilePaths)) },
         {
             status: 200,
             headers: { "Content-Type": "application/json" },

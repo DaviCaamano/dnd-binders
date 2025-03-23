@@ -15,6 +15,7 @@ interface CardProps {
   reportOversizedCard: (offset: number | undefined) => void;
   spell: Spell;
   backgroundOffsets: [number, number];
+  omitCounter?: boolean;
 }
 export const SpellCard = ({
   cardNo,
@@ -22,6 +23,7 @@ export const SpellCard = ({
   reportOversizedCard,
   spell,
   backgroundOffsets,
+  omitCounter,
 }: CardProps) => {
   const cardNumber = cardNo?.[0];
   const totalCards = cardNo?.[1];
@@ -103,7 +105,7 @@ export const SpellCard = ({
       <div className="flex h-full flex-col">
         <h2 className={styles.spellName}>
           <span>{spell?.name}</span>
-          <CardNumber cardNumber={cardNumber} totalCards={totalCards} />
+          {!omitCounter && <CardNumber cardNumber={cardNumber} totalCards={totalCards} />}
         </h2>
         <div className={styles.fieldGrid}>
           <div>

@@ -2,10 +2,11 @@
 
 import path from "path";
 import { NextResponse } from "next/server";
-import { parseBook } from "@utils/parseBook";
+import { getPages, parseBook } from "@utils/parseBook";
 
 const warlockFilePaths = [
-  path.join(   process.cwd(),
+  path.join(
+    process.cwd(),
     "src",
     "constants",
     "spells",
@@ -32,7 +33,7 @@ const warlockFilePaths = [
 
 export const GET = async () => {
   return NextResponse.json(
-    { spells: await parseBook(warlockFilePaths) },
+    { spells: await parseBook(await getPages(warlockFilePaths)) },
     {
       status: 200,
       headers: { "Content-Type": "application/json" },

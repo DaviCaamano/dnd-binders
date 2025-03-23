@@ -1,4 +1,9 @@
-export const FeatureList = () => {
+
+interface FeatureListProps {
+    player: string
+}
+export const FeatureList = ({ player }: FeatureListProps) => {
+    console.log(player);
     return (
         <div className="feature-list">
         <h2>Features</h2>

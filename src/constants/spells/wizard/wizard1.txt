@@ -865,6 +865,8 @@ When you change the weather conditions, find a current condition on the followin
   &nbsp;
   &nbsp;
   &nbsp;
+  &nbsp;
+  &nbsp;
 
 
 ##### Temperature

@@ -6,11 +6,12 @@ import { SpellCard } from "@components/SpellBook/SpellCard";
 import { Spell } from "@type/spells";
 import { Routes } from "@type/routes";
 import { generateRandomSpellCardBackgrounds } from "@utils/pixelPerInch";
+import dynamic from "next/dynamic";
 
 interface SpellBookProps {
   route: Routes;
 }
-export const SpellBook = ({ route }: SpellBookProps) => {
+const SpellBook_component = ({ route }: SpellBookProps) => {
   const spellData: Spell[] = useGetSpellData(route);
   const { iteration, reportOversizedCard, spells } = useLargeCards(spellData);
 
@@ -65,7 +66,7 @@ const getSpellCardNumbers = (
     ]),
   );
 
-  const newSpells = spells.map((spell) => {
+  const newSpells: [Spell, [number, number] | undefined][] = spells.map((spell) => {
     const count: number | undefined = spellsWithDuplicates[spell.name]?.count;
     if (!count) {
       return [spell, undefined];
@@ -82,3 +83,7 @@ const getSpellCardNumbers = (
     cardBgs[index],
   ]);
 };
+
+export const SpellBook = dynamic(() => Promise.resolve(SpellBook_component), {
+  ssr: false
+})

@@ -26,7 +26,7 @@ export const randomCardBGOffsetRange = () => {
 export const generateRandomSpellCardBackgrounds = (
   cardCount: number,
 ): [number, number][] => {
-  const bgs = [];
+  const bgs: [number, number][] = [];
   const [cardHeight, backgroundOffsetRange] = randomCardBGOffsetRange();
   //between 0 and 1 which background index to use
   let lastBgLeft = undefined;

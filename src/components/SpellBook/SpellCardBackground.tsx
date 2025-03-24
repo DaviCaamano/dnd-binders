@@ -28,7 +28,6 @@ export const SpellCardBackground = ({
       className={styles.spellCardBackgroundPanel}
       style={{
         background: `linear-gradient(to bottom, rgba(169, 169, 169,.75),rgba(169, 169, 169, 0.5), rgba(169, 169, 169, 0.2), transparent)`,
-        backgroundWidth: "100%",
         height: "30px",
         width: "100%",
         backgroundPosition: "50% 100%",
@@ -40,7 +39,6 @@ export const SpellCardBackground = ({
       className={styles.spellCardBackgroundPanel}
       style={{
         background: `linear-gradient(to top, rgba(169, 169, 169, 0.5), rgba(169, 169, 169, 0.2), transparent)`,
-        backgroundWidth: "100%",
         height: "20px",
         width: "100%",
         bottom: 0,

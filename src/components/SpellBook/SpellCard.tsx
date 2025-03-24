@@ -201,6 +201,6 @@ const CardNumber = ({ cardNumber, totalCards }: CardNumberProps) =>
 const formatDamageDice = (text: string) => {
   return text.replace(
     /\d+d\d+/g,
-    (match) => `<span className={styles.damageDice}>${match}</span>`,
+    (match) => `<span className="${styles.damageDice}">${match}</span>`,
   );
 };

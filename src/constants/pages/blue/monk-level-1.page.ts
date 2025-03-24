@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const monkSubclassLevel1Entries: MarkdownEntry = `
+
+const monkSubclassLevel1Entries = `
 # Monk Features (Level 1)
 
 ### Dexterous Attacks
@@ -12,4 +12,4 @@ You can make one Unarmed Strike as a Bonus Action.
 ### Unarmored Defense
 While you aren’t wearing any armor or wielding a Shield, your base Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier.`;
 
-export const monkLevel1: MarkdownPage = [monkSubclassLevel1Entries];
+export const monkLevel1: string[] = [monkSubclassLevel1Entries];

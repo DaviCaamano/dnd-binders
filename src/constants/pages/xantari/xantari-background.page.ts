@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const changelingEntries: MarkdownEntry = `
+
+const changelingEntries = `
 # Changeling Features
 
 ### Creature Type
@@ -11,7 +11,7 @@ As an action, you change your appearance and your voice. You determine the speci
 
 You stay in the new form until you use an action to revert to your true form or until you die.`;
 
-const backgroundCriminalEntries: MarkdownEntry = `
+const backgroundCriminalEntries = `
 # Background: Criminal Features
 
 ### Alert
@@ -19,7 +19,7 @@ Always on the lookout for danger, you gain the following benefits:
     * Initiative Proficiency:  When you roll Initiative, you can add your Proficiency Bonus to the roll.
     * Initiative Swap: Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can’t make this swap if you or the ally is Incapacitated.`;
 
-export const xantariBackground: MarkdownPage = [
+export const xantariBackground: string[] = [
   changelingEntries,
   backgroundCriminalEntries,
 ];

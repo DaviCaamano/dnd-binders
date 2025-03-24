@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const monkSubclassLevel3Entries: MarkdownEntry = `
+
+const monkSubclassLevel3Entries = `
 # Monk Features (Level 3)
 
 ### Deflect Attacks
@@ -8,7 +8,7 @@ When an attack roll hits you and its damage includes Bludgeoning, Piercing or Sl
 
 If you reduce the damage to 0, you can expend 1 Focus Point to redirect some of the attack’s force. If you do so, choose a creature within 5 feet of you if the attack was a melee attack or a creature you can see within 60 feet of yourself that isn’t behind Total Cover if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die + your Dexterity modifier. The damage is the same type dealt by the attack.`;
 
-const monkSubclassEntries: MarkdownEntry = `
+const monkSubclassEntries = `
 # Way of the Ascendant Dragon Features (Level 3)
 
 ### Draconic Presence
@@ -27,7 +27,7 @@ At 11th level, the damage of this feature increases to three rolls of your Marti
 
 You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. While you have no uses available, you can spend 2 ki points to use this feature again.`;
 
-export const monkLevel3: MarkdownPage = [
+export const monkLevel3: string[] = [
   monkSubclassLevel3Entries,
   monkSubclassEntries,
 ];

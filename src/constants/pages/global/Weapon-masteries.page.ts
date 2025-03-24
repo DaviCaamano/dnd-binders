@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const weaponMasteriesEntries: MarkdownEntry = `
+
+const weaponMasteriesEntries = `
 # Weapon Mastery Properties
 Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below.
 
@@ -28,4 +28,4 @@ If you hit a creature with this weapon, you can force the creature to make a Con
 ### Vex
 If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.`;
 
-export const weaponMasteriesPage: MarkdownPage = [weaponMasteriesEntries];
+export const weaponMasteriesPage: string[] = [weaponMasteriesEntries];

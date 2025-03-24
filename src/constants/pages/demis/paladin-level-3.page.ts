@@ -1,6 +1,5 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const paladinLevel3Entries: MarkdownEntry = `
+const paladinLevel3Entries = `
 # Paladin Features (Level 3)
 
 ### Channel Divinity
@@ -8,7 +7,7 @@ You can channel divine energy directly from the Outer Planes, using that energy 
 
 You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin level 11. If a Channel Divinity effect requires a saving throw, the DC equals the Spell Save DC from this class’s Spellcasting feature.`;
 
-export const paladinSubclassLevel3Entries: MarkdownEntry = `
+export const paladinSubclassLevel3Entries = `
 # Oath of Glory Features (Level 3)
   
 ### Oath Spells
@@ -28,7 +27,7 @@ Immediately after you cast Divine Smite, you can expend one use of your Channel 
 ### Peerless Athlete
 As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks and the distance of your Long and High Jumps increases by 10 feet (this extra distance costs movement as normal).`;
 
-export const paladinLevel3: MarkdownPage = [
+export const paladinLevel3: string[] = [
   ...paladinLevel3Entries,
   ...paladinSubclassLevel3Entries,
 ];

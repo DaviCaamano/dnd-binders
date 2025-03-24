@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const AStralElfSpeciesEntries: MarkdownEntry = `
+
+const AStralElfSpeciesEntries = `
 # Astral Elf Features
 
 ### Dark Vision
@@ -15,7 +15,7 @@ As a bonus action, you can magically teleport up to 30 feet to an unoccupied spa
 ### Astral Trance
 You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious. Whenever you finish this trance, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the Player's Handbook. You magically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, and you retain them until you finish your next long rest.`;
 
-const backgroundSageEntries: MarkdownEntry = `
+const backgroundSageEntries = `
 # Background (Sage) Features
 
 ### Feat: Magic Initiate
@@ -28,7 +28,7 @@ const backgroundSageEntries: MarkdownEntry = `
     #### Spell Change:
         Whenever you gain a new level, you can replace one of the Spells you chose for this Feat with a different Spell of the same level from the chosen Spell list.`;
 
-export const nutmegBackground: MarkdownPage = [
+export const nutmegBackground: string[] = [
   AStralElfSpeciesEntries,
   backgroundSageEntries,
 ];

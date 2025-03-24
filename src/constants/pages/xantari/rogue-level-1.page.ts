@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const RogueLevel1Entries: MarkdownEntry = `
+
+const RogueLevel1Entries = `
 # Rogue Features (Level 1)
 
 ### Sneak Attack
@@ -18,4 +18,4 @@ Your training with weapons allows you to use the mastery properties of two kinds
 
 Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Shortswords.`;
 
-export const RogueLevel1: MarkdownPage = [RogueLevel1Entries];
+export const RogueLevel1: string[] = [RogueLevel1Entries];

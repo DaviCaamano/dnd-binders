@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const paladinClassTableEntries: MarkdownEntry = `
+
+const paladinClassTableEntries = `
 # Level up Chart
 
 | Level | Prof. Bonus | Class Features                                          | Channel Divinity | Prepared Spells | 1st | 2nd | 3rd | 4th | 5th |
@@ -38,4 +38,4 @@ Some of your powerful features use a charge of Channel Divinity. You recharge yo
 ### Prepared Spells
 You have access to every paladin spell you have spell slots for. However, you can only cast spells you prepare for the day. When you finish a long rest, pick this number of spells to have access to for the day.`;
 
-export const paladinClassTable: MarkdownPage = [paladinClassTableEntries];
+export const paladinClassTable: string[] = [paladinClassTableEntries];

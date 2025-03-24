@@ -1,6 +1,5 @@
-import { MarkdownPage, MarkdownEntry } from "@type/markdown-entry";
 
-const drowSpeciesEntries: MarkdownEntry = `
+const drowSpeciesEntries = `
 # Elf (Drow) Features
 
 ### Dark Vision
@@ -18,7 +17,7 @@ When you reach character levels 3 and 5, you learn a higher-level spell, as show
     * Level 3: Spell - Faerie Fire
     * Level 5: Spell - Darkness`;
 
-const acolyteBackgroundEntries: MarkdownEntry = `
+const acolyteBackgroundEntries = `
 # Background (Acolyte) Features
 
 ### Feat: Magic Initiate
@@ -30,4 +29,4 @@ const acolyteBackgroundEntries: MarkdownEntry = `
         
     #### Spell Change:
         Whenever you gain a new level, you can replace one of the Spells you chose for this Feat with a different Spell of the same level from the chosen Spell list.`;
-export const demisBackground: MarkdownPage = [drowSpeciesEntries, acolyteBackgroundEntries];
+export const romynarBackground: string[] = [drowSpeciesEntries, acolyteBackgroundEntries];

@@ -1,0 +1,77 @@
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: 0;
+  }
+}
+
+.featurePage {
+  position: relative;
+  width: 8.5in;
+  height: 11in;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.featurePageBackgroundPanel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.33;
+}
+
+.section {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.spellCardBackgroundPanel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.markdown-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.markdown-h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: palegoldenrod;
+  -webkit-text-stroke: 1px black;
+}
+
+.markdown-h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #57480b;
+}
+
+.markdown-th,
+.markdown-td {
+  border: 1px solid #ddd;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.markdown-th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.damageDice {
+  color: #893030;
+  font-weight: 700;
+}

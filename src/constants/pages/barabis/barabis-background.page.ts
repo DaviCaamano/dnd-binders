@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const firbolgSpeciesEntries: MarkdownEntry = `
+
+const firbolgSpeciesEntries = `
 # Firbolg Features
 
 ### Firbolg Magic
@@ -15,13 +15,13 @@ You count as one size larger when determining your carrying capacity and the wei
 ### Speech of Beast and Leaf
 You have the ability to communicate in a limited manner with Beasts, Plants, and vegetation. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them.`;
 
-const backgroundSoldierEntries: MarkdownEntry = `
+const backgroundSoldierEntries = `
 # Background: Soldier Features
 
 ### Feat: Savage Attacker
 You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.`;
 
-export const barabisBackground: MarkdownPage = [
+export const barabisBackground: string[] = [
   firbolgSpeciesEntries,
   backgroundSoldierEntries,
 ];

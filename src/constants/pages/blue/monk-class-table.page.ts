@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const monkTableEntries: MarkdownEntry = `
+
+const monkTableEntries = `
 # Level Up Chart
 
 | Level | Prof. Bonus | Class Features                                             | Martial Arts | Discipline Points | Unarmored Movement |
@@ -41,4 +41,4 @@ Resource which allows you to use certain monk abilities like Flurry of Blows, Pa
 ### Unarmored Movement
 Bonus to your speed if you are not wearing armor or a shield.`;
 
-export const monkClassTable: MarkdownPage = [monkTableEntries];
+export const monkClassTable: string[] = [monkTableEntries];

@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const wizardClassTableEntries: MarkdownEntry = `
+
+const wizardClassTableEntries = `
 # Level Up Chart
 
 ### Wizard
@@ -40,4 +40,4 @@ Level 0 spells that only cost an action to cast. Each time this number increases
 ### Prepared Spells
 Your spell book can have as many spells as you can collect, however you can only cast spells you prepared for the day, when you finish a long rest pick this number of spells to prepare.`;
 
-export const wizardClassTable: MarkdownPage = [wizardClassTableEntries];
+export const wizardClassTable: string[] = [wizardClassTableEntries];

@@ -6,7 +6,7 @@ export const useGetSpellData = (route: Routes) => {
   const [spellData, setSpellData] = useState<Spell[]>([]);
 
   useEffect(() => {
-    fetch(`/api/${route}`)
+    fetch(`/api/spellbook/${route}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");

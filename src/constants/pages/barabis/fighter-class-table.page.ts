@@ -1,7 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const fighterClassTableEntries: MarkdownEntry = `
-# Level Up Chart
+
+const fighterClassTableEntries = `# Level Up Chart
 
 | Level | Prof. Bonus | Class Features                                           | Second Wind | Weapon Mastery |
 |-------|-------------|----------------------------------------------------------|-------------|----------------|
@@ -38,4 +37,4 @@ You can use the Second Wind Feature to heal yourself this number of times. You g
 ### Weapon Mastery
 Each weapon has a special effect when the wielder has a mastery of it. You can pick a number of weapons equal to this number to master.`;
 
-export const fighterClassTable: MarkdownPage = [fighterClassTableEntries];
+export const fighterClassTable: string[] = [fighterClassTableEntries];

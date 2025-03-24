@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const warlockLevel1Entries: MarkdownEntry = `
+
+const warlockLevel1Entries = `
 # Warlock Features (Level 1)
 
 ### Eldritch Invocations (See Eldritch Invocation Options Sheets)
@@ -15,4 +15,4 @@ When you gain certain Warlock levels, you gain more invocations of your choice, 
 You can't pick the same invocation more than once unless its description says otherwise.
 `;
 
-export const warlockLevel1: MarkdownPage = [warlockLevel1Entries];
+export const warlockLevel1: string[] = [warlockLevel1Entries];

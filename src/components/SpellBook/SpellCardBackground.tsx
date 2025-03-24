@@ -9,7 +9,7 @@ export const SpellCardBackground = ({
     <div
       className={styles.spellCardBackgroundPanel}
       style={{
-        backgroundImage: `url("/img/Card BG sm.png")`,
+        backgroundImage: `url("/img/card-backgrounds/Card BG sm.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: `right -${right}px`,
         opacity: 0.5,
@@ -18,7 +18,7 @@ export const SpellCardBackground = ({
     <div
       className={styles.spellCardBackgroundPanel}
       style={{
-        backgroundImage: `url("/img/Card BG2 sm.png")`,
+        backgroundImage: `url("/img/card-backgrounds/Card BG2 sm.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: `left -${left}px`,
         opacity: 0.5,

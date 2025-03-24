@@ -1,6 +1,4 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
-
-export const fighterSubclassLevel3Entries: MarkdownEntry = `
+export const fighterSubclassLevel3Entries = `
 # Champion Features (Level 3)
 
 ### Improved Critical
@@ -11,4 +9,4 @@ Thanks to your athleticism, you have Advantage on Initiative rolls and Strength 
 
 In addition, immediately after you score a Critical Hit, you can move up to half your Speed without provoking Opportunity Attacks.`;
 
-export const fighterLevel3: MarkdownPage = [fighterSubclassLevel3Entries];
+export const fighterLevel3: string[] = [fighterSubclassLevel3Entries];

@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const warlockInvocationsEntries1: MarkdownEntry = `
+
+const warlockInvocationsEntries1 = `
 # Warlock Invocations
 
 ### Agonizing Blast
@@ -44,7 +44,7 @@ Choose one of your known Warlock cantrips that deals damage and has a range of 1
 
 You can cast False Life on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.`;
 
-const warlockInvocationEntries2: MarkdownEntry = `
+const warlockInvocationEntries2 = `
 
 ### Gaze of Two Minds
 ***Prerequisite***: Level 5+ Warlock
@@ -93,7 +93,7 @@ You have received knowledge from an elder entity of the multiverse, allowing you
 ### Lifedrinker
 Prerequisites: Level 9+ Warlock, Pact of the Blade`;
 
-const warlockInvocationEntries3: MarkdownEntry = `
+const warlockInvocationEntries3 = `
 
 Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point).
 
@@ -142,7 +142,7 @@ Stitching together strands of shadow, you conjure forth a book in your hand at t
 #### Cantrips and Rituals
 When the book appears, choose three cantrips, and choose two level 1 spells that have the Ritual tag. The spells can be from any class's spell list, and they must be spells you don't already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you.`;
 
-const warlockInvocationEntries4: MarkdownEntry = `
+const warlockInvocationEntries4 = `
 
 #### Spellcasting Focus
 You can use the book as a Spellcasting Focus.
@@ -175,7 +175,7 @@ You can cast Speak with Dead without expending a spell slot.
 You have Truesight with a range of 30 feet.
 `;
 
-export const warlockInvocations: MarkdownPage = [
+export const warlockInvocations: string[] = [
   warlockInvocationsEntries1,
   warlockInvocationEntries2,
   warlockInvocationEntries3,

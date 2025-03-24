@@ -1,6 +1,5 @@
-import { MarkdownPage, MarkdownEntry } from "@type/markdown-entry";
 
-const tieflingSpeciesEntries: MarkdownEntry = `
+const tieflingSpeciesEntries = `
 # Infernal Tiefling Features
 
 ### Fiendish Legacy
@@ -15,4 +14,4 @@ When you reach character levels 3 and 5, you learn a higher-level spell, as show
 
 
 
-export const demisBackground: MarkdownPage = [tieflingSpeciesEntries];
+export const demisBackground: string[] = [tieflingSpeciesEntries];

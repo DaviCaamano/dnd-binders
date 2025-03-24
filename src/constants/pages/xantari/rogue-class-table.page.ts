@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const rogueClassTableEntries: MarkdownEntry = `
+
+const rogueClassTableEntries = `
 # Level Up Chart
 
 | Level | Prof. Bonus | Class Features                                             | Sneak Attack |
@@ -35,4 +35,4 @@ What new features you get per level
 ### Sneak Attack
 Once per turn, if you have advantage against the target of your attack, or you are attacking a creature within 5 feet of an ally (without disadvantage) roll these die and add them to your weapon damage.`;
 
-export const rogueClassTable: MarkdownPage = [rogueClassTableEntries];
+export const rogueClassTable: string[] = [rogueClassTableEntries];

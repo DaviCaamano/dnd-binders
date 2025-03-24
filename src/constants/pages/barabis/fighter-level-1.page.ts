@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const fighterLevel1Entries: MarkdownEntry = `
+
+const fighterLevel1Entries = `
 # Fighter Features (Level 1)
 
 ### Fighting Style: Great Weapon Fighting
@@ -18,4 +18,4 @@ Your training with weapons allows you to use the mastery properties of three kin
 
 When you reach certain Fighter levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Fighter Features table.`;
 
-export const monkLevel1: MarkdownPage = [fighterLevel1Entries];
+export const fighterLevel1: string[] = [fighterLevel1Entries];

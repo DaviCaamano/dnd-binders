@@ -1,6 +1,4 @@
-import {MarkdownEntry, MarkdownPage} from "@type/markdown-entry";
-
-const paladinLevel2Entries: MarkdownEntry = `
+const paladinLevel2Entries = `
 # Paladin Features (Level 2)
 
 ### Fighting Style: Great Weapon Fighting
@@ -9,4 +7,4 @@ When you roll damage for an attack you make with a Melee weapon that you are hol
 ### Paladin’s Smite
 You always have the Divine Smite spell prepared. In addition, you can cast it from this feature once without expending a spell slot, and you must finish a Long Rest before you can cast it this way again.`;
 
-export const paladinLevel2: MarkdownPage = [paladinLevel2Entries];
+export const paladinLevel2 = [paladinLevel2Entries];

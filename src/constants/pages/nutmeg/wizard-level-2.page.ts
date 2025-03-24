@@ -1,6 +1,5 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const wizardLevel2SubclassEntries: MarkdownEntry = `
+const wizardLevel2SubclassEntries = `
 # School of Chronurgy Features (Level 2)
 
 ### Chronal Shift
@@ -11,4 +10,4 @@ You can use this ability twice, and you regain any expended uses when you finish
 ### Temporal Awareness
 Starting at 2nd level, you can add your Intelligence modifiers to your initiative rolls.`;
 
-export const wizardLevel2: MarkdownPage = [wizardLevel2SubclassEntries];
+export const wizardLevel2: string[] = [wizardLevel2SubclassEntries];

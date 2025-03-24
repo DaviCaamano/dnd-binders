@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const paladinLevel1Entries: MarkdownEntry = `
+
+const paladinLevel1Entries = `
 # Paladin Features (Level 1)
 
 ### Lay on Hands
@@ -22,4 +22,4 @@ You can channel divine energy directly from the Outer Planes, using that energy 
 
 You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin level 11. If a Channel Divinity effect requires a saving throw, the DC equals the Spell Save DC from this class’s Spellcasting feature.`;
 
-export const paladinLevel1: MarkdownPage = [paladinLevel1Entries];
+export const paladinLevel1: string[] = [paladinLevel1Entries];

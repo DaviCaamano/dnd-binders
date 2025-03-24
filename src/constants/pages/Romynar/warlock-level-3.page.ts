@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const warlockLevel3Entries: MarkdownEntry = `
+
+const warlockLevel3Entries = `
 # Great Old One Features (Level 3)
 
 ### Great Old One's Spells
@@ -14,4 +14,4 @@ The magic of your patron ensures you always have certain spells ready; when you 
 | 9             | Modify Memory, Telekinesis                                             |
 `;
 
-export const warlockLevel3: MarkdownPage = [warlockLevel3Entries];
+export const warlockLevel3: string[] = [warlockLevel3Entries];

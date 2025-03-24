@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const RogueLevel3Entries: MarkdownEntry = `
+
+const RogueLevel3Entries = `
 # Assassin Features (Level 3)
 
 ### Assassinate
@@ -13,7 +13,7 @@ Surprising Strikes. During the first round of each combat, you have Advantage on
 ### Assassin's Tools
 You gain a Disguise Kit and a Poisoner's Kit, and you have proficiency with them.`;
 
-const backgroundCriminalEntries: MarkdownEntry = `
+const backgroundCriminalEntries = `
 # Background (Criminal) Features
 
 ### Feat:ALERT
@@ -25,4 +25,4 @@ const backgroundCriminalEntries: MarkdownEntry = `
         
     #### Spell Change:
         Whenever you gain a new level, you can replace one of the Spells you chose for this Feat with a different Spell of the same level from the chosen Spell list.`;
-export const RogueLevel3: MarkdownPage = [RogueLevel3Entries, backgroundCriminalEntries];
+export const RogueLevel3: string[] = [RogueLevel3Entries, backgroundCriminalEntries];

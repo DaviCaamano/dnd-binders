@@ -1,6 +1,6 @@
-import { MarkdownEntry, MarkdownPage } from "@type/markdown-entry";
 
-const tabaxiSpeciesPageEntries: MarkdownEntry = `
+
+const tabaxiSpeciesPageEntries = `
 # Tabaxi Features
 
 ### Darkvision
@@ -12,7 +12,7 @@ Your reflexes and agility allow you to move with a burst of speed. When you move
 ### Cat's Claws
 Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.`;
 
-const backgroundWayfarerEntries: MarkdownEntry = `
+const backgroundWayfarerEntries = `
 # Background: Wayfarer Features
 
 ### Lucky
@@ -23,13 +23,13 @@ You have a number of Luck Points equal to your Proficiency Bonus and can spend t
 #### Advantage
 When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.`;
 
-const backgroundFeylostEntries: MarkdownEntry = `
+const backgroundFeylostEntries = `
 # Minor Background: Feylost Features
 
 ### Feywild Connection
 Your mannerisms and knowledge of fey customs are recognized by natives of the Feywild, who see you as one of their own. Because of this, friendly Fey creatures are inclined to come to your aid if you are lost or need help in the Feywild.`;
 
-export const blueBackground: MarkdownPage = [
+export const blueBackground: string[] = [
   tabaxiSpeciesPageEntries,
   backgroundWayfarerEntries,
   backgroundFeylostEntries,

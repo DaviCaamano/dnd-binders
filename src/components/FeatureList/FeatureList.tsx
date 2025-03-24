@@ -50,6 +50,9 @@ const Page = ({ page, background }: FeaturePage) => {
                 h3: ({ ...props }) => (
                   <h3 {...props} className={styles["markdown-h3"]} />
                 ),
+                h4: ({ ...props }) => (
+                  <h4 {...props} className={styles["markdown-h4"]} />
+                ),
                 table: ({ ...props }) => (
                   <table {...props} className={styles["markdown-table"]} />
                 ),

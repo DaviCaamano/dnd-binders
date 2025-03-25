@@ -24,8 +24,14 @@
 }
 
 .section {
+  position: relative;
   margin: 0.5rem;
   padding: 0.5rem;
+
+  &.compact {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
 }
 .spellCardBackgroundPanel {
   height: 100%;
@@ -40,6 +46,41 @@
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1em;
+
+  &.romynar {
+    thead,
+    tbody {
+      tr {
+        td,
+        th {
+          &:nth-of-type(1) {
+            max-width: 30px;
+            text-align: center;
+          }
+
+          &:nth-of-type(2) {
+            max-width: 50px;
+            text-align: center;
+          }
+
+          &:nth-of-type(4) {
+            max-width: 40px;
+            text-align: center;
+          }
+
+          &:nth-of-type(5) {
+            max-width: 70px;
+            text-align: center;
+          }
+
+          &:nth-of-type(n + 6) {
+            max-width: 22px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 .markdown-h1 {
@@ -51,6 +92,12 @@
   font-weight: 500;
   color: palegoldenrod;
   -webkit-text-stroke: 1px black;
+}
+
+.markdown-h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
 }
 
 .markdown-h3 {
@@ -67,6 +114,7 @@
 
 .markdown-th,
 .markdown-td {
+  font-size: 12px;
   border: 1px solid #ddd;
   padding: 2px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -77,7 +125,35 @@
   text-align: left;
 }
 
+.markdown-hr {
+  margin-top: 0.125rem;
+  margin-bottom: 0.5rem;
+  border-width: 1px;
+}
+
 .damageDice {
   color: #893030;
   font-weight: 700;
+}
+
+.featureImageContainer {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+
+  &.top {
+    top: 0;
+    // Each image is designed with a part where the image fades out,
+    // text can be displayed legibly over this part
+    margin-bottom: -120px;
+  }
+
+  &.bottom {
+    bottom: 0;
+  }
+}
+.featureImage {
+  position: relative;
+  height: 4.5in;
+  width: 8.5in;
 }

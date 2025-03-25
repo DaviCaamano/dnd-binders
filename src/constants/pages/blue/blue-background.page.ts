@@ -23,10 +23,7 @@ You have a number of Luck Points equal to your Proficiency Bonus and can spend t
 #### Advantage
 When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.`;
 
-const backgroundFeylostEntries = `
-# Minor Background: Feylost Features
-
-### Feywild Connection
+const backgroundFeylostEntries = `### Extra Background (Feylost): Feywild Connection
 Your mannerisms and knowledge of fey customs are recognized by natives of the Feywild, who see you as one of their own. Because of this, friendly Fey creatures are inclined to come to your aid if you are lost or need help in the Feywild.`;
 
 export const blueBackground: string[] = [

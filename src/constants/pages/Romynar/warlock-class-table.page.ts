@@ -3,7 +3,7 @@
 const warlockClassTableEntries = `
 # Level Up Chart
 
-| Level | Prof. Bonus | Class Features                              | Invocations | Cantrips | Spells Prepared | Spell Slots | Slot Level |
+| Level | Prof. Bonus | Class Features                              | Invocations | Cantrips | Spells Prep'd | Spell Slots | Slot Level |
 |-------|-------------|---------------------------------------------|-------------|----------|-----------------|-------------|------------|
 | 1     | +2          | Eldritch Invocations, Pact Magic            | 1           | 2        | 2               | 1           | 1          |
 | 2     | +2          | Magical Cunning                             | 3           | 2        | 3               | 2           | 1          |

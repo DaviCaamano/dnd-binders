@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
-import { Player } from "@type/player";
+import { useEffect, useState } from 'react';
+import { Player } from '@type/player';
+import { Page } from '@type/page';
 
 export interface FeaturePage {
-  page: string[];
+  page: Page;
   background: string;
 }
 export const useGetFeatureData = (player: Player): FeaturePage[] => {
@@ -12,7 +13,7 @@ export const useGetFeatureData = (player: Player): FeaturePage[] => {
     fetch(`/api/feature/${player}`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error('Network response was not ok');
         }
         return response.json();
       })
@@ -29,21 +30,16 @@ export const useGetFeatureData = (player: Player): FeaturePage[] => {
           );
         }
       })
-      .catch((error) => console.error("Error fetching the JSON data:", error));
+      .catch((error) => console.error('Error fetching the JSON data:', error));
   }, [player]);
 
   return pages;
 };
 
-const BACKGROUND_URL = "/img/feature-backgrounds/BG";
-const BACKGROUND_EXT = ".png";
+const BACKGROUND_URL = '/img/feature-backgrounds/BG';
+const BACKGROUND_EXT = '.png';
 const getPageBackgrounds = (pages: string[][]) => {
-  const totalPages = pages.reduce(
-    (sum, innerArray) => sum + innerArray.length,
-    0,
-  );
-
-  return getRandomNumbers(totalPages).map(
+  return getRandomNumbers(pages.length || 0).map(
     (i) => BACKGROUND_URL + i + BACKGROUND_EXT,
   );
 };

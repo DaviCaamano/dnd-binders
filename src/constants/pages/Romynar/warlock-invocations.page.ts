@@ -1,5 +1,3 @@
-
-
 const warlockInvocationsEntries1 = `
 # Warlock Invocations
 
@@ -37,14 +35,14 @@ Once per turn when you hit a creature with your pact weapon, you can expend a Pa
 Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage
 Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.
 
-***Repeatable***: You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.
+***Repeatable***: You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.`;
 
-### Fiendish Vigor
+const warlockInvocationEntries2 = `### Fiendish Vigor
 ***Prerequisite***: Level 2+ Warlock
 
-You can cast False Life on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.`;
+You can cast False Life on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.\`;
 
-const warlockInvocationEntries2 = `
+const warlockInvocationEntries2 = \`
 
 ### Gaze of Two Minds
 ***Prerequisite***: Level 5+ Warlock
@@ -65,7 +63,11 @@ When any creature whose name is on the page is reduced to 0 Hit Points but not k
 
 As a Magic action, you can erase a name on the page by touching it.
 
-### Investment of the Chain Master
+### Lessons of the First Ones
+***Prerequisite***: Level 2+ Warlock
+You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.`;
+
+const warlockInvocationEntries3 = `### Investment of the Chain Master
 Prerequisites: Level 5+ Warlock, Pact of the Chain
 When you cast Find Familiar, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.
 
@@ -84,16 +86,10 @@ If the familiar forces a creature to make a saving throw, it uses your spell sav
 #### Resistance
 When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.
 
-### Lessons of the First Ones
-***Prerequisite***: Level 2+ Warlock
-You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.
-
 ***Repeatable***: You can gain this invocation more than once. Each time you do so, choose a different Origin feat.
 
 ### Lifedrinker
-Prerequisites: Level 9+ Warlock, Pact of the Blade`;
-
-const warlockInvocationEntries3 = `
+Prerequisites: Level 9+ Warlock, Pact of the Blade
 
 Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point).
 
@@ -110,8 +106,9 @@ You can cast Alter Self without expending a spell slot.
 ### Misty Visions
 ***Prerequisite***: Level 2+ Warlock
 
-You can cast Silent Image without expending a spell slot.
+You can cast Silent Image without expending a spell slot.`;
 
+const warlockInvocationEntries4 = `
 ### One with Shadows
 ***Prerequisite***: Level 5+ Warlock
 
@@ -136,21 +133,23 @@ When you cast the spell, you choose one of the normal forms for your familiar or
 
 Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction.
 
-### Pact of the Tome
-Stitching together strands of shadow, you conjure forth a book in your hand at the end of a Short or Long Rest. This Book of Shadows (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die.
-
-#### Cantrips and Rituals
-When the book appears, choose three cantrips, and choose two level 1 spells that have the Ritual tag. The spells can be from any class's spell list, and they must be spells you don't already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you.`;
-
-const warlockInvocationEntries4 = `
-
-#### Spellcasting Focus
-You can use the book as a Spellcasting Focus.
-
 ### Repelling Blast
 Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage via an Attack Roll
 
 Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.
+`;
+
+const warlockInvocationEntries5 = `
+
+### Pact of the Tome
+Stitching together strands of shadow, you conjure forth a book in your hand at the end of a Short or Long Rest. This Book of Shadows (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die.
+
+#### Cantrips and Rituals
+When the book appears, choose three cantrips, and choose two level 1 spells that have the Ritual tag. The spells can be from any class's spell list, and they must be spells you don't already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you.
+
+#### Spellcasting Focus
+You can use the book as a Spellcasting Focus.
+
 
 ***Repeatable***: You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.
 
@@ -169,15 +168,16 @@ You can cast Arcane Eye without expending a spell slot.
 
 You can cast Speak with Dead without expending a spell slot.
 
-###Witch Sight
+### Witch Sight
 ***Prerequisite***: Level 15+ Warlock
 
 You have Truesight with a range of 30 feet.
 `;
 
-export const warlockInvocations: string[] = [
-  warlockInvocationsEntries1,
-  warlockInvocationEntries2,
-  warlockInvocationEntries3,
-  warlockInvocationEntries4,
+export const warlockInvocations: string[][] = [
+  [warlockInvocationsEntries1],
+  [warlockInvocationEntries2],
+  [warlockInvocationEntries3],
+  [warlockInvocationEntries4],
+  [warlockInvocationEntries5],
 ];

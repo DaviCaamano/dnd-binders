@@ -1,5 +1,3 @@
-
-
 const weaponMasteriesEntries = `
 # Weapon Mastery Properties
 Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below.

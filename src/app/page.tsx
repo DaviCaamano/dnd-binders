@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
-import {FeatureList} from '@components/FeatureList/FeatureList';
-import {Player} from '@type/player';
+import { Guide } from '@components/Guide';
 
 export default function Home() {
-  return <FeatureList player={Player.barabis} />;
+  return <Guide />;
 }

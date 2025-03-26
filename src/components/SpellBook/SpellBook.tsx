@@ -1,12 +1,12 @@
-"use client";
-import styles from "../../styles/SpellBook.module.scss";
-import { useGetSpellData } from "@hooks/useGetSpellData";
-import { useLargeCards } from "@hooks/useLargeCards";
-import { SpellCard } from "@components/SpellBook/SpellCard";
-import { Spell } from "@type/spells";
-import { Routes } from "@type/routes";
-import { generateRandomSpellCardBackgrounds } from "@utils/pixelPerInch";
-import dynamic from "next/dynamic";
+'use client';
+import styles from '../../styles/SpellBook.module.scss';
+import { useGetSpellData } from '@hooks/useGetSpellData';
+import { useLargeCards } from '@hooks/useLargeCards';
+import { SpellCard } from '@components/SpellBook/SpellCard';
+import { Spell } from '@type/spells';
+import { Routes } from '@type/routes';
+import { generateRandomSpellCardBackgrounds } from '@utils/pixelPerInch';
+import dynamic from 'next/dynamic';
 
 interface SpellBookProps {
   route: Routes;
@@ -33,6 +33,7 @@ const SpellBook_component = ({ route }: SpellBookProps) => {
             reportOversizedCard={report(index)}
             cardNo={cardNo}
             backgroundOffsets={background}
+            omitCounter={route === Routes.extra}
           />
         ),
       )}
@@ -66,16 +67,18 @@ const getSpellCardNumbers = (
     ]),
   );
 
-  const newSpells: [Spell, [number, number] | undefined][] = spells.map((spell) => {
-    const count: number | undefined = spellsWithDuplicates[spell.name]?.count;
-    if (!count) {
-      return [spell, undefined];
-    }
-    const used: number | undefined =
-      spellsWithDuplicates[spell.name]?.used ?? undefined;
-    if (used !== undefined) spellsWithDuplicates[spell.name].used++;
-    return [spell, typeof used === "number" ? [used, count] : undefined];
-  });
+  const newSpells: [Spell, [number, number] | undefined][] = spells.map(
+    (spell) => {
+      const count: number | undefined = spellsWithDuplicates[spell.name]?.count;
+      if (!count) {
+        return [spell, undefined];
+      }
+      const used: number | undefined =
+        spellsWithDuplicates[spell.name]?.used ?? undefined;
+      if (used !== undefined) spellsWithDuplicates[spell.name].used++;
+      return [spell, typeof used === 'number' ? [used, count] : undefined];
+    },
+  );
   const cardBgs = generateRandomSpellCardBackgrounds(spells.length);
   return newSpells.map(([spell, cardNo], index) => [
     spell,
@@ -85,5 +88,5 @@ const getSpellCardNumbers = (
 };
 
 export const SpellBook = dynamic(() => Promise.resolve(SpellBook_component), {
-  ssr: false
-})
+  ssr: false,
+});

@@ -45,7 +45,7 @@ const getPageBackgrounds = (pages: string[][]) => {
 };
 
 function getRandomNumbers(n: number): number[] {
-  const numbers = Array.from({ length: 20 }, (_, i) => i + 1);
+  const numbers = Array.from({ length: 19 }, (_, i) => i + 1);
   const result = [];
 
   for (let i = 0; i < n; i++) {

@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { Spell, SpellKeys } from '@type/spells';
+import { Spell, SpellKeys, SpellSize } from '@type/spells';
 import { getLevelAndSchool, replaceTableHeaders } from '@utils/fileParser';
 
 export const parseBook = async (filePaths: string[]): Promise<Spell[]> => {
@@ -12,9 +12,9 @@ export const parseBook = async (filePaths: string[]): Promise<Spell[]> => {
     }
     const spell: Partial<Spell> = {};
 
-    const [spellName, isCompact] = getSpellName(spellData[0]);
+    const [spellName, spellSize] = getSpellName(spellData[0]);
     spell.name = spellName;
-    spell.isCompact = isCompact;
+    spell.size = spellSize;
     const [level, school] = getLevelAndSchool(spellData[1]);
 
     spell.level = level;
@@ -117,9 +117,17 @@ const getBook = async (filePaths: string[]) => {
 // inside the card (avoiding subsequent cards that contain very little test)
 // example: "Ceremony" -> "--Ceremony"
 const COMPACT_SPELL_SYMBOL = '--';
-const getSpellName = (spell: string): [string, boolean] => {
+// You can add ++ to do the opposite, marking them as large spells. Large
+// spells have double gaps between lines. This is for cards who don't
+// have very much on their subsequent card, but too much to easily remove
+// the subsequent card with the -- symbol or simplifing the text.
+// Instead this makes the second card take on more text.
+const LARG_SPELL_SYMBOL = '++';
+const getSpellName = (spell: string): [string, SpellSize] => {
   if (spell.startsWith(COMPACT_SPELL_SYMBOL)) {
-    return [spell.replace(COMPACT_SPELL_SYMBOL, ''), true];
+    return [spell.replace(COMPACT_SPELL_SYMBOL, ''), SpellSize.compact];
+  } else if (spell.startsWith(LARG_SPELL_SYMBOL)) {
+    return [spell.replace(LARG_SPELL_SYMBOL, ''), SpellSize.large];
   }
-  return [spell, false];
+  return [spell, SpellSize.normal];
 };

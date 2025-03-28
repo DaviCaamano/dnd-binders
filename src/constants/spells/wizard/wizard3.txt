@@ -66,7 +66,7 @@ This spell's damage increases when you reach certain levels. At 5th level, the m
 
 **Classes:** Artificer, Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
 
-#### Guards and Wards
+#### ++Guards and Wards
 *Level 6 Abjuration*
 ___
 - **Casting Time:** 1 hour
@@ -256,8 +256,6 @@ As a bonus action on your turn, you can move the illusion up to 60 feet. At any 
 
 The illusion is tangible because of the shadow stuff used to create it, but attacks miss it automatically, it succeeds on all saving throws, and it is immune to all damage and conditions. A creature that uses an action to examine the dragon can determine that it is an illusion by succeeding on an Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through it and has advantage on saving throws against its breath.
 
-**Classes:** Wizard, Wizard
-
 #### Illusory Script
 *Level 1 Illusion*
 ___
@@ -288,7 +286,7 @@ If damage from this spell kills a target, the target is turned to ash.
 
 **Classes:** Sorcerer, Sorcerer, Wizard, Wizard
 
-#### Imprisonment
+#### ++Imprisonment
 *Level 9 Abjuration*
 ___
 - **Casting Time:** 1 minute
@@ -328,7 +326,7 @@ The cloud moves 10 feet away from you in a direction you choose at the start of 
 
 **Classes:** Druid, Sorcerer, Wizard
 
-#### Infernal Calling
+#### ++Infernal Calling
 *Level 5 Conjuration*
 ___
 - **Casting Time:** 1 minute
@@ -742,7 +740,7 @@ Each time you cast this spell, you can cause its magic to operate in the reverse
 
 **Classes:** Cleric, Paladin, Warlock, Wizard
 
-#### Magic Jar
+#### ++Magic Jar
 *Level 6 Necromancy*
 ___
 - **Casting Time:** 1 minute
@@ -842,8 +840,6 @@ Each target gains a number of temporary hit points equal to the hit points of it
 The creature is limited in the actions it can perform by the nature of its new form. It can't speak, cast spells, or do anything else that requires hands or speech.
 
 The target's gear melds into the new form. The target can't activate, use, wield, or otherwise benefit from any of its equipment.
-
-**Classes:** Bard, Bard, Sorcerer, Sorcerer, Wizard, Wizard
 
 #### Mass Suggestion
 *Level 6 Enchantment*
@@ -974,7 +970,7 @@ A nonmagical object that isn't being worn or carried also takes the damage if it
 
 **Classes:** Sorcerer, Wizard
 
-#### Mighty Fortress
+#### ++Mighty Fortress
 *Level 8 Conjuration*
 ___
 - **Casting Time:** 1 minute

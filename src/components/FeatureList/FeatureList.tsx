@@ -30,7 +30,6 @@ const Page = ({
   page,
   player,
 }: FeaturePage & { player: Player }) => {
-  console.log('background', background);
   if (!page?.sections.length) {
     return null;
   }

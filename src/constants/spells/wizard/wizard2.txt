@@ -661,7 +661,7 @@ The target also has Resistance to all damage except Psychic damage, and it has I
 
 **Classes:** Bard, Cleric, Druid, Wizard
 
-#### Find Familiar
+#### ++Find Familiar
 *Level 1 Conjuration*
 ___
 - **Casting Time:** 1 hour or Ritual

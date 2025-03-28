@@ -1,5 +1,5 @@
 import { CSSProperties, RefObject, useEffect, useRef, useState } from 'react';
-import { Spell } from '@type/spells';
+import { Spell, SpellSize } from '@type/spells';
 import { getSchoolColor } from '@utils/schoolColors';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -8,7 +8,6 @@ import rehypeRaw from 'rehype-raw';
 import { SpellCardBackground } from '@components/SpellBook/SpellCardBackground';
 import styles from '../../styles/SpellBook.module.scss';
 
-const TEXT_ROW_HEIGHT = 12;
 interface CardProps {
   cardNo: [number, number] | undefined;
   iteration: number;
@@ -39,7 +38,8 @@ export const SpellCard = ({
   const textContainerRef = useRef<HTMLDivElement | null>(null);
   const textContentsRef = useRef<HTMLDivElement | null>(null);
 
-  const isCompact = spell.isCompact;
+  const isCompact = spell.size === SpellSize.compact;
+  const isLarge = spell.size === SpellSize.large;
   useEffect(() => {
     // if the iteration has changed, reset the component state
     if (stickyIteration.current !== iteration) {
@@ -52,15 +52,17 @@ export const SpellCard = ({
 
   useEffect(() => {
     // Get the Height of the visible text area and round it down to the
-    // nearest multiple of TEXT_ROW_HEIGHT
+    // nearest multiple of TEXT_ROW_HEIGHT, TEXT_ROW_HEIGHT_COMPACT,
+    // or TEST_ROW_HEIGHT_LARGE
 
     if (textContainerRef.current !== null && textRowHeight === undefined) {
       const availableHeight = textContainerRef.current!.offsetHeight;
+      const [rowHeight, rowOffset] = getRowHeight(spell.size);
       const newHeight =
-        Math.floor(availableHeight / TEXT_ROW_HEIGHT) * TEXT_ROW_HEIGHT;
+        Math.floor(availableHeight / rowHeight) * rowHeight - rowOffset;
       setTextRowHeight(newHeight);
     }
-  }, [iteration, spell.name, textRowHeight]);
+  }, [iteration, spell.name, spell.size, textRowHeight]);
 
   useEffect(() => {
     if (stickyText.current !== spell.text) {
@@ -80,9 +82,10 @@ export const SpellCard = ({
       // Hard far down the content is visible from the top of the content area.
       const containerReach = (spell.tailCardOffset || 0) + textRowHeight;
 
-      // containerReach increased by TEXT_ROW_HEIGHT due to extra empty line added to end of markdown
+      const [rowHeight, rowOffset] = getRowHeight(spell.size);
+      // containerReach increased by rowHeight due to extra empty line added to end of markdown
       reportOversizedCard(
-        contentHeight > containerReach + TEXT_ROW_HEIGHT
+        contentHeight > containerReach + rowHeight - rowOffset
           ? containerReach
           : undefined,
       );
@@ -138,7 +141,9 @@ export const SpellCard = ({
           }}
         >
           <div
-            className={styles.textFieldInner}
+            className={`${styles.textFieldInner} ${
+              isCompact ? styles.compact : ''
+            } ${isLarge ? styles.large : ''}`}
             ref={textContentsRef as RefObject<HTMLDivElement>}
             style={{ top: spell.tailCardOffset ? -spell.tailCardOffset : 0 }}
           >
@@ -148,10 +153,7 @@ export const SpellCard = ({
               components={{
                 p: ({ children, ...props }) => {
                   return (
-                    <p
-                      {...props}
-                      style={{ marginBottom: isCompact ? '0.25rem' : '1em' }}
-                    >
+                    <p {...props} style={{ marginBottom: '1em' }}>
                       {children}
                     </p>
                   );
@@ -159,19 +161,25 @@ export const SpellCard = ({
                 table: ({ ...props }) => (
                   <table
                     {...props}
-                    className={`markdown-table ${isCompact ? 'compact' : ''}`}
+                    className={`markdown-table ${isCompact ? 'compact' : ''} ${
+                      isLarge ? 'large' : ''
+                    }`}
                   />
                 ),
                 th: ({ ...props }) => (
                   <th
                     {...props}
-                    className={`markdown-th ${isCompact ? 'compact' : ''}`}
+                    className={`markdown-th ${isCompact ? 'compact' : ''} ${
+                      isLarge ? 'large' : ''
+                    }`}
                   />
                 ),
                 td: ({ ...props }) => (
                   <td
                     {...props}
-                    className={`markdown-td ${isCompact ? 'compact' : ''}`}
+                    className={`markdown-td ${isCompact ? 'compact' : ''} ${
+                      isLarge ? 'large' : ''
+                    }`}
                   />
                 ),
               }}
@@ -223,3 +231,22 @@ const formatDamageDice = (text: string) => {
     (match) => `<span className="${styles.damageDice}">${match}</span>`,
   );
 };
+
+const TEXT_ROW_HEIGHT = 12;
+const TEXT_ROW_HEIGHT_COMPACT = 11;
+const TEXT_ROW_HEIGHT_LARGE = 13;
+const TEXT_ROW_HEIGHT_OFFSET = -2;
+const TEXT_ROW_HEIGHT_COMPACT_OFFSET = 0;
+const TEXT_ROW_HEIGHT_LARGE_OFFSET = 0;
+const getRowHeight = (size: SpellSize): [number, number] => [
+  size === SpellSize.compact
+    ? TEXT_ROW_HEIGHT_COMPACT
+    : size === SpellSize.large
+    ? TEXT_ROW_HEIGHT_LARGE
+    : TEXT_ROW_HEIGHT,
+  size === SpellSize.compact
+    ? TEXT_ROW_HEIGHT_COMPACT_OFFSET
+    : size === SpellSize.large
+    ? TEXT_ROW_HEIGHT_LARGE_OFFSET
+    : TEXT_ROW_HEIGHT_OFFSET,
+];

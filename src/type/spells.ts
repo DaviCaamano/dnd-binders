@@ -1,6 +1,6 @@
 export type Spell = {
   tailCardOffset?: number;
-  isCompact: boolean;
+  size: SpellSize;
   castingTime?: string;
   components?: string;
   duration?: string;
@@ -14,6 +14,11 @@ export type Spell = {
   text: string;
 };
 
+export enum SpellSize {
+  compact = 'compact',
+  normal = 'normal',
+  'large' = 'large',
+}
 export enum SpellKeys {
   'Casting Time' = 'castingTime',
   'Range' = 'range',

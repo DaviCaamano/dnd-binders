@@ -112,7 +112,7 @@ A creature that has Truesight can read the hidden message.
 
 **Classes:** Bard, Warlock, Wizard
 
-#### Imprisonment
+#### ++Imprisonment
 *Level 9 Abjuration*
 ___
 - **Casting Time:** 1 minute
@@ -136,7 +136,7 @@ A *Dispel Magic* spell can end the spell only if it is cast with a level 9 spell
 
 **Classes:** Warlock, Wizard
 
-#### Infernal Calling
+#### ++Infernal Calling
 *Level 5 Conjuration*
 ___
 - **Casting Time:** 1 minute
@@ -678,7 +678,7 @@ The air quivers around up to five creatures of your choice that you can see with
 
 **Classes:** Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
 
-#### Scrying
+#### --Scrying
 *Level 5 Divination*
 ___
 - **Casting Time:** 10 minutes
@@ -686,7 +686,7 @@ ___
 - **Components:** V, S, M (a focus worth 1,000+ GP, such as a crystal ball, mirror, or water-filled font)
 - **Duration:** Concentration, up to 10 minutes
 ---
-You can see and hear a creature you choose that is on the same plane of existence as you. The target makes a Wisdom saving throw, which is modified (see the tables below) by how well you know the target and the sort of physical connection you have to it. The target doesn't know what it is making the save against, only that it feels uneasy.
+You can see/hear a creature you choose that is on the same plane of existence. The target makes a Wisdom save, modified (see tables) by how well you know the target and the sort of physical connection you have to it. The target doesn't know what it is making the save against, only that it feels uneasy.
 
 | Your Knowledge of the Target Is... | Save Modifier |
 |------------------------------------|:-------------:|
@@ -702,11 +702,9 @@ You can see and hear a creature you choose that is on the same plane of existenc
 
 On a successful save, the target isn't affected, and you can't use this spell on it again for 24 hours.
 
-On a failed save, the spell creates an Invisible, intangible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. If something can see the sensor, it appears as a luminous orb about the size of your fist.
+On a failed save, the spell creates an Invisible, intangible sensor within 10 feet of the target. You can see/hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. If something can see the sensor, it appears as a luminous orb about the size of your fist.
 
-Instead of targeting a creature, you can target a location you have seen. When you do so, the sensor appears at that location and doesn't move.
-
-**Classes:** Bard, Cleric, Druid, Warlock, Wizard
+Instead of targeting a creature, you can target a location you have seen, making the sensor appears at that location and doesn't move.
 
 #### Shadow Blade
 *Level 2 Illusion*
@@ -751,7 +749,7 @@ When a creature moves into the spell's area for the first time on a turn or star
 
 **Classes:** Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
 
-#### Soul Cage
+#### ++Soul Cage
 *Level 6 Necromancy*
 ___
 - **Casting Time:** Reaction, which you take when a humanoid you can see within 60 feet of you dies

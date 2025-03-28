@@ -1,0 +1,50 @@
+#### --Summon Lesser Demons
+*Level 3 Conjuration*
+___
+- **Casting Time:** Action
+- **Range:** 60 feet
+- **Components:** V, S, M (a vial of blood from a humanoid killed within the past 24 hours)
+- **Duration:** Concentration, up to 1 hour
+---
+You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.
+
+|  d6 | Demons Summoned                               |
+|:---:|-----------------------------------------------|
+| 1-2 | Two demons of challenge rating 1 or lower     |
+| 3-4 | Four demons of challenge rating 1/2 or lower  |
+| 5-6 | Eight demons of challenge rating 1/4 or lower |
+
+The DM chooses the demons, such as **manes** or **dretches**, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends.
+
+The demons are hostile to all creatures, including you. Roll initiative for the summoned demons as a group, which has its own turns. The demons pursue and attack the nearest non-demons to the best of their ability.
+
+As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demons can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends.
+***At Higher Levels.*** When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons.
+
+#### --Scrying
+*Level 5 Divination*
+___
+- **Casting Time:** 10 minutes
+- **Range:** Self
+- **Components:** V, S, M (a focus worth 1,000+ GP, such as a crystal ball, mirror, or water-filled font)
+- **Duration:** Concentration, up to 10 minutes
+---
+You can see/hear a creature you choose that is on the same plane of existence. The target makes a Wisdom save, modified (see tables) by how well you know the target and the sort of physical connection you have to it. The target doesn't know what it is making the save against, only that it feels uneasy.
+
+| Your Knowledge of the Target Is... | Save Modifier |
+|------------------------------------|:-------------:|
+| Secondhand (heard of the target)   |       +5      |
+| Firsthand (met the target)         |       +0      |
+| Extensive (know the target well)   |       -5      |
+
+| You Have the Target's...                | Save Modifier |
+|-----------------------------------------|:-------------:|
+| Picture or other likeness               |       -2      |
+| Garment or other possession             |       -4      |
+| Body part, lock of hair, or bit of nail |      -10      |
+
+On a successful save, the target isn't affected, and you can't use this spell on it again for 24 hours.
+
+On a failed save, the spell creates an Invisible, intangible sensor within 10 feet of the target. You can see/hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. If something can see the sensor, it appears as a luminous orb about the size of your fist.
+
+Instead of targeting a creature, you can target a location you have seen, making the sensor appears at that location and doesn't move.

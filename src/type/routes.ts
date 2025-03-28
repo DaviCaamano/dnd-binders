@@ -3,4 +3,5 @@ export enum Routes {
   paladin = "paladin",
   warlock = "warlock",
   extra = "extra",
+  reprint = "reprint",
 }

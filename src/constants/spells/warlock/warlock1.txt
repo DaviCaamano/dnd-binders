@@ -51,7 +51,7 @@ Invoking Hadar, you cause tendrils to erupt from yourself. Each creature in a 10
 
 **Classes:** Warlock
 
-#### Astral Projection
+#### --Astral Projection
 *Level 9 Necromancy*
 ___
 - **Casting Time:** 1 hour
@@ -304,7 +304,7 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 
 **Classes:** Artificer, Druid, Druid, Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
 
-#### Create Undead
+#### --Create Undead
 *Level 6 Necromancy*
 ___
 - **Casting Time:** 1 minute

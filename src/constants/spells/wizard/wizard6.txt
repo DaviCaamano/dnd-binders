@@ -1,5 +1,5 @@
 
-#### True Polymorph
+#### ++True Polymorph
 *Level 9 Transmutation*
 ___
 - **Casting Time:** Action
@@ -163,7 +163,7 @@ A creature that ends its turn in the wall's area takes 4d8 radiant damage.
 Until the spell ends, you can use an action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes 4d8 radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends.
 ***At Higher Levels.*** When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.
 
-**Classes:** Sorcerer, Sorcerer, Warlock, Warlock, Wizard, Wizard
+**Classes:** Sorcerer, Sorcerer, Warlock, Warlock, Wizard
 
 #### Wall of Sand
 *Level 3 Evocation*
@@ -177,7 +177,7 @@ You create a wall of swirling sand on the ground at a point you can see within r
 
 **Classes:** Wizard, Wizard
 
-#### Wall of Stone
+#### --Wall of Stone
 *Level 5 Evocation*
 ___
 - **Casting Time:** Action
@@ -261,7 +261,7 @@ This spell grants up to ten willing creatures of your choice within range the ab
 
 **Classes:** Artificer, Druid, Ranger, Sorcerer, Wizard
 
-#### Watery Sphere
+#### --Watery Sphere
 *Level 4 Conjuration*
 ___
 - **Casting Time:** Action
@@ -331,7 +331,7 @@ A restrained creature can use an action to make a Strength or Dexterity check ag
 
 **Classes:** Druid, Druid, Sorcerer, Sorcerer, Wizard, Wizard
 
-#### Wish
+#### ++Wish
 *Level 9 Conjuration*
 ___
 - **Casting Time:** Action

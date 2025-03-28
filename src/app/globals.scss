@@ -18,3 +18,21 @@ body.print-page {
   margin: 0;
   width: 8.5in;
 }
+
+.markdown-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+.markdown-th,
+.markdown-td {
+  border: 1px solid #ddd;
+  padding: 4px 2px !important;
+}
+
+.markdown-th {
+  background-color: #f2f2f2;
+  text-align: left;
+}

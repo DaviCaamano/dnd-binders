@@ -54,6 +54,7 @@ export const useLargeCards = (spellData: Spell[]) => {
         tailCardOffset: reported.current.largeCard[cardIndex],
         name: card.name,
         text: card.text,
+        size: card.size
       });
 
       incrementLargeCards(cardIndex);

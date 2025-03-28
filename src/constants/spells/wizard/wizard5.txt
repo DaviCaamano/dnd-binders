@@ -175,7 +175,7 @@ A flurry of magic snowballs erupts from a point you choose within range. Each cr
 
 **Classes:** Sorcerer, Sorcerer, Wizard, Wizard
 
-#### Soul Cage
+#### ++Soul Cage
 *Level 6 Necromancy*
 ___
 - **Casting Time:** Reaction, which you take when a humanoid you can see within 60 feet of you dies
@@ -436,7 +436,7 @@ The creature is an ally to you and your allies. In combat, the creature shares y
 
 **Classes:** Warlock, Wizard
 
-#### Summon Greater Demon
+#### --Summon Greater Demon
 *Level 4 Conjuration*
 ___
 - **Casting Time:** Action
@@ -444,18 +444,16 @@ ___
 - **Components:** V, S, M (a vial of blood from a humanoid killed within the past 24 hours)
 - **Duration:** Concentration, up to 1 hour
 ---
-You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon's type, which must be one of challenge rating 5 or lower, such as a **shadow demon** or a **barlgura**. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.
+You utter foul words, summoning one demon from the Abyss. You choose the demon's type, which must be one of challenge rating 5 or lower, such as a **shadow demon**/**barlgura**. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.
 
-Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.
+The demon has its own turns and initiative. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.
 
 At the end of each of the demon's turns, it makes a Charisma saving throw. The demon has disadvantage on this saving throw if you say its true name. On a failed save, the demon continues to obey you. On a successful save, your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest non-demons to the best of its ability. If you stop concentrating on the spell before it reaches its full duration, an uncontrolled demon doesn't disappear for 1d6 rounds if it still has hit points.
 
 As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and it can't target anyone within it. Using the material component in this manner consumes it when the spell ends.
 ***At Higher Levels.*** When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th.
 
-**Classes:** Warlock, Warlock, Wizard, Wizard
-
-#### Summon Lesser Demons
+#### --Summon Lesser Demons
 *Level 3 Conjuration*
 ___
 - **Casting Time:** Action
@@ -477,8 +475,6 @@ The demons are hostile to all creatures, including you. Roll initiative for the 
 
 As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demons can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends.
 ***At Higher Levels.*** When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons.
-
-**Classes:** Warlock, Warlock, Wizard, Wizard
 
 #### Summon Shadowspawn
 *Level 3 Conjuration*
@@ -674,7 +670,7 @@ Uttering an incantation, you draw on the magic of the Lower Planes or Upper Plan
 - All your weapon attacks are magical, and when you make a weapon attack, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls.
 - You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that lets you attack more than once when you take the Attack action on your turn.
 
-#### Telekinesis
+#### --Telekinesis
 *Level 5 Transmutation*
 ___
 - **Casting Time:** Action
@@ -708,7 +704,7 @@ Until the spell ends, you and the target can instantly share words, images, soun
 
 **Classes:** Wizard
 
-#### Teleport
+#### --Teleport
 *Level 7 Conjuration*
 ___
 - **Casting Time:** Action
@@ -915,7 +911,7 @@ This spell grants the creature you touch the ability to understand any spoken or
 
 **Classes:** Bard, Cleric, Sorcerer, Warlock, Wizard
 
-#### Transmute Rock
+#### --Transmute Rock
 *Level 5 Transmutation*
 ___
 - **Casting Time:** Action
@@ -932,5 +928,3 @@ The ground in the spell's area becomes muddy enough that creatures can sink into
 If you cast the spell on a ceiling, the mud falls. Any creature under the mud when it falls must make a Dexterity saving throw. A creature takes 4d8 bludgeoning damage on a failed save, or half as much damage on a successful one.
 
 ***Transmute Mud to Rock.*** Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spell's duration. Any creature in the mud when it transforms must make a Dexterity saving throw. On a successful save, a creature is shunted safely to the surface in an unoccupied space. On a failed save, a creature becomes restrained by the rock. A restrained creature, or another creature within reach, can use an action to try to break the rock by succeeding on a DC 20 Strength check or by dealing damage to it. The rock has AC 15 and 25 hit points, and it is immune to poison and psychic damage.
-
-**Classes:** Artificer, Druid, Druid, Wizard, Wizard

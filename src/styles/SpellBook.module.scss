@@ -114,6 +114,10 @@
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1em;
+
+    &.large {
+      margin-bottom: 2em;
+    }
   }
 
   .markdown-th,
@@ -195,7 +199,7 @@
   font-family: Consolas, Monaco, monospace; /* Use Consolas and Monaco monospaced fonts */
 }
 
-.textFieldInner {
+.textFieldInner:not(.compact):not(.large) {
   padding: 0;
   margin: 0;
   position: absolute;
@@ -228,6 +232,72 @@
   }
 }
 
+.textFieldInner.compact {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 11px;
+
+  * {
+    font-size: 11px;
+    line-height: 11px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    * {
+      font-size: 11px;
+      line-height: 11px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+
+      * {
+        font-size: 11px;
+        line-height: 11px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+}
+
+.textFieldInner.large {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 13px;
+
+  * {
+    font-size: 13px;
+    line-height: 13px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    * {
+      font-size: 13px;
+      line-height: 13px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+
+      * {
+        font-size: 13px;
+        line-height: 13px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+}
+
 .cardNumberParenthese {
   font-size: 16px;
   font-weight: bold;
@@ -238,23 +308,6 @@
 .cardNo {
   font-size: 16px;
   font-weight: bold;
-}
-
-.markdown-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1em;
-}
-
-.markdown-th,
-.markdown-td {
-  border: 1px solid #ddd;
-  padding: 2px;
-}
-
-.markdown-th {
-  background-color: #f2f2f2;
-  text-align: left;
 }
 
 .damageDice {

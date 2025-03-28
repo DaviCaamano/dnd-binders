@@ -122,8 +122,6 @@ You perform a special religious ceremony that is infused with magic. When you ca
 
 ***Wedding.*** You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed.
 
-**Classes:** Cleric, Cleric, Paladin, Paladin
-
 #### Circle of Power
 *Level 5 Abjuration*
 ___
@@ -357,7 +355,7 @@ A nonmagical weapon you touch becomes a magic weapon. Choose one of the followin
 
 **Classes:** Artificer, Druid, Paladin, Ranger
 
-#### Find Greater Steed
+#### --Find Greater Steed
 *Level 4 Conjuration*
 ___
 - **Casting Time:** 10 minutes
@@ -374,12 +372,9 @@ The mount disappears temporarily when it drops to 0 hit points or when you dismi
 You can't have more than one mount bonded by this spell or *find steed* at the same time. As an action, you can release a mount from its bond, causing it to disappear permanently.
 
 Whenever the mount disappears, it leaves behind any objects it was wearing or carrying.
-  &nbsp;
 
 > ##### Dragonnel Steeds
->
 >With the DM's permission, a paladin can summon a spirit in the form of a **dragonnel** using the find greater steed spell, which appears in *Xanathar's Guide to Everything*.
->
 
 **Classes:** Paladin, Paladin
 

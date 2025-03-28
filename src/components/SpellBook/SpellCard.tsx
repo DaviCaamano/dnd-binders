@@ -1,12 +1,12 @@
-import { CSSProperties, RefObject, useEffect, useRef, useState } from "react";
-import { Spell } from "@type/spells";
-import { getSchoolColor } from "@utils/schoolColors";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import remarkBreaks from "remark-breaks";
-import rehypeRaw from "rehype-raw";
-import { SpellCardBackground } from "@components/SpellBook/SpellCardBackground";
-import styles from "../../styles/SpellBook.module.scss";
+import { CSSProperties, RefObject, useEffect, useRef, useState } from 'react';
+import { Spell } from '@type/spells';
+import { getSchoolColor } from '@utils/schoolColors';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkBreaks from 'remark-breaks';
+import rehypeRaw from 'rehype-raw';
+import { SpellCardBackground } from '@components/SpellBook/SpellCardBackground';
+import styles from '../../styles/SpellBook.module.scss';
 
 const TEXT_ROW_HEIGHT = 12;
 interface CardProps {
@@ -39,6 +39,7 @@ export const SpellCard = ({
   const textContainerRef = useRef<HTMLDivElement | null>(null);
   const textContentsRef = useRef<HTMLDivElement | null>(null);
 
+  const isCompact = spell.isCompact;
   useEffect(() => {
     // if the iteration has changed, reset the component state
     if (stickyIteration.current !== iteration) {
@@ -105,32 +106,34 @@ export const SpellCard = ({
       <div className="flex h-full flex-col">
         <h2 className={styles.spellName}>
           <span>{spell?.name}</span>
-          {!omitCounter && <CardNumber cardNumber={cardNumber} totalCards={totalCards} />}
+          {!omitCounter && (
+            <CardNumber cardNumber={cardNumber} totalCards={totalCards} />
+          )}
         </h2>
         <div className={styles.fieldGrid}>
           <div>
-            <Row name={"Level"} value={spell?.level} />
-            <Row name={"Casting Time"} value={spell?.castingTime} />
-            <Row name={"Range"} value={spell?.range} />
+            <Row name={'Level'} value={spell?.level} />
+            <Row name={'Casting Time'} value={spell?.castingTime} />
+            <Row name={'Range'} value={spell?.range} />
           </div>
           <div>
-            <Row name={"Duration"} value={spell?.duration} />
+            <Row name={'Duration'} value={spell?.duration} />
             <Row
-              name={"School"}
+              name={'School'}
               value={spell?.school}
               style={{
-                fontWeight: "bold",
+                fontWeight: 'bold',
                 color: getSchoolColor(spell?.school),
               }}
             />
           </div>
         </div>
-        <Row name={"Components"} value={spell?.components} />
+        <Row name={'Components'} value={spell?.components} />
         <div
           className={`${styles.textField} overflow-hidden`}
           ref={textContainerRef as RefObject<HTMLDivElement>}
           style={{
-            flex: textRowHeight ? "unset" : 1,
+            flex: textRowHeight ? 'unset' : 1,
             height: textRowHeight,
           }}
         >
@@ -145,21 +148,37 @@ export const SpellCard = ({
               components={{
                 p: ({ children, ...props }) => {
                   return (
-                    <p {...props} style={{ marginBottom: "1em" }}>
+                    <p
+                      {...props}
+                      style={{ marginBottom: isCompact ? '0.25rem' : '1em' }}
+                    >
                       {children}
                     </p>
                   );
                 },
                 table: ({ ...props }) => (
-                  <table {...props} className="markdown-table" />
+                  <table
+                    {...props}
+                    className={`markdown-table ${isCompact ? 'compact' : ''}`}
+                  />
                 ),
-                th: ({ ...props }) => <th {...props} className="markdown-th" />,
-                td: ({ ...props }) => <td {...props} className="markdown-td" />,
+                th: ({ ...props }) => (
+                  <th
+                    {...props}
+                    className={`markdown-th ${isCompact ? 'compact' : ''}`}
+                  />
+                ),
+                td: ({ ...props }) => (
+                  <td
+                    {...props}
+                    className={`markdown-td ${isCompact ? 'compact' : ''}`}
+                  />
+                ),
               }}
             >
               {/* add empty lines after paragraphs
               (but not after table as it breaks the table */}
-              {formatDamageDice(text).replace(/(?<!\|.*)\n(?!.*\|)/g, "\n\n")}
+              {formatDamageDice(text).replace(/(?<!\|.*)\n(?!.*\|)/g, '\n\n')}
             </ReactMarkdown>
           </div>
         </div>
@@ -188,12 +207,12 @@ interface CardNumberProps {
   totalCards: number | undefined;
 }
 const CardNumber = ({ cardNumber, totalCards }: CardNumberProps) =>
-  typeof totalCards === "number" &&
-  typeof cardNumber === "number" &&
+  typeof totalCards === 'number' &&
+  typeof cardNumber === 'number' &&
   totalCards > 1 ? (
     <span className="ml-2">
-      <span className={styles.cardNumberParenthese}>(</span>{" "}
-      <span className={styles.cardNo}>{cardNumber + 1}</span>{" "}
+      <span className={styles.cardNumberParenthese}>(</span>{' '}
+      <span className={styles.cardNo}>{cardNumber + 1}</span>{' '}
       <span className={styles.cardNumberParenthese}>)</span>
     </span>
   ) : null;

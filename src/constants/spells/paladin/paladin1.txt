@@ -100,7 +100,7 @@ The target hit by the strike takes an extra 3d8 Radiant damage from the attack, 
 
 **Classes:** Paladin
 
-#### Ceremony
+#### --Ceremony
 *Level 1 Abjuration*
 ___
 - **Casting Time:** 1 hour or Ritual

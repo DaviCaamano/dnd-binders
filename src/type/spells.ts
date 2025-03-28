@@ -1,5 +1,6 @@
 export type Spell = {
   tailCardOffset?: number;
+  isCompact: boolean;
   castingTime?: string;
   components?: string;
   duration?: string;

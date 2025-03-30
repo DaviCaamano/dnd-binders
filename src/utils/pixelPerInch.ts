@@ -25,26 +25,40 @@ export const randomCardBGOffsetRange = () => {
 
 export const generateRandomSpellCardBackgrounds = (
   cardCount: number,
-): [number, number][] => {
-  const bgs: [number, number][] = [];
+): [number, number, number, number][] => {
+  const bgs: [number, number, number, number][] = [];
   const [cardHeight, backgroundOffsetRange] = randomCardBGOffsetRange();
   //between 0 and 1 which background index to use
-  let lastBgLeft = undefined;
+  let lastBgTop = undefined;
   let lastBgRight = undefined;
+  let lastBgBottom = undefined;
+  let lastBgLeft = undefined;
   for (let i = 0; i < cardCount; i++) {
-    const leftOffset = generateRandomSpellCardBackgroundOffset(
-      lastBgLeft,
+    const topOffset = generateRandomSpellCardBackgroundOffset(
+      lastBgTop,
       backgroundOffsetRange,
       cardHeight,
     );
-    lastBgLeft = leftOffset;
+    lastBgTop = topOffset;
     const rightOffset = generateRandomSpellCardBackgroundOffset(
       lastBgRight,
       backgroundOffsetRange,
       cardHeight,
     );
     lastBgRight = rightOffset;
-    bgs.push([leftOffset, rightOffset]);
+    const bottomOffset = generateRandomSpellCardBackgroundOffset(
+      lastBgBottom,
+      backgroundOffsetRange,
+      cardHeight,
+    );
+    lastBgBottom = bottomOffset;
+    const leftOffset = generateRandomSpellCardBackgroundOffset(
+      lastBgLeft,
+      backgroundOffsetRange,
+      cardHeight,
+    );
+    lastBgLeft = leftOffset;
+    bgs.push([topOffset,  rightOffset, bottomOffset, leftOffset]);
   }
   return bgs;
 };

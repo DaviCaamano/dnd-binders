@@ -1,25 +1,33 @@
-import { useRef, useState } from "react";
-import { Spell } from "@type/spells";
+import { useRef, useState } from 'react';
+import { Spell } from '@type/spells';
+import { SpellData } from '@hooks/useGetSpellData';
+import { getFeatureBackground } from '@utils/getFeatureBackground';
 const { log } = console;
+
 interface OversizedCard {
   count: number;
   largeCard: Record<number, number>;
   alreadyReported: number[];
 }
-export const useLargeCards = (spellData: Spell[]) => {
+
+export const useLargeCards = (spellData: SpellData[]) => {
   const iteration = useRef<number>(0);
   const reported = useRef<OversizedCard>({
     count: 0,
     largeCard: {},
     alreadyReported: [],
   });
-  const [spells, setSpells] = useState<Spell[]>([]);
+  const [spells, setSpells] = useState<SpellData[]>([]);
 
   const generateTailCards = () => {
     let largeCardsIndexes = Object.keys(reported.current.largeCard)
       .map(Number)
       .sort((a, b) => b - a);
-    const newSpells: Spell[] = [...(spells.length ? spells : spellData)];
+    const newSpells: Spell[] = [
+      ...(spells.length
+        ? spells.map(({ spell }) => spell)
+        : spellData.map(({ spell }) => spell)),
+    ];
 
     // increment all indexes after the inserted card
     const incrementLargeCards = (incrementedIndex: number) => {
@@ -54,7 +62,7 @@ export const useLargeCards = (spellData: Spell[]) => {
         tailCardOffset: reported.current.largeCard[cardIndex],
         name: card.name,
         text: card.text,
-        size: card.size
+        size: card.size,
       });
 
       incrementLargeCards(cardIndex);
@@ -66,13 +74,13 @@ export const useLargeCards = (spellData: Spell[]) => {
     };
 
     if (newCardsCreated === 0) {
-      log("Card Duplication Complete:");
+      log('Card Duplication Complete:');
       const tripplets = getDuplicates(
         newSpells.map((spell) => spell.name),
         3,
       );
       if (tripplets.length) {
-        log("3 Cards:", tripplets);
+        log('3 Cards:', tripplets);
       }
 
       const quadruplets = getDuplicates(
@@ -80,7 +88,7 @@ export const useLargeCards = (spellData: Spell[]) => {
         4,
       );
       if (quadruplets.length) {
-        log("4 cards:", quadruplets);
+        log('4 cards:', quadruplets);
       }
       const miniBooks = getDuplicates(
         newSpells.map((spell) => spell.name),
@@ -88,12 +96,17 @@ export const useLargeCards = (spellData: Spell[]) => {
         true,
       );
       if (miniBooks.length) {
-        log("Mini-books:", miniBooks);
+        log('Mini-books:', miniBooks);
       }
     } else {
       iteration.current += 1;
-
-      setSpells(newSpells);
+      const backgrounds = getFeatureBackground(newSpells.length);
+      setSpells(
+        newSpells.map((spell, index) => ({
+          spell,
+          background: backgrounds[index],
+        })),
+      );
     }
   };
 

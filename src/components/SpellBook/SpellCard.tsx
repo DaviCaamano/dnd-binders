@@ -1,27 +1,25 @@
 import { CSSProperties, RefObject, useEffect, useRef, useState } from 'react';
-import { Spell, SpellSize } from '@type/spells';
+import { SpellSize } from '@type/spells';
 import { getSchoolColor } from '@utils/schoolColors';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkBreaks from 'remark-breaks';
 import rehypeRaw from 'rehype-raw';
-import { SpellCardBackground } from '@components/SpellBook/SpellCardBackground';
 import styles from '../../styles/SpellBook.module.scss';
+import { SpellData } from '@hooks/useGetSpellData';
 
 interface CardProps {
   cardNo: [number, number] | undefined;
   iteration: number;
   reportOversizedCard: (offset: number | undefined) => void;
-  spell: Spell;
-  backgroundOffsets: [number, number];
+  spellData: SpellData;
   omitCounter?: boolean;
 }
 export const SpellCard = ({
   cardNo,
   iteration,
   reportOversizedCard,
-  spell,
-  backgroundOffsets,
+  spellData: { spell, background },
   omitCounter,
 }: CardProps) => {
   const cardNumber = cardNo?.[0];
@@ -104,7 +102,15 @@ export const SpellCard = ({
     <div
       className={`${styles.card} bg-wite border rounded-lg p-2 overflow-hidden`}
     >
-      <SpellCardBackground offSets={backgroundOffsets} />
+      <div
+        className={`center ${styles.spellCardBackgroundPanel}`}
+        style={{
+          backgroundImage: `url("${background}")`,
+          opacity: 0.33,
+          zIndex: -3,
+          boxShadow: 'inset 0 0 10px rgba(0, 0, 0, 1)',
+        }}
+      />
       {/* Spell Name and Card Number */}
       <div className="flex h-full flex-col">
         <h2 className={styles.spellName}>
@@ -115,7 +121,9 @@ export const SpellCard = ({
         </h2>
         <div className={styles.fieldGrid}>
           <div>
-            <Row name={'Level'} value={spell?.level} />
+            <p className={styles.field}>
+              <strong>Level {spell?.level}</strong>
+            </p>
             <Row name={'Casting Time'} value={spell?.castingTime} />
             <Row name={'Range'} value={spell?.range} />
           </div>
@@ -181,6 +189,14 @@ export const SpellCard = ({
                       isLarge ? 'large' : ''
                     }`}
                   />
+                ),
+                strong: ({ children, ...props }) => (
+                  <strong
+                    {...props}
+                    style={{ color: '#4d1f01', fontWeight: 'bolder' }}
+                  >
+                    {children}
+                  </strong>
                 ),
               }}
             >

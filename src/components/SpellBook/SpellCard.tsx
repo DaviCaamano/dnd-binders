@@ -121,9 +121,15 @@ export const SpellCard = ({
         </h2>
         <div className={styles.fieldGrid}>
           <div>
-            <p className={styles.field}>
-              <strong>Level {spell?.level}</strong>
-            </p>
+            {spell?.level && (
+              <p className={styles.field}>
+                <strong>
+                  {spell?.level.toLowerCase() === 'cantrip'
+                    ? 'Cantrip'
+                    : `Level ${spell?.level}`}
+                </strong>
+              </p>
+            )}
             <Row name={'Casting Time'} value={spell?.castingTime} />
             <Row name={'Range'} value={spell?.range} />
           </div>
@@ -235,9 +241,9 @@ const CardNumber = ({ cardNumber, totalCards }: CardNumberProps) =>
   typeof cardNumber === 'number' &&
   totalCards > 1 ? (
     <span className="ml-2">
-      <span className={styles.cardNumberParenthese}>(</span>{' '}
+      <span className={styles.cardNumberParentheses}>(</span>{' '}
       <span className={styles.cardNo}>{cardNumber + 1}</span>{' '}
-      <span className={styles.cardNumberParenthese}>)</span>
+      <span className={styles.cardNumberParentheses}>)</span>
     </span>
   ) : null;
 
@@ -248,12 +254,12 @@ const formatDamageDice = (text: string) => {
   );
 };
 
-const TEXT_ROW_HEIGHT = 12;
-const TEXT_ROW_HEIGHT_COMPACT = 11;
-const TEXT_ROW_HEIGHT_LARGE = 13;
-const TEXT_ROW_HEIGHT_OFFSET = -2;
+const TEXT_ROW_HEIGHT = 11;
+const TEXT_ROW_HEIGHT_COMPACT = 10;
+const TEXT_ROW_HEIGHT_LARGE = 12;
+const TEXT_ROW_HEIGHT_OFFSET = 0;
 const TEXT_ROW_HEIGHT_COMPACT_OFFSET = 0;
-const TEXT_ROW_HEIGHT_LARGE_OFFSET = 0;
+const TEXT_ROW_HEIGHT_LARGE_OFFSET = -1;
 const getRowHeight = (size: SpellSize): [number, number] => [
   size === SpellSize.compact
     ? TEXT_ROW_HEIGHT_COMPACT

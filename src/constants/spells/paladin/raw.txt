@@ -11,7 +11,7 @@ You bless up to three creatures within range. Whenever a target makes an attack 
 
 **Classes:** Cleric, Paladin
 
-#### --Ceremony
+#### Ceremony
 *Level 1 Abjuration*
 ___
 - **Casting Time:** 1 hour or Ritual
@@ -32,6 +32,8 @@ You perform a special religious ceremony that is infused with magic. When you ca
 ***Funeral Rite.*** You touch one corpse, and for the next 7 days, the target can't become undead by any means short of a *wish* spell.
 
 ***Wedding.*** You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed.
+
+**Classes:** Cleric, Cleric, Paladin, Paladin
 
 #### Command
 *Level 1 Enchantment*
@@ -121,7 +123,7 @@ The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a th
 
 **Classes:** Cleric, Druid, Paladin, Ranger
 
-#### ++Divine Favor
+#### Divine Favor
 *Level 1 Transmutation*
 ___
 - **Casting Time:** Bonus action
@@ -171,7 +173,7 @@ Until the spell ends, one willing creature you touch is protected against creatu
 
 **Classes:** Cleric, Druid, Paladin, Warlock, Wizard
 
-#### ++Purify Food and Drink
+#### Purify Food and Drink
 *Level 1 Transmutation*
 ___
 - **Casting Time:** Action or Ritual
@@ -196,7 +198,7 @@ As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the
 
 **Classes:** Paladin
 
-#### ++Shield of Faith
+#### Shield of Faith
 *Level 1 Abjuration*
 ___
 - **Casting Time:** Bonus action
@@ -280,7 +282,7 @@ The spell also effectively extends the time limit on raising the target from the
 
 **Classes:** Cleric, Paladin, Wizard
 
-#### ++Lesser Restoration
+#### Lesser Restoration
 *Level 2 Abjuration*
 ___
 - **Casting Time:** Bonus action
@@ -334,7 +336,7 @@ Up to five creatures of your choice who remain within range for the spell's enti
 
 **Classes:** Cleric, Paladin
 
-#### ++Protection from Poison
+#### Protection from Poison
 *Level 2 Abjuration*
 ___
 - **Casting Time:** Action
@@ -387,7 +389,7 @@ An affected creature is aware of the spell and can avoid answering questions to 
 
 **Classes:** Bard, Cleric, Paladin
 
-#### Aura of Vitality
+#### ++Aura of Vitality
 *Level 3 Abjuration*
 ___
 - **Casting Time:** Action
@@ -412,7 +414,7 @@ The target hit by the strike takes an extra 3d8 Radiant damage from the attack, 
 
 **Classes:** Paladin
 
-#### ++Create Food and Water
+#### Create Food and Water
 *Level 3 Conjuration*
 ___
 - **Casting Time:** Action
@@ -424,7 +426,7 @@ You create 45 pounds of food and 30 gallons of fresh water on the ground or in c
 
 **Classes:** Artificer, Cleric, Paladin
 
-#### ++Crusader's Mantle
+#### Crusader's Mantle
 *Level 3 Evocation*
 ___
 - **Casting Time:** Action
@@ -494,10 +496,12 @@ Choose one or more of the following types of creatures: Celestials, Elementals, 
 - The creature has Disadvantage on attack rolls against targets within the Cylinder.
 - Targets within the Cylinder can't be possessed by or gain the Charmed or Frightened condition from the creature.
 
-Each time you cast this spell, you can cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the Cylinder & protecting targets outside it.
-***Using a Higher-Level Spell Slot.*** Duration increases by 1 hour for each spell slot level above 3.
+Each time you cast this spell, you can cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the Cylinder and protecting targets outside it.
+***Using a Higher-Level Spell Slot.*** The duration increases by 1 hour for each spell slot level above 3.
 
-#### ++Remove Curse
+**Classes:** Cleric, Paladin, Warlock, Wizard
+
+#### Remove Curse
 *Level 3 Abjuration*
 ___
 - **Casting Time:** Action
@@ -536,7 +540,7 @@ Until the spell ends, any attack you make deals 1d8 extra damage when you hit a 
 In addition, any creature of your choice that you can see that starts its turn within 10 feet of you has its speed reduced by 10 feet until the start of your next turn.
 ***At Higher Levels.*** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every two slot levels above 3rd.
 
-#### ++Aura of Life
+#### Aura of Life
 *Level 4 Abjuration*
 ___
 - **Casting Time:** Action
@@ -548,7 +552,7 @@ An aura radiates from you in a 30-foot Emanation for the duration. While in the 
 
 **Classes:** Cleric, Paladin
 
-#### ++Aura of Purity
+#### Aura of Purity
 *Level 4 Abjuration*
 ___
 - **Casting Time:** Action
@@ -589,7 +593,7 @@ If the spell is still in effect when the target is subjected to an effect that w
 
 **Classes:** Cleric, Paladin
 
-#### ++Find Greater Steed
+#### Find Greater Steed
 *Level 4 Conjuration*
 ___
 - **Casting Time:** 10 minutes

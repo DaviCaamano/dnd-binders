@@ -108,7 +108,7 @@ const spellBooks = [
   { label: 'Extra Spells', url: '/spellbook/extra' },
 ];
 
-const feats = { label: 'Feats', url: '/pdf/feats.pdf' };
+const feats = { label: 'Feats', url: 'https://mega.nz/file/I910SJjT#22vhGGK2LHxV5qdzcx2DopIzA_8kUH9RjLhc_0PDgK8' };
 
 const SectionBanner = ({ name }: { name: string }) => (
   <h2

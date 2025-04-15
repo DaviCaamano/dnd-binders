@@ -55,6 +55,7 @@ export const Guide = () => {
             <li key={index} style={{ marginBottom: '0.5rem' }}>
               <a
                 href={link.url}
+                download={'Feats.pdf'}
                 style={{
                   textDecoration: 'none',
                   color: '#81c390',

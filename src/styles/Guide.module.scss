@@ -1,0 +1,45 @@
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: Cinzel, serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px #000000;
+  padding-bottom: 0.5rem;
+}
+
+.item {
+  text-decoration: none;
+  color: #9cc2ec;
+  font-weight: bold;
+  text-transform: capitalize;
+
+  &.spells {
+    color: palegoldenrod;
+  }
+
+  &.other {
+    color: #893030;
+  }
+}
+
+.sectionBanner {
+  color: #fff;
+  font-family: Cinzel, serif;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px #000000;
+  border-bottom: 2px solid #8b0000;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}

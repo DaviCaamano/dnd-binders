@@ -1,46 +1,16 @@
 import { Player } from '@type/player';
+import styles from '@styles/Guide.module.scss';
 
 export const Guide = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        padding: '2rem',
-        fontFamily: 'Arial, sans-serif',
-        backgroundColor: '#000000',
-        minHeight: '100vh',
-        minWidth: '100vw',
-        margin: 0,
-      }}
-    >
-      <h1
-        style={{
-          marginBottom: '1rem',
-          color: '#fff',
-          fontFamily: 'Cinzel, serif',
-          fontSize: '3rem',
-          textShadow: '2px 2px 6px #000000',
-          paddingBottom: '0.5rem',
-        }}
-      >
-        {"Davi's D&D Player Guide"}
-      </h1>
+    <div className={styles.guide}>
+      <h1 className={styles.title}>{"Davi's D&D Player Guide"}</h1>
       <div style={{ marginBottom: '2rem', width: '100%' }}>
-        <SectionBanner name="Features" />
+        <SectionBanner name="Players" />
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           {features.map((link, index) => (
             <li key={index} style={{ marginBottom: '0.5rem' }}>
-              <a
-                href={link.url?.toLowerCase()}
-                style={{
-                  textDecoration: 'none',
-                  color: '#9cc2ec',
-                  fontWeight: 'bold',
-                  textTransform: 'capitalize',
-                }}
-              >
+              <a href={link.url?.toLowerCase()} className={styles.item}>
                 {link.label}
               </a>
             </li>
@@ -53,16 +23,7 @@ export const Guide = () => {
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           {spellBooks.map((link, index) => (
             <li key={index} style={{ marginBottom: '0.5rem' }}>
-              <a
-                href={link.url}
-                download={'Feats.pdf'}
-                style={{
-                  textDecoration: 'none',
-                  color: '#81c390',
-                  fontWeight: 'bold',
-                  textTransform: 'capitalize',
-                }}
-              >
+              <a href={link.url} className={`${styles.item} ${styles.spells}`}>
                 {link.label}
               </a>
             </li>
@@ -74,15 +35,7 @@ export const Guide = () => {
         <SectionBanner name="Other" />
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           <li>
-            <a
-              href={feats.url}
-              style={{
-                textDecoration: 'none',
-                color: '#ff6070',
-                fontWeight: 'bold',
-                textTransform: 'capitalize',
-              }}
-            >
+            <a href={feats.url} className={`${styles.item} ${styles.other}`}>
               {feats.label}
             </a>
           </li>
@@ -102,13 +55,16 @@ const features = [
 ];
 
 const spellBooks = [
-  { label: Player.demis + ' Spells', url: '/spellbook/paladin' },
-  { label: Player.nutmeg + ' Spells', url: '/spellbook/wizard' },
-  { label: Player.romynar + ' Spells', url: '/spellbook/warlock' },
+  { label: 'Paladin Spells', url: '/spellbook/paladin' },
+  { label: 'Warlock Spells', url: '/spellbook/warlock' },
+  { label: 'Wizard Spells', url: '/spellbook/wizard' },
   { label: 'Extra Spells', url: '/spellbook/extra' },
 ];
 
-const feats = { label: 'Feats', url: 'https://mega.nz/file/I910SJjT#22vhGGK2LHxV5qdzcx2DopIzA_8kUH9RjLhc_0PDgK8' };
+const feats = {
+  label: 'Feats (levels 1 - 4)',
+  url: 'https://coffee-viva-24.tiiny.site/',
+};
 
 const SectionBanner = ({ name }: { name: string }) => (
   <h2

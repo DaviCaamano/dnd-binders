@@ -1,4 +1,4 @@
-#### Dancing Lights
+#### ++Dancing Lights
 *Illusion Cantrip*
 ___
 - **Casting Time:** Action
@@ -12,7 +12,7 @@ As a Bonus Action, you can move the lights up to 60 feet to a space within range
 
 **Classes:** Artificer, Bard, Sorcerer, Wizard
 
-#### Dancing Lights
+#### ++Dancing Lights
 *Illusion Cantrip*
 ___
 - **Casting Time:** Action
@@ -26,7 +26,7 @@ As a Bonus Action, you can move the lights up to 60 feet to a space within range
 
 **Classes:** Artificer, Bard, Sorcerer, Wizard
 
-#### Fire Bolt
+#### ++Fire Bolt
 *Evocation Cantrip*
 ___
 - **Casting Time:** Action
@@ -39,7 +39,7 @@ You hurl a mote of fire at a creature or an object within range. Make a ranged s
 
 **Classes:** Artificer, Sorcerer, Wizard
 
-#### Guidance
+#### ++Guidance
 *Divination Cantrip*
 ___
 - **Casting Time:** Action
@@ -244,7 +244,7 @@ At the end of each of its turns and each time it takes damage, it makes another 
 
 **Classes:** Bard, Warlock, Wizard
 
-#### Detect Thoughts
+#### --Detect Thoughts
 *Level 2 Divination*
 ___
 - **Casting Time:** Action

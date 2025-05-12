@@ -3,8 +3,8 @@
 const acolyteBackgroundEntries = `
 # Background (Acolyte) Features
 
-### Feat: Magic Initiate
-#### Two Cantrips:
+### Feat: Magic Initiate 
+#### Two Cantrips: 
 You learn two cantrips of your choice from the Cleric, Druid or Wizard spell list (choose when you select this feat). Intelligence, Wisdom or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
         
 #### 1st-Level Spell:

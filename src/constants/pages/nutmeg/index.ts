@@ -3,6 +3,7 @@ import { wizardClassTable } from './wizard-class-table.page';
 import { nutmegBackground } from './nutmeg-background';
 import { nutmegSpecies } from './nutmeg-species';
 import { wizardLevel1 } from './wizard-page-1';
+import { wizardLevel2 } from '@constants/pages/nutmeg/wizard-page-2';
 
 const urls = [
   '/img/feature/nutmeg/1.png',
@@ -32,13 +33,20 @@ export const nutmegPages: Page[] = [
       url: urls[1],
     },
   },
-
   {
     sections: wizardLevel1,
     compact: true,
     img: {
       position: PageArtPosition.top,
       url: urls[0],
+    },
+  },
+  {
+    sections: wizardLevel2,
+    compact: true,
+    img: {
+      position: PageArtPosition.top,
+      url: urls[2],
     },
   },
 ];

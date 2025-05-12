@@ -1,5 +1,6 @@
 import { fighterPage1 } from './fighter-page-1';
 import { fighterPage2 } from './fighter-page-2';
+import { fighterPage3 } from './fighter-page-3';
 
 import { Page, PageArtPosition } from '@type/page';
 import { barabisBackground } from '@constants/pages/barabis/barabis-background.page';
@@ -42,6 +43,15 @@ export const barabisPages: Page[] = [
       url: urls[3],
       position: PageArtPosition.bottom,
       offset: 35,
+    },
+  },
+  {
+    sections: fighterPage3,
+    compact: false,
+    img: {
+      url: urls[1],
+      position: PageArtPosition.top,
+      offset: 0,
     },
   },
 ];

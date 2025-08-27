@@ -6,12 +6,14 @@ import { warlockClassTable } from './warlock-class-table.page';
 import { warlockLevel1 } from './warlock-page-1';
 import { warlockLevel2 } from './warlock-page-2';
 import { warlockInvocations } from './warlock-invocations.page';
+import { warlockLevel6 } from '@constants/pages/Romynar/warlock-page-3';
 
 const urls = [
   '/img/feature/romynar/1.png',
   '/img/feature/romynar/2.png',
   '/img/feature/romynar/3.png',
   '/img/feature/romynar/4.png',
+  '/img/feature/romynar/5.png',
 ];
 
 export const romynarPages: Page[] = [
@@ -49,6 +51,14 @@ export const romynarPages: Page[] = [
     img: {
       position: PageArtPosition.top,
       url: urls[3],
+    },
+  },
+  {
+    sections: warlockLevel6,
+    compact: false,
+    img: {
+      position: PageArtPosition.bottom,
+      url: urls[4],
     },
   },
   ...warlockInvocations.map((section: string[]) => ({

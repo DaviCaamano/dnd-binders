@@ -4,7 +4,8 @@ import { blueBackground } from './blue-background.page';
 import { monkPage1 } from './monk-page-1';
 import { monkPage2 } from './monk-page-2';
 import { monkPage3 } from './monk-page-3';
-import { monkPage4 } from '@constants/pages/blue/monk-page-4';
+import { monkPage4 } from './monk-page-4';
+import { monkPage5 } from './monk-page-5';
 
 const urls = [
   '/img/feature/blue/1.png',
@@ -12,6 +13,7 @@ const urls = [
   '/img/feature/blue/3.png',
   '/img/feature/blue/4.png',
   '/img/feature/blue/5.png',
+  '/img/feature/blue/6.png',
 ];
 
 export const bluePages: Page[] = [
@@ -61,6 +63,15 @@ export const bluePages: Page[] = [
     img: {
       position: PageArtPosition.bottom,
       url: urls[4],
+      offset: 0,
+    },
+  },
+  {
+    sections: monkPage5,
+    compact: true,
+    img: {
+      position: PageArtPosition.top,
+      url: urls[5],
       offset: 0,
     },
   },

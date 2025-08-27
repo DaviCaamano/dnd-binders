@@ -5,12 +5,14 @@ import { fighterPage3 } from './fighter-page-3';
 import { Page, PageArtPosition } from '@type/page';
 import { barabisBackground } from '@constants/pages/barabis/barabis-background.page';
 import { fighterClassTable } from '@constants/pages/barabis/fighter-class-table.page';
+import { fighterPage4 } from '@constants/pages/barabis/fighter-page-4';
 
 const urls = [
   '/img/feature/barabis/1.png',
   '/img/feature/barabis/2.png',
   '/img/feature/barabis/3.png',
   '/img/feature/barabis/4.png',
+  '/img/feature/barabis/5.png',
 ];
 
 export const barabisPages: Page[] = [
@@ -51,6 +53,15 @@ export const barabisPages: Page[] = [
     img: {
       url: urls[1],
       position: PageArtPosition.top,
+      offset: 0,
+    },
+  },
+  {
+    sections: fighterPage4,
+    compact: false,
+    img: {
+      url: urls[4],
+      position: PageArtPosition.bottom,
       offset: 0,
     },
   },

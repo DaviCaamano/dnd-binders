@@ -5,6 +5,7 @@ import { paladinLevel1 } from '@constants/pages/demis/paladin-page-1';
 import { paladinLevel2 } from '@constants/pages/demis/paladin-page-2';
 import { paladinLevel3 } from '@constants/pages/demis/paladin-page-3';
 import { paladinLevel4 } from '@constants/pages/demis/paladin-page-4';
+import { paladinLevel5 } from '@constants/pages/demis/paladin-page-5';
 
 const urls = [
   '/img/feature/demis/1.png',
@@ -12,6 +13,7 @@ const urls = [
   '/img/feature/demis/3.png',
   '/img/feature/demis/4.png',
   '/img/feature/demis/5.png',
+  '/img/feature/demis/6.png',
 ];
 
 export const demisePages: Page[] = [
@@ -60,6 +62,14 @@ export const demisePages: Page[] = [
     img: {
       position: PageArtPosition.bottom,
       url: urls[4],
+      offset: 0,
+    },
+  },{
+    sections: paladinLevel5,
+    compact: false,
+    img: {
+      position: PageArtPosition.top,
+      url: urls[5],
       offset: 0,
     },
   },

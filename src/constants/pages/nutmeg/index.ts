@@ -4,12 +4,14 @@ import { nutmegBackground } from './nutmeg-background';
 import { nutmegSpecies } from './nutmeg-species';
 import { wizardLevel1 } from './wizard-page-1';
 import { wizardLevel2 } from '@constants/pages/nutmeg/wizard-page-2';
+import { wizardLevel3 } from '@constants/pages/nutmeg/wizard-page-3';
 
 const urls = [
   '/img/feature/nutmeg/1.png',
   '/img/feature/nutmeg/2.png',
   '/img/feature/nutmeg/3.png',
   '/img/feature/nutmeg/4.png',
+  '/img/feature/nutmeg/5.png',
 ];
 
 export const nutmegPages: Page[] = [
@@ -47,6 +49,13 @@ export const nutmegPages: Page[] = [
     img: {
       position: PageArtPosition.top,
       url: urls[2],
+    },
+  },{
+    sections: wizardLevel3,
+    compact: true,
+    img: {
+      position: PageArtPosition.bottom,
+      url: urls[4],
     },
   },
 ];
